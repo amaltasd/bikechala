@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Zap } from 'lucide-react';
-import { type Bike, CATEGORY_LABEL, bikeUrl, keyStats, priceLabel, formatPrice, bikeImage } from '@/lib/bikes';
+import BrandLogo from '@/components/BrandLogo';
+import { type Bike, CATEGORY_LABEL, bikeUrl, keyStats, priceLabel, formatPrice, bikeImage, brandLogo } from '@/lib/bikes';
 
 /** Letter-mark tile in place of photos (no licensed images yet). */
 export function BikeMark({ bike, className = '' }: { bike: Bike; className?: string }) {
@@ -11,6 +12,13 @@ export function BikeMark({ bike, className = '' }: { bike: Bike; className?: str
       <div aria-hidden className={`overflow-hidden bg-muted ${className}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={img.src} alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
+      </div>
+    );
+  }
+  if (brandLogo(bike.brandSlug)) {
+    return (
+      <div aria-hidden className={`flex items-center justify-center bg-muted ${className}`}>
+        <BrandLogo brand={bike.brand} brandSlug={bike.brandSlug} className="h-1/2 w-1/2 max-h-14 max-w-14 opacity-90" />
       </div>
     );
   }

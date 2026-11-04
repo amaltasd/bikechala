@@ -41,3 +41,7 @@ npm run build && npm start
 - `src/data/bikes.json` is built by `scripts/import_prices.py` (price sheet in `data-raw/`) and `scripts/import_package.py` (spec package in `data-raw/package/`). `npm run check-data` validates it.
 - Models with a price but no confirmed specs are marked `specsPending`. Their pages show a notice, are `noindex`, and are left out of the sitemap until specs are added.
 - **Images:** the sandbox this was built in cannot reach manufacturer sites, so no photos are bundled yet. On a machine with normal internet run `npm run fetch-images`. It downloads each model's `imageUrl` (and the `og:image` of official model pages) into `public/images/bikes/` and records the source in `src/data/images.json`. Pages pick images up automatically; commit both the folder and the JSON. Check you are comfortable with each brand's image terms before publishing.
+
+## Brand logos
+
+`src/data/brand-logos.json` maps a brand slug to a logo file in `public/logos/`. Honda, KTM, Suzuki, BMW Motorrad, Ducati, Vespa and Yamaha are included (single-colour SVGs from the `simple-icons` package, CC0 files; the marks themselves remain their owners' trademarks). Brands without a logo show a neutral initials tile. To add the rest, run `npm run fetch-logos` on a machine that can reach the brand sites (it reads each homepage's touch icon, see `src/data/brand-sites.json`), check the results by eye, or drop your own file into `public/logos/` and add it to `brand-logos.json`.

@@ -1,9 +1,10 @@
+import BrandLogo from '@/components/BrandLogo';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ChevronLeft } from 'lucide-react';
 import BikeCard from '@/components/BikeCard';
-import { bikesByBrand, getBrands, formatPrice } from '@/lib/bikes';
+import { bikesByBrand, getBrands, formatPrice, brandLogo } from '@/lib/bikes';
 
 type P = Promise<{ brand: string }>;
 export const dynamicParams = false;
@@ -32,7 +33,10 @@ export default async function BrandPage({ params }: { params: P }) {
       <header className="border-b border-border bg-background">
         <div className="container mx-auto max-w-7xl px-4 py-5 sm:py-8">
           <Link href="/bikes" className="mb-2 inline-flex min-h-10 items-center gap-1 text-sm font-semibold text-primary"><ChevronLeft className="h-4 w-4" />All bikes</Link>
-          <h1 className="text-2xl font-black tracking-tight sm:text-3xl">{name} bikes &amp; scooters</h1>
+          <div className="flex items-center gap-3">
+            {brandLogo(brand) && <BrandLogo brand={name} brandSlug={brand} className="h-10 w-10 shrink-0" />}
+            <h1 className="text-2xl font-black tracking-tight sm:text-3xl">{name} bikes &amp; scooters</h1>
+          </div>
           <p className="mt-1 text-muted-foreground">
             {list.length} {list.length === 1 ? 'model' : 'models'}{prices.length ? ` · prices from ${formatPrice(Math.min(...prices))}` : ''}
           </p>

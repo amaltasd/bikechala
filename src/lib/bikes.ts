@@ -1,5 +1,6 @@
 import raw from '@/data/bikes.json';
 import imageMap from '@/data/images.json';
+import logoMap from '@/data/brand-logos.json';
 
 export type Category = 'commuter' | 'sports' | 'naked' | 'cruiser' | 'adventure' | 'scooter' | 'off-road';
 type N = number | null | undefined;
@@ -260,3 +261,8 @@ export const BEST_LISTS: BestList[] = [
 
 export const getBestList = (slug: string) => BEST_LISTS.find((l) => l.slug === slug);
 export const bestListBikes = (l: BestList) => bikes.filter(l.pick).sort(l.sort);
+
+type LogoEntry = { src: string; mono?: boolean; credit?: string };
+const logos = logoMap as unknown as Record<string, LogoEntry>;
+/** Brand logo from src/data/brand-logos.json, or null when we do not have one yet. */
+export const brandLogo = (brandSlug: string) => logos[brandSlug] ?? null;

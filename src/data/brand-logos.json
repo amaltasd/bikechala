@@ -1,0 +1,9 @@
+{
+  "honda": { "src": "/logos/honda.svg", "mono": true, "credit": "simple-icons (CC0 files; the marks belong to their owners)" },
+  "ktm": { "src": "/logos/ktm.svg", "mono": true, "credit": "simple-icons (CC0 files; the marks belong to their owners)" },
+  "suzuki": { "src": "/logos/suzuki.svg", "mono": true, "credit": "simple-icons (CC0 files; the marks belong to their owners)" },
+  "bmw-motorrad": { "src": "/logos/bmw-motorrad.svg", "mono": true, "credit": "simple-icons (CC0 files; the marks belong to their owners)" },
+  "ducati": { "src": "/logos/ducati.svg", "mono": true, "credit": "simple-icons (CC0 files; the marks belong to their owners)" },
+  "vespa": { "src": "/logos/vespa.svg", "mono": true, "credit": "simple-icons (CC0 files; the marks belong to their owners)" },
+  "yamaha": { "src": "/logos/yamaha.svg", "mono": true, "credit": "simple-icons (CC0 files; the marks belong to their owners)" }
+}

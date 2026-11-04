@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { ArrowRight, Zap, GitCompare, Calculator, Fuel } from 'lucide-react';
 import BikeCard from '@/components/BikeCard';
-import { bikes, getBrands, BEST_LISTS, formatPrice } from '@/lib/bikes';
+import BrandLogo from '@/components/BrandLogo';
+import { bikes, getBrands, BEST_LISTS, formatPrice, brandLogo } from '@/lib/bikes';
 import { articles } from '@/lib/articles';
 
 export default function Home() {
@@ -52,6 +53,11 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {brands.map((b) => (
               <Link key={b.slug} href={`/bikes/${b.slug}`} className="rounded-2xl border border-border bg-card p-4 transition-all active:scale-[0.98] hover:border-primary">
+                <div className="mb-2 flex h-9 items-center">
+                  {brandLogo(b.slug)
+                    ? <BrandLogo brand={b.name} brandSlug={b.slug} className="h-8 w-8" />
+                    : <span aria-hidden className="flex h-8 w-8 items-center justify-center rounded-lg bg-muted text-xs font-bold text-muted-foreground">{b.name.replace(/[^A-Za-z]/g, '').slice(0, 2).toUpperCase()}</span>}
+                </div>
                 <p className="font-bold">{b.name}</p>
                 <p className="text-xs text-muted-foreground">{b.count} {b.count === 1 ? 'model' : 'models'}{b.minPrice ? ` · from ${formatPrice(b.minPrice)}` : ''}</p>
               </Link>
