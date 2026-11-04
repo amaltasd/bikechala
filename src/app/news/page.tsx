@@ -22,7 +22,7 @@ export default function NewsPage() {
       <div className="container mx-auto grid max-w-4xl gap-3 px-4 py-5 sm:gap-4">
         {sorted.map((a) => (
           <article key={a.slug} className="group relative rounded-2xl border border-border bg-card p-5 transition-all active:scale-[0.99] sm:hover:shadow-md">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-primary">{a.category}</p>
+            <p className="text-xs font-semibold text-primary">{a.category}</p>
             <h2 className="mt-1 text-lg font-bold leading-snug group-hover:text-primary sm:text-xl">
               <Link href={`/news/${a.slug}`} className="before:absolute before:inset-0">{a.title}</Link>
             </h2>

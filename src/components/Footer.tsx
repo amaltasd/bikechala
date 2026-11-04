@@ -11,17 +11,17 @@ export default function Footer() {
           <p className="mt-2 text-sm text-muted-foreground">Bikes and scooters in India: specs, prices, comparisons and calculators.</p>
         </div>
         <div>
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-muted-foreground">Brands</p>
+          <p className="mb-3 text-sm font-semibold text-foreground">Brands</p>
           <ul className="space-y-1">{brands.map((b) => <li key={b.slug}><Link href={`/bikes/${b.slug}`} className="inline-block py-1 text-sm hover:text-primary">{b.name}</Link></li>)}</ul>
         </div>
         <div>
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-muted-foreground">Explore</p>
+          <p className="mb-3 text-sm font-semibold text-foreground">Explore</p>
           <ul className="space-y-1 text-sm">
             {[['/bikes', 'All bikes'], ['/best/best-mileage-bikes', 'Best mileage'], ['/best/best-electric-scooters', 'Electric scooters'], ['/compare', 'Compare bikes'], ['/news', 'Articles']].map(([h, l]) => <li key={h}><Link href={h} className="inline-block py-1 hover:text-primary">{l}</Link></li>)}
           </ul>
         </div>
         <div>
-          <p className="mb-3 text-xs font-bold uppercase tracking-widest text-muted-foreground">Tools</p>
+          <p className="mb-3 text-sm font-semibold text-foreground">Tools</p>
           <ul className="space-y-1 text-sm">
             {[['/tools/emi-calculator', 'EMI calculator'], ['/tools/fuel-cost-calculator', 'Running cost'], ['/tools/on-road-price-calculator', 'On-road price']].map(([h, l]) => <li key={h}><Link href={h} className="inline-block py-1 hover:text-primary">{l}</Link></li>)}
           </ul>

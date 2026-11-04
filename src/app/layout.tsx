@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BottomNav from "@/components/BottomNav";
 import PwaClient from "@/components/PwaClient";
+import { CompareProvider } from "@/components/CompareStore";
+import CompareTray from "@/components/CompareTray";
 import { SITE_URL } from "@/lib/seo";
 
 const displayFont = Outfit({ variable: "--font-display", subsets: ["latin"], display: "swap" });
@@ -39,13 +41,16 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${bodyFont.variable} ${displayFont.variable} flex min-h-screen flex-col font-sans antialiased`}>
+        <CompareProvider>
         <Header />
         <main className="flex flex-1 flex-col">{children}</main>
         <Footer />
         {/* keeps the footer clear of the fixed bottom tab bar on phones */}
         <div aria-hidden className="h-[calc(4rem+env(safe-area-inset-bottom))] lg:hidden" />
         <BottomNav />
+        <CompareTray />
         <PwaClient />
+        </CompareProvider>
       </body>
     </html>
   );

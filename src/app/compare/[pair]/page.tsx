@@ -58,7 +58,7 @@ export default async function ComparePair({ params }: { params: P }) {
             <div />
             {list.map((x) => (
               <Link key={x.slug} href={bikeUrl(x)} className="border-l border-border p-3 text-sm font-bold leading-snug hover:text-primary">
-                <span className="text-[10px] font-bold uppercase tracking-widest text-primary">{x.brand}</span>
+                <span className="text-xs font-semibold text-primary">{x.brand}</span>
                 <span className="block">{x.name}</span>
               </Link>
             ))}

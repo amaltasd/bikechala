@@ -11,6 +11,12 @@ type P = Promise<{ brand: string; model: string }>;
 export const dynamicParams = false;
 export const generateStaticParams = () => bikes.map((b) => ({ brand: b.brandSlug, model: b.modelSlug }));
 
+/** Example EMI: 10% down, 3 years, 10% a year. Labelled as an example on the page; the EMI tool lets people change it. */
+function exampleEmi(price: number) {
+  const loan = price * 0.9, r = 0.10 / 12, n = 36;
+  return Math.round((loan * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1));
+}
+
 const summaryOf = (b: { summary?: string; brand: string; name: string; category: keyof typeof CATEGORY_LABEL }) =>
   b.summary?.trim() || `${b.brand} ${b.name} is a ${CATEGORY_LABEL[b.category].toLowerCase()} sold in India.`;
 
@@ -63,12 +69,19 @@ export default async function BikePage({ params }: { params: P }) {
           <div className="flex gap-4 p-4 sm:p-6">
             <BikeMark bike={b} className="h-20 w-20 shrink-0 rounded-2xl text-3xl sm:h-28 sm:w-28 sm:text-5xl" />
             <div className="min-w-0">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-primary">{CATEGORY_LABEL[b.category]}{ev ? ' · Electric' : b.fuelType === 'cng' ? ' · CNG' : ''}</p>
+              <p className="text-xs font-semibold text-primary">{CATEGORY_LABEL[b.category]}{ev ? ' · Electric' : b.fuelType === 'cng' ? ' · CNG' : ''}</p>
               <h1 className="text-2xl font-black leading-tight tracking-tight sm:text-3xl">{bikeTitle(b)}</h1>
               <p className="mt-2 text-xl font-extrabold">
                 {price ?? <span className="text-base font-semibold text-muted-foreground">Price not confirmed</span>}
                 {price && <span className="ml-1 text-sm font-normal text-muted-foreground">ex-showroom</span>}
               </p>
+              {b.exShowroomPriceInr != null && (
+                <p className="mt-1 text-sm text-foreground/80">
+                  EMI from about <span className="font-bold">₹{exampleEmi(b.exShowroomPriceInr).toLocaleString('en-IN')}/month</span>
+                  <span className="text-muted-foreground"> (10% down, 3 years, 10% interest). </span>
+                  <Link href={`/tools/emi-calculator?bike=${b.slug}`} className="font-semibold text-primary">Change it</Link>
+                </p>
+              )}
               {price && b.priceAsOf && <p className="text-xs text-muted-foreground">Price as of: {b.priceAsOf}. Starting variant, Delhi. Confirm with your dealer.</p>}
               {b.priceNote && <p className="mt-1 text-xs text-muted-foreground">{b.priceNote}</p>}
             </div>
@@ -197,6 +210,15 @@ export default async function BikePage({ params }: { params: P }) {
               </details>
             )}
           </aside>
+        </div>
+      </div>
+      <div className="fixed inset-x-0 z-30 border-t border-border bg-background/95 px-4 py-2.5 backdrop-blur-md bottom-[calc(4rem+env(safe-area-inset-bottom))] lg:hidden">
+        <div className="mx-auto flex max-w-5xl items-center gap-3">
+          <div className="min-w-0 flex-1">
+            <p className="truncate text-sm font-bold">{bikeTitle(b)}</p>
+            <p className="text-xs text-muted-foreground">{price ? `${price} ex-showroom` : 'Price not confirmed'}</p>
+          </div>
+          <Link href={`/compare?a=${b.slug}`} className="flex min-h-11 items-center gap-1.5 rounded-xl bg-primary px-4 text-sm font-bold text-primary-foreground active:scale-95"><GitCompare className="h-4 w-4" />Compare</Link>
         </div>
       </div>
     </div>

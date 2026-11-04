@@ -14,7 +14,7 @@ export default function ComparePicker({ options, initialA = '', initialB = '' }:
 
   const select = (value: string, set: (v: string) => void, label: string, other: string) => (
     <label className="block">
-      <span className="mb-1 block text-xs font-bold uppercase tracking-widest text-muted-foreground">{label}</span>
+      <span className="mb-1 block text-sm font-semibold text-foreground">{label}</span>
       <select value={value} onChange={(e) => set(e.target.value)} className="h-12 w-full rounded-xl border border-border bg-background px-3">
         <option value="">Choose a bike…</option>
         {brands.map((br) => (

@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import { Zap } from 'lucide-react';
 import BrandLogo from '@/components/BrandLogo';
-import { type Bike, CATEGORY_LABEL, bikeUrl, keyStats, priceLabel, formatPrice, bikeImage, brandLogo } from '@/lib/bikes';
+import { type CardBike, CATEGORY_LABEL, bikeUrl, keyStats, priceLabel, formatPrice, bikeImage, brandLogo } from '@/lib/bike-core';
+import CompareToggle from '@/components/CompareToggle';
 
 /** Letter-mark tile in place of photos (no licensed images yet). */
-export function BikeMark({ bike, className = '' }: { bike: Bike; className?: string }) {
+export function BikeMark({ bike, className = '' }: { bike: CardBike; className?: string }) {
   const ev = bike.fuelType === 'electric';
   const img = bikeImage(bike);
   if (img) {
@@ -33,14 +34,14 @@ export function BikeMark({ bike, className = '' }: { bike: Bike; className?: str
   );
 }
 
-export default function BikeCard({ bike }: { bike: Bike }) {
+export default function BikeCard({ bike }: { bike: CardBike }) {
   const stats = keyStats(bike);
   const known = formatPrice(bike.exShowroomPriceInr);
   return (
     <article className="group relative flex gap-3 rounded-2xl border border-border bg-card p-3 transition-all active:scale-[0.99] sm:flex-col sm:gap-0 sm:p-0 sm:hover:-translate-y-0.5 sm:hover:shadow-lg sm:overflow-hidden">
       <BikeMark bike={bike} className="h-20 w-20 shrink-0 rounded-xl text-2xl sm:h-28 sm:w-full sm:rounded-none sm:text-4xl" />
-      <div className="flex min-w-0 flex-1 flex-col sm:p-4">
-        <p className="text-[10px] font-bold uppercase tracking-widest text-primary">
+      <div className="flex min-w-0 flex-1 flex-col pr-20 sm:p-4 sm:pr-4">
+        <p className="text-xs font-semibold text-primary">
           {CATEGORY_LABEL[bike.category]}{bike.fuelType === 'electric' ? ' · Electric' : bike.fuelType === 'cng' ? ' · CNG' : ''}
         </p>
         <h3 className="mt-0.5 line-clamp-2 font-bold leading-snug">
@@ -55,6 +56,7 @@ export default function BikeCard({ bike }: { bike: Bike }) {
           {bike.listingStatus === 'prebook' && !known ? 'Pre-booking' : known ? <>{priceLabel(bike)} <span className="text-xs font-normal text-muted-foreground">ex-showroom</span></> : 'Price not confirmed'}
         </p>
       </div>
+      <CompareToggle slug={bike.slug} label={`${bike.brand} ${bike.name}`} />
     </article>
   );
 }

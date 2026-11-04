@@ -53,7 +53,7 @@ export default async function ArticlePage({ params }: { params: P }) {
 
         <article id="article-body" className="overflow-hidden border-y border-border bg-background sm:rounded-2xl sm:border">
           <div className="px-4 py-6 sm:p-8">
-            <p className="text-[10px] font-bold uppercase tracking-widest text-primary">{a.category}</p>
+            <p className="text-xs font-semibold text-primary">{a.category}</p>
             <h1 className="mt-1 mb-4 text-balance text-[26px] font-extrabold leading-[1.2] tracking-tight sm:text-4xl">{a.title}</h1>
             <div className="mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-border pb-5 text-sm text-muted-foreground">
               <p className="flex flex-wrap items-center gap-x-3 gap-y-1">
@@ -97,7 +97,7 @@ export default async function ArticlePage({ params }: { params: P }) {
             {next && next.slug !== a.slug && (
               <Link href={`/news/${next.slug}`} className="group mt-8 flex items-center gap-3 rounded-2xl border border-border bg-muted/30 p-4 active:bg-muted sm:hover:border-primary/50">
                 <div className="min-w-0 flex-1">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-primary">Next article</p>
+                  <p className="text-xs font-semibold text-primary">Next article</p>
                   <p className="line-clamp-2 text-sm font-semibold leading-snug group-hover:text-primary">{next.title}</p>
                 </div>
                 <ArrowRight className="h-5 w-5 shrink-0 text-muted-foreground group-hover:text-primary" />

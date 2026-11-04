@@ -40,7 +40,7 @@ export default async function ComparePage({ searchParams }: { searchParams: SP }
           <div className="grid gap-2 sm:grid-cols-2">
             {pairs.map(([x, y]) => (
               <Link key={x.slug + y.slug} href={`/compare/${x.slug}-vs-${y.slug}`} className="rounded-xl border border-border bg-card p-4 active:scale-[0.99] hover:border-primary">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-primary">{CATEGORY_LABEL[x.category]}</p>
+                <p className="text-xs font-semibold text-primary">{CATEGORY_LABEL[x.category]}</p>
                 <p className="mt-1 font-semibold">{bikeTitle(x)} <span className="text-muted-foreground">vs</span> {bikeTitle(y)}</p>
               </Link>
             ))}

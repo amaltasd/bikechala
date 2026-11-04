@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowRight, Zap, GitCompare, Calculator, Fuel } from 'lucide-react';
 import BikeCard from '@/components/BikeCard';
 import BrandLogo from '@/components/BrandLogo';
+import { BUDGETS } from '@/lib/browse';
 import { bikes, getBrands, BEST_LISTS, formatPrice, brandLogo } from '@/lib/bikes';
 import { articles } from '@/lib/articles';
 
@@ -15,19 +16,28 @@ export default function Home() {
 
   return (
     <div className="flex-1">
-      <section className="border-b border-border bg-gradient-to-b from-primary/10 to-transparent">
-        <div className="container mx-auto max-w-7xl px-4 py-10 sm:py-16">
-          <h1 className="max-w-3xl text-4xl font-black leading-[1.05] tracking-tight sm:text-6xl">
-            Find your next <span className="text-primary">two-wheeler.</span>
-          </h1>
-          <p className="mt-4 max-w-xl text-base text-muted-foreground sm:text-lg">
-            {bikes.length} bikes and scooters from {brands.length} brands. Compare specs, check prices and work out what you will really pay.
+      <section className="border-b border-border bg-muted/40">
+        <div className="container mx-auto max-w-7xl px-4 py-8 sm:py-14">
+          <h1 className="max-w-2xl text-3xl font-black leading-tight tracking-tight sm:text-5xl">What is your budget?</h1>
+          <p className="mt-3 max-w-xl text-base text-muted-foreground sm:text-lg">
+            {bikes.length} bikes and scooters from {brands.length} brands, with ex-showroom prices and honest gaps where we have no confirmed number.
           </p>
-          <form action="/bikes" method="GET" role="search" className="mt-6 flex max-w-xl gap-2">
-            <input type="search" name="q" placeholder="Search Splendor, Classic 350, Ather…" aria-label="Search bikes" enterKeyHint="search" className="h-13 min-h-12 flex-1 rounded-xl border border-border bg-background px-4 text-base focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
+          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            {BUDGETS.map((b) => {
+              const n = bikes.filter((x) => x.exShowroomPriceInr != null && x.exShowroomPriceInr >= b.min && x.exShowroomPriceInr < b.max).length;
+              return (
+                <Link key={b.id} href={`/bikes?budget=${b.id}`} className="rounded-2xl border border-border bg-background p-4 transition-all active:scale-[0.98] hover:border-primary">
+                  <span className="block text-lg font-extrabold leading-tight">{b.label}</span>
+                  <span className="mt-1 block text-sm text-muted-foreground">{n} bikes</span>
+                </Link>
+              );
+            })}
+          </div>
+          <form action="/bikes" method="GET" role="search" className="mt-4 flex max-w-xl gap-2">
+            <input type="search" name="q" placeholder="Or search a model, e.g. Splendor, Classic 350" aria-label="Search bikes" enterKeyHint="search" className="h-12 flex-1 rounded-xl border border-border bg-background px-4 text-base focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
             <button className="min-h-12 rounded-xl bg-primary px-5 font-bold text-primary-foreground active:scale-95">Search</button>
           </form>
-          <div className="snap-row hide-scrollbar mt-5 gap-2">
+          <div className="snap-row hide-scrollbar mt-4 gap-2">
             {BEST_LISTS.map((l) => (
               <Link key={l.slug} href={`/best/${l.slug}`} className="whitespace-nowrap rounded-full border border-border bg-background px-4 py-2.5 text-sm font-semibold active:scale-95 hover:border-primary hover:text-primary">
                 {l.title.replace(' in India', '')}
@@ -86,7 +96,7 @@ export default function Home() {
           <div className="grid gap-3 sm:grid-cols-2">
             {articles.slice(0, 2).map((a) => (
               <Link key={a.slug} href={`/news/${a.slug}`} className="rounded-2xl border border-border bg-card p-5 active:scale-[0.99] hover:border-primary">
-                <p className="text-[10px] font-bold uppercase tracking-widest text-primary">{a.category}</p>
+                <p className="text-xs font-semibold text-primary">{a.category}</p>
                 <p className="mt-1 text-lg font-bold leading-snug">{a.title}</p>
                 <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{a.excerpt}</p>
               </Link>

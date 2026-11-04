@@ -1,4 +1,4 @@
-import { brandLogo } from '@/lib/bikes';
+import { brandLogo } from '@/lib/bike-core';
 
 /**
  * Official brand mark when we have one (src/data/brand-logos.json), otherwise the brand name set in type.
