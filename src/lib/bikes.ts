@@ -1,6 +1,7 @@
 import raw from '@/data/bikes.json';
+import imageMap from '@/data/images.json';
 
-export type Category = 'commuter' | 'sports' | 'naked' | 'cruiser' | 'adventure' | 'scooter';
+export type Category = 'commuter' | 'sports' | 'naked' | 'cruiser' | 'adventure' | 'scooter' | 'off-road';
 type N = number | null | undefined;
 type S = string | null | undefined;
 
@@ -11,7 +12,7 @@ export type Bike = {
   name: string;
   modelSlug: string;
   category: Category;
-  fuelType: 'petrol' | 'electric';
+  fuelType: 'petrol' | 'electric' | 'cng';
   engineCc?: N;
   powerPs?: N;
   torqueNm?: N;
@@ -37,7 +38,23 @@ export type Bike = {
   highlights: string[];
   summary: string;
   sources: string[];
+  /** true when we have a price but no confirmed specs yet */
+  specsPending?: boolean;
+  listingStatus?: 'listed' | 'unverified' | 'prebook';
+  officialUrl?: S;
+  officialUrlIsModelPage?: boolean;
+  brochureUrl?: S;
+  imageUrl?: S;
+  officialSpecs?: { label: string; value: string }[];
+  officialSpecsSource?: { url?: S; status?: S } | null;
+  keyFeatures?: string[];
+  variants?: { name: string; price?: N; battery?: S; range?: S; topSpeed?: S; charging?: S; features?: S; sourceUrl?: S }[];
 };
+
+type ImageEntry = { src: string; credit?: string; sourceUrl?: string };
+const images = imageMap as unknown as Record<string, ImageEntry>;
+/** Locally stored photo for a bike, if scripts/fetch-images.mjs has downloaded one. */
+export const bikeImage = (b: Bike) => images[b.slug] ?? null;
 
 export const bikes = raw as unknown as Bike[];
 
@@ -48,6 +65,7 @@ export const CATEGORY_LABEL: Record<Category, string> = {
   cruiser: 'Cruiser',
   adventure: 'Adventure',
   scooter: 'Scooter',
+  'off-road': 'Off-road / competition',
 };
 
 export const bikeTitle = (b: Bike) => `${b.brand} ${b.name}`;

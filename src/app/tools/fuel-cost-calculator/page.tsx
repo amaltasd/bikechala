@@ -19,7 +19,7 @@ export default async function Page({ searchParams }: { searchParams: SP }) {
     slug: b.slug,
     label: bikeTitle(b),
     price: b.exShowroomPriceInr,
-    fuelType: b.fuelType,
+    fuelType: (b.fuelType === 'electric' ? 'electric' : 'petrol') as 'electric' | 'petrol',
     mileage: b.mileageKmpl ?? null,
     rangeKm: b.rangeKm ?? null,
     batteryKwh: b.batteryKwh ?? null,

@@ -35,3 +35,9 @@ npm run build && npm start
 - **No news feed.** `/news` holds four evergreen guides only. Time-sensitive news needs a real source or an editor.
 - Tax and insurance rates in the on-road calculator are editable assumptions, not state-specific rates.
 - Set `NEXT_PUBLIC_SITE_URL` in production (defaults to https://bikechala.com).
+
+## Data and images
+
+- `src/data/bikes.json` is built by `scripts/import_prices.py` (price sheet in `data-raw/`) and `scripts/import_package.py` (spec package in `data-raw/package/`). `npm run check-data` validates it.
+- Models with a price but no confirmed specs are marked `specsPending`. Their pages show a notice, are `noindex`, and are left out of the sitemap until specs are added.
+- **Images:** the sandbox this was built in cannot reach manufacturer sites, so no photos are bundled yet. On a machine with normal internet run `npm run fetch-images`. It downloads each model's `imageUrl` (and the `og:image` of official model pages) into `public/images/bikes/` and records the source in `src/data/images.json`. Pages pick images up automatically; commit both the folder and the JSON. Check you are comfortable with each brand's image terms before publishing.

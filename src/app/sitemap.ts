@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...fixed.map((p) => ({ url: absoluteUrl(p), lastModified: now })),
     ...getBrands().map((b) => ({ url: absoluteUrl(`/bikes/${b.slug}`), lastModified: now })),
-    ...bikes.map((b) => ({ url: absoluteUrl(bikeUrl(b)), lastModified: now })),
+    ...bikes.filter((b) => !b.specsPending).map((b) => ({ url: absoluteUrl(bikeUrl(b)), lastModified: now })),
     ...BEST_LISTS.map((l) => ({ url: absoluteUrl(`/best/${l.slug}`), lastModified: now })),
     ...articles.map((a) => ({ url: absoluteUrl(`/news/${a.slug}`), lastModified: new Date(a.timestamp) })),
   ];
