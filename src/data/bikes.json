@@ -4826,15 +4826,30 @@
   "exShowroomPriceInr": 150000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "199.6 cc single-cylinder petrol",
+   "Single-channel ABS",
+   "Disc brakes at both ends",
+   "13 L fuel tank"
+  ],
+  "summary": "Hero's 200 cc adventure-styled bike with a 5-speed gearbox and disc brakes at both ends.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/bike-comparison/hero-xpulse-200-vs-hero-xpulse-210"
+   "https://www.zigwheels.com/bike-comparison/hero-xpulse-200-vs-hero-xpulse-210",
+   "https://www.bikedekho.com/hero/xpulse-200-4v-bike",
+   "https://www.autocarindia.com/bikes/hero-motocorp/xpulse-200-4v/specifications"
   ],
   "officialUrl": "https://www.heromotocorp.com/en-in/products/motorcycles",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 199.6,
+  "powerPs": 19.16,
+  "torqueNm": 17.35,
+  "mileageKmpl": 36,
+  "gearbox": "5-speed",
+  "fuelTankL": 13,
+  "kerbWeightKg": 161,
+  "seatHeightMm": 891
  },
  {
   "brand": "Hero",
@@ -4915,15 +4930,33 @@
   "exShowroomPriceInr": 184000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "249 cc engine making 30 PS",
+   "6-speed gearbox",
+   "Dual-channel switchable ABS",
+   "320 mm front disc"
+  ],
+  "summary": "Hero's 250 cc naked streetfighter with a 6-speed gearbox and dual-channel ABS.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/hero-bikes/"
+   "https://www.zigwheels.com/hero-bikes/",
+   "https://www.bikedekho.com/hero/xtreme-250r"
   ],
   "officialUrl": "https://www.heromotocorp.com/en-in/products/motorcycles",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 249.03,
+  "powerPs": 30,
+  "torqueNm": 25,
+  "mileageKmpl": 37,
+  "gearbox": "6-speed",
+  "fuelTankL": 11.5,
+  "startType": "Electric start",
+  "kerbWeightKg": 167.7,
+  "seatHeightMm": 806,
+  "frontBrake": "Disc, 320 mm, 2-piston",
+  "rearBrake": "Disc, 230 mm",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Hero",
@@ -4936,15 +4969,30 @@
   "exShowroomPriceInr": 114000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "163.2 cc air-cooled engine, 15 PS",
+   "5-speed gearbox",
+   "Single-channel ABS",
+   "12 L fuel tank"
+  ],
+  "summary": "Hero's 160 cc naked commuter-sport bike; the base single-disc version is listed here.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/hero-bikes/"
+   "https://www.zigwheels.com/hero-bikes/",
+   "https://www.bikedekho.com/hero/xtreme-160r"
   ],
   "officialUrl": "https://www.heromotocorp.com/en-in/products/motorcycles",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 163.2,
+  "powerPs": 15,
+  "torqueNm": 14,
+  "mileageKmpl": 46,
+  "gearbox": "5-speed",
+  "fuelTankL": 12,
+  "startType": "Electric start",
+  "kerbWeightKg": 139.5,
+  "seatHeightMm": 790
  },
  {
   "brand": "Hero",
@@ -4956,15 +5004,32 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 74321,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "110.9 cc air-cooled engine",
+   "Automatic CVT",
+   "Kick and electric start",
+   "5.2 L fuel tank"
+  ],
+  "summary": "Hero's 110 cc automatic scooter with drum brakes at both ends in the base trim.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/hero-scooters/"
+   "https://www.zigwheels.com/hero-scooters/",
+   "https://www.bikedekho.com/hero/xoom-110"
   ],
   "officialUrl": "https://www.heromotocorp.com/en-in/products/motorcycles",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 110.9,
+  "powerPs": 8.15,
+  "torqueNm": 8.7,
+  "mileageKmpl": 53.4,
+  "gearbox": "CVT (Variomatic automatic)",
+  "fuelTankL": 5.2,
+  "startType": "Kick and electric start",
+  "kerbWeightKg": 108,
+  "seatHeightMm": 770,
+  "frontBrake": "Drum, 130 mm",
+  "rearBrake": "Drum, 130 mm"
  },
  {
   "brand": "Hero",
@@ -4976,15 +5041,30 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 84294,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "124.6 cc engine, 9.92 PS",
+   "Automatic CVT",
+   "Combi-braking system",
+   "5 L fuel tank"
+  ],
+  "summary": "Hero's 125 cc automatic scooter with combi-braking; the base VX is listed.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/hero-scooters/"
+   "https://www.zigwheels.com/hero-scooters/",
+   "https://www.bikedekho.com/hero/xoom-125"
   ],
   "officialUrl": "https://www.heromotocorp.com/en-in/products/motorcycles",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 124.6,
+  "powerPs": 9.92,
+  "torqueNm": 10.4,
+  "mileageKmpl": 52.8,
+  "gearbox": "CVT (automatic)",
+  "fuelTankL": 5,
+  "startType": "Kick and electric start",
+  "kerbWeightKg": 120,
+  "seatHeightMm": 777
  },
  {
   "brand": "Hero",
@@ -4997,15 +5077,33 @@
   "exShowroomPriceInr": 149000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "156 cc engine, 14.81 PS",
+   "Single-channel ABS",
+   "Front disc brake",
+   "7 L fuel tank"
+  ],
+  "summary": "Hero's largest scooter, a 156 cc automatic with a front disc and single-channel ABS.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/hero-scooters/"
+   "https://www.zigwheels.com/hero-scooters/",
+   "https://www.bikedekho.com/hero/xoom-160"
   ],
   "officialUrl": "https://www.heromotocorp.com/en-in/products/motorcycles",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 156,
+  "powerPs": 14.81,
+  "torqueNm": 14,
+  "mileageKmpl": 40,
+  "gearbox": "CVT (automatic)",
+  "fuelTankL": 7,
+  "startType": "Electric start",
+  "kerbWeightKg": 142,
+  "seatHeightMm": 787,
+  "frontBrake": "Disc, 240 mm",
+  "rearBrake": "Drum",
+  "abs": "Single-channel ABS"
  },
  {
   "brand": "Hero",
@@ -5017,15 +5115,30 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 80138,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "124.6 cc engine, 9.12 PS",
+   "Automatic CVT",
+   "Claimed 60 kmpl",
+   "5.3 L fuel tank"
+  ],
+  "summary": "Hero's 125 cc automatic scooter; the base VX variant is listed.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/hero-scooters/"
+   "https://www.zigwheels.com/hero-scooters/",
+   "https://www.bikedekho.com/hero/destini-125"
   ],
   "officialUrl": "https://www.heromotocorp.com/en-in/products/motorcycles",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 124.6,
+  "powerPs": 9.12,
+  "torqueNm": 10.4,
+  "mileageKmpl": 60,
+  "gearbox": "CVT (automatic)",
+  "fuelTankL": 5.3,
+  "startType": "Kick and electric start",
+  "kerbWeightKg": 115,
+  "seatHeightMm": 770
  },
  {
   "brand": "Hero",
@@ -5037,15 +5150,27 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 75000,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "110.9 cc air-cooled engine, 8.15 PS",
+   "Launched Sept 2025 per BikeDekho",
+   "5.3 L fuel tank"
+  ],
+  "summary": "Hero's 110 cc scooter launched in September 2025, listed here in its base VX form.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/hero-scooters/"
+   "https://www.zigwheels.com/hero-scooters/",
+   "https://www.bikedekho.com/hero/destini-110"
   ],
   "officialUrl": "https://www.heromotocorp.com/en-in/products/motorcycles",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 110.9,
+  "powerPs": 8.15,
+  "torqueNm": 8.7,
+  "mileageKmpl": 56.26,
+  "fuelTankL": 5.3,
+  "kerbWeightKg": 114,
+  "seatHeightMm": 770
  },
  {
   "brand": "Hero",
@@ -5057,15 +5182,22 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 69766,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "110.9 cc engine, 8.15 PS",
+   "Claimed 52.1 kmpl"
+  ],
+  "summary": "Hero's 110 cc scooter; only headline figures could be confirmed.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/hero-scooters/"
+   "https://www.zigwheels.com/hero-scooters/",
+   "https://www.bikedekho.com/hero/pleasure-plus-scooter"
   ],
   "officialUrl": "https://www.heromotocorp.com/en-in/products/motorcycles",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 110.9,
+  "powerPs": 8.15,
+  "mileageKmpl": 52.1
  },
  {
   "brand": "Hero",
@@ -5077,15 +5209,33 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 187000,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "210 cc engine, 25.5 PS",
+   "6-speed gearbox",
+   "Dual-channel ABS",
+   "Fully faired sports styling"
+  ],
+  "summary": "Hero's 210 cc fully faired sports bike with a 6-speed gearbox and dual-channel ABS.",
+  "specsPending": false,
   "sources": [
-   "https://www.bikecentral.in/hero"
+   "https://www.bikecentral.in/hero",
+   "https://www.bikedekho.com/hero/karizma-xmr-210"
   ],
   "officialUrl": "https://www.heromotocorp.com/en-in/products/motorcycles",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 210,
+  "powerPs": 25.5,
+  "torqueNm": 20.4,
+  "mileageKmpl": 41.55,
+  "gearbox": "6-speed",
+  "fuelTankL": 11,
+  "startType": "Electric start",
+  "kerbWeightKg": 163.5,
+  "seatHeightMm": 810,
+  "frontBrake": "Disc, 300 mm, 2-piston",
+  "rearBrake": "Disc, 230 mm",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Honda",
