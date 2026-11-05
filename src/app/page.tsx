@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Zap, GitCompare, Calculator, Fuel } from 'lucide-react';
 import BikeCard from '@/components/BikeCard';
@@ -5,6 +6,8 @@ import BrandLogo from '@/components/BrandLogo';
 import { BUDGETS } from '@/lib/browse';
 import { bikes, getBrands, BEST_LISTS, formatPrice, brandLogo } from '@/lib/bikes';
 import { articles } from '@/lib/articles';
+
+export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 export default function Home() {
   const brands = getBrands();

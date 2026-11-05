@@ -17,7 +17,7 @@ export default function Footer() {
         <div>
           <p className="mb-3 text-sm font-semibold text-foreground">Explore</p>
           <ul className="space-y-1 text-sm">
-            {[['/bikes', 'All bikes'], ['/best/best-mileage-bikes', 'Best mileage'], ['/best/best-electric-scooters', 'Electric scooters'], ['/compare', 'Compare bikes'], ['/news', 'Articles']].map(([h, l]) => <li key={h}><Link href={h} className="inline-block py-1 hover:text-primary">{l}</Link></li>)}
+            {[['/bikes', 'All bikes'], ['/best/best-mileage-bikes', 'Best mileage'], ['/best/best-electric-scooters', 'Electric scooters'], ['/compare', 'Compare bikes'], ['/news', 'Articles'], ['/about', 'About our data']].map(([h, l]) => <li key={h}><Link href={h} className="inline-block py-1 hover:text-primary">{l}</Link></li>)}
           </ul>
         </div>
         <div>

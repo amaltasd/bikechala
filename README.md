@@ -45,3 +45,12 @@ npm run build && npm start
 ## Brand logos
 
 `src/data/brand-logos.json` maps a brand slug to a logo file in `public/logos/`. Honda, KTM, Suzuki, BMW Motorrad, Ducati, Vespa and Yamaha are included (single-colour SVGs from the `simple-icons` package, CC0 files; the marks themselves remain their owners' trademarks). Brands without a logo show a neutral initials tile. To add the rest, run `npm run fetch-logos` on a machine that can reach the brand sites (it reads each homepage's touch icon, see `src/data/brand-sites.json`), check the results by eye, or drop your own file into `public/logos/` and add it to `brand-logos.json`.
+
+## SEO and AI-search (GEO) setup
+
+- Every page type sets its own canonical URL. Filtered `/bikes?...` views are `noindex`; price-only models are `noindex` and absent from the sitemap.
+- Structured data (JSON-LD): Organization and WebSite (with site search) everywhere; Product with price, availability, specs and image on model pages; BreadcrumbList on all inner pages; ItemList on brand and best-of pages; FAQPage on model, brand and best-of pages. FAQ answers and comparison sentences are generated only from fields we hold (`src/lib/insights.ts`); nothing is estimated.
+- `robots.txt` explicitly allows search and AI crawlers. `/llms.txt` is a plain-text site map for AI assistants. `/about` explains sources and method.
+- The sitemap uses the data date (newest `priceAsOf`) for `lastmod`, not the build time, and includes about 120 curated "A vs B" comparison pages (each bike with its two closest rivals).
+- Share images are generated: site-wide and per model (`opengraph-image.tsx`).
+- After deploy: submit `/sitemap.xml` in Google Search Console and Bing Webmaster Tools, and set `NEXT_PUBLIC_SITE_URL` to the live domain.

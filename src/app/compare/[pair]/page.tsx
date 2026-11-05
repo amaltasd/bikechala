@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ChevronLeft, Trophy } from 'lucide-react';
+import { Trophy } from 'lucide-react';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import { compareFacts, curatedPairs, pairSlug } from '@/lib/insights';
 import { getBikeBySlug, bikeTitle, bikeUrl, specValue, visibleSpecFields, winners } from '@/lib/bikes';
 
 type P = Promise<{ pair: string }>;
+export const generateStaticParams = () => curatedPairs().map((pair) => ({ pair }));
 
 function parse(pair: string) {
   const i = pair.indexOf('-vs-');
@@ -20,8 +23,8 @@ export async function generateMetadata({ params }: { params: P }): Promise<Metad
   if (!p) return { title: 'Comparison not found' };
   return {
     title: `${bikeTitle(p[0])} vs ${bikeTitle(p[1])}: Price, Specs & Mileage`,
-    description: `Compare ${bikeTitle(p[0])} and ${bikeTitle(p[1])} side by side on price, power, mileage or range, weight and features.`,
-    alternates: { canonical: `/compare/${pair}` },
+    description: `${compareFacts(p[0], p[1]).slice(0, 3).join(' ')} Compare ${bikeTitle(p[0])} and ${bikeTitle(p[1])} side by side on price, power, mileage or range, weight and features.`.slice(0, 300),
+    alternates: { canonical: `/compare/${pairSlug(p[0].slug, p[1].slug)}` },
   };
 }
 
@@ -38,13 +41,20 @@ export default async function ComparePair({ params }: { params: P }) {
     return { f, w };
   });
   const [a, b] = list;
+  const facts = compareFacts(a, b);
   const lead = wins[a.slug] === wins[b.slug] ? null : wins[a.slug] > wins[b.slug] ? a : b;
 
   return (
     <div className="flex-1 bg-muted/30 pb-8">
       <div className="container mx-auto max-w-4xl px-4 py-4 sm:py-8">
-        <Link href="/compare" className="mb-3 inline-flex min-h-10 items-center gap-1 text-sm font-semibold text-primary"><ChevronLeft className="h-4 w-4" />New comparison</Link>
+        <Breadcrumbs items={[{ name: 'Compare', href: '/compare' }, { name: `${bikeTitle(a)} vs ${bikeTitle(b)}`, href: `/compare/${pair}` }]} />
         <h1 className="text-xl font-black leading-tight tracking-tight sm:text-3xl">{bikeTitle(a)} <span className="text-muted-foreground">vs</span> {bikeTitle(b)}</h1>
+
+        {facts.length > 0 && (
+          <ul className="mt-3 space-y-1.5 rounded-xl border border-border bg-card p-4 text-sm leading-relaxed">
+            {facts.map((f) => <li key={f} className="flex gap-2"><span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />{f}</li>)}
+          </ul>
+        )}
 
         {lead && (
           <p className="mt-3 flex items-start gap-2 rounded-xl bg-primary/10 p-3 text-sm">

@@ -5,6 +5,12 @@ import { ChevronLeft, GitCompare, Calculator, Fuel, ExternalLink, CheckCircle2, 
 import { BikeMark } from '@/components/BikeCard';
 import BikeCard from '@/components/BikeCard';
 import { absoluteUrl } from '@/lib/seo';
+import JsonLd from '@/components/JsonLd';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import Faq from '@/components/Faq';
+import SpecPosition from '@/components/SpecPosition';
+import { faqFor, quickAnswer, rivals, DATA_UPDATED, DATA_UPDATED_LABEL, pairSlug } from '@/lib/insights';
+import { breadcrumbLd } from '@/lib/seo';
 import { bikes, getBike, bikeImage, bikeTitle, bikeUrl, CATEGORY_LABEL, formatPrice, similarBikes, SPEC_FIELDS, specValue } from '@/lib/bikes';
 
 type P = Promise<{ brand: string; model: string }>;
@@ -45,25 +51,36 @@ export default async function BikePage({ params }: { params: P }) {
   const ev = b.fuelType === 'electric';
   const img = bikeImage(b);
   const official = b.officialSpecs ?? [];
-  const variants = b.variants ?? [];
+  // a variant row is only worth showing when it carries a price or at least one spec
+  const variants = (b.variants ?? []).filter((v) => v.price != null || v.battery || v.range || v.topSpeed || v.charging);
   const features = b.keyFeatures ?? [];
 
+  const faqs = faqFor(b);
+  const rv = rivals(b, 3);
+  const availability = b.listingStatus === 'prebook' ? 'https://schema.org/PreOrder' : b.listingStatus === 'unverified' ? undefined : 'https://schema.org/InStock';
+  const props = rows.slice(0, 12).map((r) => ({ '@type': 'PropertyValue', name: r.f.label, value: r.v }));
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
+    additionalType: 'https://schema.org/Motorcycle',
     name: bikeTitle(b),
+    sku: b.slug,
     brand: { '@type': 'Brand', name: b.brand },
     category: CATEGORY_LABEL[b.category],
-    description: summaryOf(b),
+    description: quickAnswer(b),
     url: absoluteUrl(bikeUrl(b)),
-    ...(b.exShowroomPriceInr != null && { offers: { '@type': 'Offer', priceCurrency: 'INR', price: b.exShowroomPriceInr, availability: 'https://schema.org/InStock' } }),
+    ...(img && { image: absoluteUrl(img.src) }),
+    ...(props.length && { additionalProperty: props }),
+    ...(b.exShowroomPriceInr != null && {
+      offers: { '@type': 'Offer', priceCurrency: 'INR', price: b.exShowroomPriceInr, url: absoluteUrl(bikeUrl(b)), ...(availability && { availability }), itemCondition: 'https://schema.org/NewCondition' },
+    }),
   };
 
   return (
     <div className="flex-1 bg-muted/30 pb-8">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <JsonLd data={schema} />
       <div className="container mx-auto max-w-5xl px-4 py-4 sm:py-8">
-        <Link href={`/bikes/${b.brandSlug}`} className="mb-3 inline-flex min-h-10 items-center gap-1 text-sm font-semibold text-primary"><ChevronLeft className="h-4 w-4" />{b.brand}</Link>
+        <Breadcrumbs items={[{ name: 'Bikes', href: '/bikes' }, { name: b.brand, href: `/bikes/${b.brandSlug}` }, { name: b.name, href: bikeUrl(b) }]} />
 
         <section className="overflow-hidden rounded-2xl border border-border bg-card">
           <div className="flex gap-4 p-4 sm:p-6">
@@ -124,13 +141,17 @@ export default async function BikePage({ params }: { params: P }) {
           <div className="space-y-5 lg:col-span-3">
             <section className="rounded-2xl border border-border bg-card p-5">
               <h2 className="text-lg font-bold">Overview</h2>
-              <p className="mt-2 leading-relaxed text-foreground/85">{summaryOf(b)}</p>
+              <p className="mt-2 font-semibold leading-relaxed">{quickAnswer(b)}</p>
+              {b.summary?.trim() && <p className="mt-2 leading-relaxed text-foreground/85">{b.summary}</p>}
+              <p className="mt-3 text-xs text-muted-foreground">Data last updated <time dateTime={DATA_UPDATED.toISOString().slice(0, 10)}>{DATA_UPDATED_LABEL}</time>. <Link href="/about" className="font-semibold text-primary">How we source our data</Link></p>
               {b.highlights.length > 0 && (
                 <ul className="mt-4 space-y-2">
                   {b.highlights.map((h) => <li key={h} className="flex gap-2 text-sm"><CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />{h}</li>)}
                 </ul>
               )}
             </section>
+
+            <SpecPosition bike={b} />
 
             {features.length > 0 && (
               <section className="rounded-2xl border border-border bg-card p-5">
@@ -190,6 +211,24 @@ export default async function BikePage({ params }: { params: P }) {
                 </ul>
               </section>
             )}
+
+            {rv.length > 0 && (
+              <section className="rounded-2xl border border-border bg-card p-5">
+                <h2 className="text-lg font-bold">Compare the {b.name} with rivals</h2>
+                <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+                  {rv.map((r) => (
+                    <li key={r.slug}>
+                      <Link href={`/compare/${pairSlug(b.slug, r.slug)}`} className="flex min-h-12 items-center justify-between gap-2 rounded-xl border border-border px-4 py-2 text-sm font-semibold active:bg-muted hover:border-primary">
+                        <span className="min-w-0 truncate">vs {bikeTitle(r)}</span>
+                        <span className="shrink-0 text-xs font-normal text-muted-foreground">{formatPrice(r.exShowroomPriceInr)}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            <Faq faqs={faqs} title={`${bikeTitle(b)}: common questions`} />
           </div>
 
           <aside className="space-y-5 lg:col-span-2">
