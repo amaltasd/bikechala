@@ -5868,15 +5868,32 @@
   "exShowroomPriceInr": 233000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "199.5 cc liquid-cooled single",
+   "6-speed gearbox",
+   "320 mm front disc with dual-channel ABS",
+   "13.7 L fuel tank"
+  ],
+  "summary": "The RC 200 is a fully faired sports motorcycle with a 199.5 cc single-cylinder engine and a 6-speed gearbox. It has dual-channel ABS and a 160 kg kerb weight.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/ktm-bikes/"
+   "https://www.zigwheels.com/ktm-bikes/",
+   "https://www.autocarindia.com/bikes/ktm/rc-200/specifications"
   ],
   "officialUrl": "https://www.ktmindia.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 199.5,
+  "powerPs": 24.9,
+  "torqueNm": 19.2,
+  "mileageKmpl": 43.5,
+  "gearbox": "6-speed",
+  "fuelTankL": 13.7,
+  "kerbWeightKg": 160,
+  "seatHeightMm": 835,
+  "frontBrake": "320 mm disc, 4-piston caliper",
+  "rearBrake": "230 mm disc, 1-piston caliper",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "KTM",
@@ -5889,15 +5906,31 @@
   "exShowroomPriceInr": 253000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "249 cc single-cylinder engine",
+   "6-speed gearbox with slipper clutch",
+   "Dual-channel ABS",
+   "14.5 L fuel tank"
+  ],
+  "summary": "The 250 Adventure is a small-capacity adventure tourer with a 249 cc single-cylinder engine and a 6-speed gearbox. It weighs 176 kg with a 825 mm seat.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/ktm-bikes/"
+   "https://www.zigwheels.com/ktm-bikes/",
+   "https://www.autocarindia.com/bikes/ktm/250-adventure/specifications"
   ],
   "officialUrl": "https://www.ktmindia.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 249.07,
+  "powerPs": 30.9,
+  "torqueNm": 25,
+  "gearbox": "6-speed",
+  "fuelTankL": 14.5,
+  "kerbWeightKg": 176,
+  "seatHeightMm": 825,
+  "frontBrake": "320 mm disc, 4-piston caliper",
+  "rearBrake": "240 mm disc, 1-piston caliper",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "KTM",
@@ -5910,15 +5943,29 @@
   "exShowroomPriceInr": 407000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "398.63 cc single-cylinder engine",
+   "6-speed gearbox with assist and slipper clutch",
+   "14.5 L fuel tank",
+   "Switchable ABS listed"
+  ],
+  "summary": "The 390 Adventure S is the higher-spec 399 cc 390 Adventure variant. It has a 6-speed gearbox and a 182 kg kerb weight.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/ktm-bikes/"
+   "https://www.zigwheels.com/ktm-bikes/",
+   "https://www.autocarindia.com/bikes/ktm/390-adventure-s/specifications",
+   "https://www.bikewale.com/news/ktm-390-adventure-with-350cc-engine-launched-at-rs-281-lakh/"
   ],
   "officialUrl": "https://www.ktmindia.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 398.63,
+  "powerPs": 45.9,
+  "torqueNm": 39,
+  "gearbox": "6-speed",
+  "fuelTankL": 14.5,
+  "kerbWeightKg": 182,
+  "seatHeightMm": 830
  },
  {
   "brand": "KTM",
@@ -5931,15 +5978,28 @@
   "exShowroomPriceInr": 351000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "398.63 cc single-cylinder engine",
+   "6-speed gearbox with assist and slipper clutch",
+   "14.5 L fuel tank",
+   "181 kg kerb weight"
+  ],
+  "summary": "The 390 Adventure X is the lower-priced 399 cc 390 Adventure variant with a 6-speed gearbox. It has a 181 kg kerb weight and 825 mm seat height.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/ktm-bikes/"
+   "https://www.zigwheels.com/ktm-bikes/",
+   "https://www.autocarindia.com/bikes/ktm/390-adventure-x/specifications"
   ],
   "officialUrl": "https://www.ktmindia.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 398.63,
+  "powerPs": 45.9,
+  "torqueNm": 39,
+  "gearbox": "6-speed",
+  "fuelTankL": 14.5,
+  "kerbWeightKg": 181,
+  "seatHeightMm": 825
  },
  {
   "brand": "KTM",
@@ -5952,15 +6012,28 @@
   "exShowroomPriceInr": 347000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "398.63 cc single-cylinder engine",
+   "6-speed gearbox with assist and slipper clutch",
+   "15 L fuel tank",
+   "168.3 kg kerb weight"
+  ],
+  "summary": "The 390 Duke R is a 399 cc naked sportbike with a 6-speed gearbox and a 168.3 kg kerb weight. Sources agree on engine, torque, tank and brake hardware.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/ktm-bikes/"
+   "https://www.zigwheels.com/ktm-bikes/",
+   "https://www.autocarindia.com/bikes/ktm/390-duke-r/specifications",
+   "https://www.bikedekho.com/ktm/390-duke-r/specifications"
   ],
   "officialUrl": "https://www.ktmindia.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 398.63,
+  "torqueNm": 39,
+  "gearbox": "6-speed",
+  "fuelTankL": 15,
+  "startType": "Electric start (self start)",
+  "kerbWeightKg": 168.3
  },
  {
   "brand": "KTM",
@@ -8068,12 +8141,29 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "1350 cc V-twin per page data",
+   "Around 188 bhp and 145 Nm",
+   "6-speed gearbox with assist and slipper clutch",
+   "Cornering ABS named on the page"
+  ],
+  "summary": "The 1390 Super Duke R is a large-capacity naked sportbike listed with a 1350 cc engine and 6-speed gearbox. It weighs 210 kg with a 17.5 L tank.",
+  "sources": [
+   "https://www.autocarindia.com/bikes/ktm/1390-super-duke-r/specifications"
+  ],
   "priceNote": "Listed in KTM India official catalogue",
   "listingStatus": "listed",
-  "specsPending": true
+  "specsPending": false,
+  "engineCc": 1350,
+  "powerPs": 190.4,
+  "torqueNm": 145,
+  "gearbox": "6-speed",
+  "fuelTankL": 17.5,
+  "kerbWeightKg": 210,
+  "seatHeightMm": 834,
+  "frontBrake": "320 mm disc, 4-piston caliper",
+  "rearBrake": "240 mm disc, 2-piston caliper",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "KTM",
@@ -8085,12 +8175,30 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "889 cc parallel-twin",
+   "About 119 bhp and 99 Nm",
+   "6-speed gearbox with slipper clutch",
+   "Cornering ABS listed"
+  ],
+  "summary": "The 890 Duke R is a 889 cc twin-cylinder naked sportbike with a 6-speed gearbox. It weighs 180 kg and has a 14 L tank.",
+  "sources": [
+   "https://www.autocarindia.com/bikes/ktm/890-duke-r/standard"
+  ],
   "priceNote": "Listed in KTM India official catalogue",
   "listingStatus": "listed",
-  "specsPending": true
+  "specsPending": false,
+  "engineCc": 889,
+  "powerPs": 121.0,
+  "torqueNm": 99,
+  "gearbox": "6-speed",
+  "fuelTankL": 14,
+  "startType": "Electric start",
+  "kerbWeightKg": 180,
+  "seatHeightMm": 834,
+  "frontBrake": "320 mm disc, 4-piston caliper",
+  "rearBrake": "240 mm disc, 1-piston caliper",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "KTM",
@@ -8119,12 +8227,29 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "164.2 cc liquid-cooled single",
+   "19 PS and 15.5 Nm",
+   "6-speed gearbox with assist and slipper clutch",
+   "Dual-channel ABS with Supermoto mode"
+  ],
+  "summary": "The RC 160 is a small fully faired sportbike with a 164.2 cc engine and 6-speed gearbox. It has dual-channel ABS and a 13.75 L tank.",
+  "sources": [
+   "https://iamabiker.com/avin/2026/ktm-rc-160-launched-in-india-at-₹1-85-lakh-19-ps-engine-dual-channel-abs-and-full-specs/",
+   "https://www.91wheels.com/bikes/ktm/rc-160/specifications"
+  ],
   "priceNote": "Listed in KTM India official catalogue",
   "listingStatus": "listed",
-  "specsPending": true
+  "specsPending": false,
+  "engineCc": 164.2,
+  "powerPs": 19,
+  "torqueNm": 15.5,
+  "gearbox": "6-speed",
+  "fuelTankL": 13.75,
+  "seatHeightMm": 830,
+  "frontBrake": "320 mm disc",
+  "rearBrake": "230 mm disc",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "KTM",
@@ -8187,12 +8312,25 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "449.9 cc liquid-cooled single",
+   "5-speed gearbox",
+   "About 107 kg",
+   "Competition motocross bike"
+  ],
+  "summary": "The 450 SX-F is a motocross competition bike with a 449.9 cc single and 5-speed gearbox. It is intended for off-road and track use only.",
+  "sources": [
+   "https://www.autocarindia.com/bikes/ktm/450-sx-f/specifications"
+  ],
   "priceNote": "Motocross model listed in KTM India official catalogue",
   "listingStatus": "listed",
-  "specsPending": true
+  "specsPending": false,
+  "engineCc": 449.9,
+  "powerPs": 63.0,
+  "torqueNm": 74,
+  "gearbox": "5-speed",
+  "fuelTankL": 7.2,
+  "seatHeightMm": 958
  },
  {
   "brand": "KTM",
