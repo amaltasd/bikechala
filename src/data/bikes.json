@@ -5248,15 +5248,29 @@
   "exShowroomPriceInr": 193000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "348 cc air-cooled single",
+   "Dual-channel ABS",
+   "310 mm front and 240 mm rear discs",
+   "15 L tank"
+  ],
+  "summary": "Air-cooled 348 cc single-cylinder roadster-cruiser with a 5-speed gearbox and slipper clutch. Autocar India lists it as discontinued, now sold as the CB350C.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/honda-bikes/"
+   "https://www.zigwheels.com/honda-bikes/",
+   "https://www.autocarindia.com/bikes/honda-bikes/hness-cb350/specifications",
+   "https://www.honda2wheelersindia.com/motorcycle/CB350"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 348.36,
+  "powerPs": 21.07,
+  "torqueNm": 30,
+  "gearbox": "5-speed",
+  "fuelTankL": 15,
+  "kerbWeightKg": 181,
+  "seatHeightMm": 800
  },
  {
   "brand": "Honda",
@@ -5269,16 +5283,33 @@
   "exShowroomPriceInr": 195000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "348 cc air-cooled single",
+   "Dual-channel ABS",
+   "Disc brakes at both ends",
+   "Self start"
+  ],
+  "summary": "Air-cooled 348 cc single-cylinder roadster with a 5-speed gearbox. Specs come from an aggregator page that is not tied to one variant.",
+  "specsPending": false,
   "sources": [
    "https://www.zigwheels.com/honda-bikes/",
-   "https://www.honda2wheelersindia.com/motorcycle/CB350"
+   "https://www.honda2wheelersindia.com/motorcycle/CB350",
+   "https://www.bikedekho.com/honda/cb350/specifications"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle/CB350",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": true
+  "officialUrlIsModelPage": true,
+  "engineCc": 348.36,
+  "powerPs": 21.07,
+  "torqueNm": 30,
+  "gearbox": "5-speed",
+  "fuelTankL": 15,
+  "startType": "Self start",
+  "kerbWeightKg": 181,
+  "seatHeightMm": 800,
+  "frontBrake": "Disc, 310 mm",
+  "rearBrake": "Disc, 240 mm",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Honda",
@@ -5291,15 +5322,32 @@
   "exShowroomPriceInr": 198000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "348 cc air-cooled single",
+   "Dual-channel ABS",
+   "15 L tank",
+   "Self start"
+  ],
+  "summary": "Scrambler-styled 348 cc single-cylinder motorcycle sharing the CB350 mechanicals, with a 5-speed gearbox.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/honda-bikes/"
+   "https://www.zigwheels.com/honda-bikes/",
+   "https://www.bikedekho.com/honda/cb350rs/specifications"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 348.36,
+  "powerPs": 21.07,
+  "torqueNm": 30,
+  "gearbox": "5-speed",
+  "fuelTankL": 15,
+  "startType": "Self start",
+  "kerbWeightKg": 180,
+  "seatHeightMm": 800,
+  "frontBrake": "Disc, 310 mm",
+  "rearBrake": "Disc, 240 mm",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Honda",
@@ -5312,15 +5360,29 @@
   "exShowroomPriceInr": 118000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "162.7 cc single-cylinder",
+   "13.18 PS and 14.8 Nm",
+   "Front disc, rear drum",
+   "Single-channel ABS"
+  ],
+  "summary": "162.7 cc commuter-sport motorcycle with a 5-speed gearbox and front disc, rear drum brakes.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/honda-bikes/"
+   "https://www.zigwheels.com/honda-bikes/",
+   "https://www.bikedekho.com/honda/sp160/specifications?amp=1"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 162.71,
+  "powerPs": 13.18,
+  "torqueNm": 14.8,
+  "gearbox": "5-speed",
+  "fuelTankL": 12,
+  "startType": "Self start",
+  "kerbWeightKg": 138,
+  "seatHeightMm": 796
  },
  {
   "brand": "Honda",
@@ -5333,15 +5395,27 @@
   "exShowroomPriceInr": 115000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "124 cc air-cooled single",
+   "Front disc, rear drum",
+   "Single-channel ABS listed",
+   "12 L tank"
+  ],
+  "summary": "124 cc entry naked motorcycle with a 5-speed gearbox and a front disc brake.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/honda-bikes/"
+   "https://www.zigwheels.com/honda-bikes/",
+   "https://www.autocarindia.com/bikes/honda-bikes/cb125-hornet/specifications"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 123.94,
+  "powerPs": 11.1,
+  "torqueNm": 11.2,
+  "gearbox": "5-speed",
+  "fuelTankL": 12,
+  "kerbWeightKg": 124
  },
  {
   "brand": "Honda",
@@ -5353,12 +5427,18 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 65643,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "99 cc single-cylinder",
+   "4-speed gearbox",
+   "Drum brakes with CBS",
+   "Kick and self start"
+  ],
+  "summary": "99 cc entry commuter motorcycle with a 4-speed gearbox, drum brakes and combined braking.",
+  "specsPending": false,
   "sources": [
    "https://www.zigwheels.com/honda-bikes/",
-   "https://www.honda2wheelersindia.com/motorcycle/shine-100"
+   "https://www.honda2wheelersindia.com/motorcycle/shine-100",
+   "https://www.bikedekho.com/honda/shine-100/specifications"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle/shine-100",
   "listingStatus": "listed",
@@ -5372,7 +5452,18 @@
     "sourceUrl": "https://www.honda2wheelersindia.com/motorcycle"
    }
   ],
-  "officialUrlIsModelPage": true
+  "officialUrlIsModelPage": true,
+  "engineCc": 98.98,
+  "powerPs": 7.38,
+  "torqueNm": 8.04,
+  "gearbox": "4-speed",
+  "fuelTankL": 9,
+  "startType": "Kick and self start",
+  "kerbWeightKg": 99,
+  "seatHeightMm": 786,
+  "frontBrake": "Drum, 130 mm",
+  "rearBrake": "Drum, 110 mm",
+  "abs": "CBS"
  },
  {
   "brand": "Honda",
@@ -5384,15 +5475,32 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 71085,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "109.5 cc automatic scooter",
+   "CBS",
+   "5.3 L tank",
+   "Kick and self start"
+  ],
+  "summary": "109.5 cc automatic scooter with drum brakes at both ends and combined braking.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/honda-scooters/"
+   "https://www.zigwheels.com/honda-scooters/",
+   "https://www.bikedekho.com/honda/dio/specifications"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 109.51,
+  "powerPs": 7.95,
+  "torqueNm": 9.03,
+  "gearbox": "CVT automatic",
+  "fuelTankL": 5.3,
+  "startType": "Kick and self start",
+  "kerbWeightKg": 106,
+  "seatHeightMm": 765,
+  "frontBrake": "Drum, 130 mm",
+  "rearBrake": "Drum, 130 mm",
+  "abs": "CBS"
  },
  {
   "brand": "Honda",
@@ -5404,15 +5512,31 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 88133,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "123.9 cc automatic scooter",
+   "CBS",
+   "Self start with remote start listed",
+   "5.3 L tank"
+  ],
+  "summary": "123.9 cc automatic scooter with CBS. The source lists a front disc brake and a rear drum.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/honda-scooters/"
+   "https://www.zigwheels.com/honda-scooters/",
+   "https://www.bikedekho.com/honda/dio-125/specifications"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 123.92,
+  "powerPs": 8.3,
+  "torqueNm": 10.5,
+  "gearbox": "CVT automatic",
+  "fuelTankL": 5.3,
+  "startType": "Self start",
+  "kerbWeightKg": 105,
+  "frontBrake": "Disc, 190 mm",
+  "rearBrake": "Drum, 130 mm",
+  "abs": "CBS"
  },
  {
   "brand": "Honda",
@@ -5425,15 +5549,30 @@
   "exShowroomPriceInr": 135000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "3.0 kWh fixed battery",
+   "145 km claimed IDC range",
+   "0-80% in 2 h 40 min",
+   "12-inch wheels, 32 L underseat storage"
+  ],
+  "summary": "Electric scooter with a fixed 3.0 kWh battery and a hub-mounted rear motor, launched in India in September 2026.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/honda-scooters/"
+   "https://www.zigwheels.com/honda-scooters/",
+   "https://www.autocarindia.com/bike-news-amp/honda-qc3-launched-at-rs-135-lakh-440828",
+   "https://rideapart.com/news/809355/honda-qc3-ev-scooter-india-specs-price-features",
+   "https://carhp.in/bike-news/honda-qc3-launched-at-rs-1-35-lakh-with-145km-range-5-inch-tft",
+   "https://www.autocarindia.com/bike-news/honda-expands-electric-scooter-lineup-with-qc3-440287"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/ev",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "CBS",
+  "batteryKwh": 3.0,
+  "rangeKm": 145,
+  "chargingTime0to80": "2 h 40 min"
  },
  {
   "brand": "Honda",
@@ -5446,15 +5585,32 @@
   "exShowroomPriceInr": 161000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "184.4 cc single-cylinder",
+   "Dual-channel ABS",
+   "Front 276 mm and rear 220 mm discs",
+   "12 L tank"
+  ],
+  "summary": "184.4 cc adventure-styled motorcycle with a 5-speed gearbox and dual-channel ABS.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/honda-bikes/"
+   "https://www.zigwheels.com/honda-bikes/",
+   "https://www.bikedekho.com/honda/nx200/specifications"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 184.4,
+  "powerPs": 16.99,
+  "torqueNm": 15.7,
+  "gearbox": "5-speed",
+  "fuelTankL": 12,
+  "startType": "Self start",
+  "kerbWeightKg": 148,
+  "seatHeightMm": 810,
+  "frontBrake": "Disc, 276 mm",
+  "rearBrake": "Disc, 220 mm",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Honda",
@@ -5467,15 +5623,31 @@
   "exShowroomPriceInr": 744000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "471 cc parallel-twin",
+   "Dual-channel ABS",
+   "Twin 296 mm front discs",
+   "17.5 L tank"
+  ],
+  "summary": "471 cc liquid-cooled parallel-twin adventure tourer sold through Big Wing dealers.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/honda-bikes/"
+   "https://www.zigwheels.com/honda-bikes/",
+   "https://www.autocarpro.in/news/honda-motorcycle-scooter-india-launches-nx500-priced-at-rs-590-lakh-118788",
+   "https://www.autocarindia.com/bikes/honda-bikes/nx500"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 471,
+  "torqueNm": 43,
+  "gearbox": "6-speed",
+  "fuelTankL": 17.5,
+  "kerbWeightKg": 196,
+  "seatHeightMm": 830,
+  "frontBrake": "Dual disc, 296 mm",
+  "rearBrake": "Disc, 240 mm",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Honda",
@@ -5488,15 +5660,33 @@
   "exShowroomPriceInr": 1049000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "755 cc parallel-twin",
+   "Dual-channel ABS",
+   "Twin 296 mm front discs",
+   "6-speed with slipper clutch"
+  ],
+  "summary": "755 cc liquid-cooled parallel-twin naked motorcycle, sold through Big Wing dealers.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/honda-bikes/"
+   "https://www.zigwheels.com/honda-bikes/",
+   "https://www.autocarindia.com/bikes/honda-bikes/cb750-hornet/specifications",
+   "https://www.autocarpro.in/news/honda-launches-cb750-hornet-and-cb1000-hornet-sp-in-india-126583",
+   "https://www.91wheels.com/bikes/honda/cb750-hornet/specifications",
+   "https://www.autocarindia.com/bike-news-amp/honda-cb750-hornet-and-xl750-transalp-e-clutch-launched-in-india-439948"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 755,
+  "powerPs": 91.8,
+  "torqueNm": 75,
+  "gearbox": "6-speed",
+  "fuelTankL": 15.2,
+  "seatHeightMm": 795,
+  "frontBrake": "Dual disc, 296 mm, 4-piston",
+  "rearBrake": "Disc, 240 mm",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Honda",
@@ -5509,15 +5699,31 @@
   "exShowroomPriceInr": 1320000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "755 cc parallel-twin",
+   "16.9 L tank",
+   "Dual-channel ABS, rear switchable",
+   "Sold through Big Wing dealers"
+  ],
+  "summary": "755 cc liquid-cooled parallel-twin adventure tourer.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/honda-bikes/"
+   "https://www.zigwheels.com/honda-bikes/",
+   "https://www.91wheels.com/bikes/honda/xl750-transalp/specifications",
+   "https://www.autocarindia.com/bikes/honda-bikes/transalp-750",
+   "https://www.autocarindia.com/bike-news-amp/honda-cb750-hornet-and-xl750-transalp-e-clutch-launched-in-india-439948"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 755,
+  "powerPs": 91.75,
+  "torqueNm": 75,
+  "fuelTankL": 16.9,
+  "kerbWeightKg": 216,
+  "seatHeightMm": 850,
+  "frontBrake": "Disc",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Jawa",
@@ -7753,15 +7959,27 @@
   "exShowroomPriceInr": 275000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "501 cc air/oil-cooled single",
+   "Dual-channel ABS",
+   "Switchable traction control",
+   "Deliveries expected late 2026"
+  ],
+  "summary": "New 501 cc air/oil-cooled single-cylinder roadster with a 5-speed gearbox, launched in India with deliveries not yet started.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/honda-bikes/"
+   "https://www.zigwheels.com/honda-bikes/",
+   "https://www.timesdrive.in/news/honda-cb500-launched-in-india-at-rs-2-75-lakh-check-variants-engine-features-and-more-article-156200805",
+   "https://www.autocarindia.com/bike-news-amp/all-new-honda-cb500-unveiled-in-india-440284",
+   "https://www.autocarindia.com/bikes/honda-bikes/cb500"
   ],
   "officialUrl": "https://www.honda2wheelersindia.com/motorcycle",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 501,
+  "powerPs": 28.4,
+  "torqueNm": 43.3,
+  "gearbox": "5-speed"
  },
  {
   "brand": "Suzuki",
@@ -8071,12 +8289,29 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "755 cc parallel-twin",
+   "E-Clutch (auto clutch operation)",
+   "Dual-channel ABS",
+   "About 3 kg heavier than non-E-Clutch"
+  ],
+  "summary": "E-Clutch version of the 755 cc parallel-twin CB750 Hornet, launched in 2026.",
+  "sources": [
+   "https://www.autocarindia.com/bikes/honda-bikes/cb750-hornet/specifications",
+   "https://www.91wheels.com/bikes/honda/cb750-hornet/specifications",
+   "https://www.autocarindia.com/bike-news-amp/honda-cb750-hornet-and-xl750-transalp-e-clutch-launched-in-india-439948",
+   "https://www.autocarpro.in/news/honda-launches-cb750-hornet-and-cb1000-hornet-sp-in-india-126583"
+  ],
   "priceNote": "Shown in Honda India BigWing product navigation",
   "listingStatus": "listed",
-  "specsPending": true
+  "specsPending": false,
+  "engineCc": 755,
+  "powerPs": 91.8,
+  "torqueNm": 75,
+  "gearbox": "6-speed",
+  "fuelTankL": 15.2,
+  "kerbWeightKg": 196,
+  "seatHeightMm": 795
  },
  {
   "brand": "Honda",
@@ -8088,12 +8323,31 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "999 cc inline-four",
+   "Bi-directional quickshifter",
+   "Brembo radial front calipers",
+   "Dual-channel ABS"
+  ],
+  "summary": "999 cc liquid-cooled inline-four naked motorcycle sold through Big Wing Topline dealers.",
+  "sources": [
+   "https://www.autocarindia.com/bikes/honda-bikes/cb1000-hornet/specifications",
+   "https://www.autocarpro.in/news/honda-launches-cb750-hornet-and-cb1000-hornet-sp-in-india-126583"
+  ],
   "priceNote": "Shown in Honda India BigWing product navigation",
   "listingStatus": "listed",
-  "specsPending": true
+  "specsPending": false,
+  "engineCc": 999,
+  "powerPs": 157.2,
+  "torqueNm": 107,
+  "gearbox": "6-speed",
+  "fuelTankL": 17,
+  "startType": "Electric start",
+  "kerbWeightKg": 211,
+  "seatHeightMm": 810,
+  "frontBrake": "Dual disc, 310 mm, Brembo radial calipers",
+  "rearBrake": "Disc, 240 mm",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Honda",
@@ -8105,12 +8359,28 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "1833 cc flat-six",
+   "7-speed DCT with reverse",
+   "393 kg kerb weight",
+   "Dual-channel ABS"
+  ],
+  "summary": "1833 cc flat-six touring motorcycle with a dual-clutch automatic gearbox.",
+  "sources": [
+   "https://www.autocarindia.com/bikes/honda-bikes/gold-wing-gl1800/standard"
+  ],
   "priceNote": "Shown in Honda India BigWing product navigation",
   "listingStatus": "listed",
-  "specsPending": true
+  "specsPending": false,
+  "engineCc": 1833,
+  "torqueNm": 170,
+  "gearbox": "7-speed DCT",
+  "fuelTankL": 21,
+  "kerbWeightKg": 393,
+  "seatHeightMm": 745,
+  "frontBrake": "Dual disc, 320 mm, 6-piston",
+  "rearBrake": "Disc, 316 mm, 3-piston",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Honda",
@@ -8122,12 +8392,26 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "999.9 cc inline-four",
+   "Brembo Stylema front calipers",
+   "Bi-directional quickshifter",
+   "Relaunched in India 2025/2026"
+  ],
+  "summary": "Superbike with a 1000 cc inline-four, Brembo brakes and a quickshifter.",
+  "sources": [
+   "https://www.autocarindia.com/bike-news-amp/honda-cbr1000rr-r-fireblade-sp-launched-at-rs-3350-lakh-439950",
+   "https://www.91wheels.com/bikes/honda/cbr1000rr-r-sp/specifications"
+  ],
   "priceNote": "Shown in Honda India BigWing product navigation",
   "listingStatus": "listed",
-  "specsPending": true
+  "specsPending": false,
+  "engineCc": 999,
+  "torqueNm": 113,
+  "gearbox": "6-speed",
+  "fuelTankL": 16.5,
+  "kerbWeightKg": 201,
+  "seatHeightMm": 830
  },
  {
   "brand": "Honda",
@@ -8207,12 +8491,32 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "348 cc air-cooled single",
+   "Dual-channel ABS with HSTC",
+   "15.2 L tank",
+   "Renamed version of the CB350"
+  ],
+  "summary": "Air-cooled 348 cc single-cylinder roadster, the renamed CB350 with a 5-speed gearbox and slipper clutch.",
+  "sources": [
+   "https://www.bikedekho.com/honda/cb350c/specifications",
+   "https://www.honda2wheelersindia.com/news/honda-motorcycle-and-scooter-india-launches-all-new-cb350c-special-edition",
+   "https://www.autocarindia.com/bike-news-amp/honda-cb350c-special-edition-launched-at-rs-202-lakh-437439"
+  ],
   "priceNote": "Shown in Honda India BigWing product navigation",
   "listingStatus": "listed",
-  "specsPending": true
+  "specsPending": false,
+  "engineCc": 348.36,
+  "powerPs": 21.07,
+  "torqueNm": 29.5,
+  "gearbox": "5-speed",
+  "fuelTankL": 15.2,
+  "startType": "Self start",
+  "kerbWeightKg": 186,
+  "seatHeightMm": 800,
+  "frontBrake": "Disc, 310 mm",
+  "rearBrake": "Disc, 240 mm",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Honda",
@@ -8224,12 +8528,24 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "Cosmetic variant of CB350C",
+   "Tank and fender striped graphics",
+   "Chrome pillion grab rail",
+   "Two colours"
+  ],
+  "summary": "Cosmetic special edition of the CB350C with the same 348 cc engine and dual-channel ABS.",
+  "sources": [
+   "https://www.honda2wheelersindia.com/news/honda-motorcycle-and-scooter-india-launches-all-new-cb350c-special-edition",
+   "https://www.autocarindia.com/bike-news-amp/honda-cb350c-special-edition-launched-at-rs-202-lakh-437439"
+  ],
   "priceNote": "Shown in Honda India BigWing product navigation",
   "listingStatus": "listed",
-  "specsPending": true
+  "specsPending": false,
+  "engineCc": 348.36,
+  "powerPs": 21.07,
+  "torqueNm": 29.5,
+  "gearbox": "5-speed"
  },
  {
   "brand": "Hero",
