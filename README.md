@@ -54,3 +54,9 @@ npm run build && npm start
 - The sitemap uses the data date (newest `priceAsOf`) for `lastmod`, not the build time, and includes about 120 curated "A vs B" comparison pages (each bike with its two closest rivals).
 - Share images are generated: site-wide and per model (`opengraph-image.tsx`).
 - After deploy: submit `/sitemap.xml` in Google Search Console and Bing Webmaster Tools, and set `NEXT_PUBLIC_SITE_URL` to the live domain.
+
+## Launch order for Google
+
+1. Verify the domain in Search Console (DNS) first. Submit `/sitemap.xml` only after deploy.
+2. Comparison pages (`/compare/a-vs-b`) are `noindex` and out of the sitemap by default. About 3 to 4 weeks after launch, once model pages are indexed and showing impressions, set `INDEX_COMPARE=true` and redeploy.
+3. Do not add more generated pages until the existing ones are indexed.

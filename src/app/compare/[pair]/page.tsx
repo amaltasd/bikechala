@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Trophy } from 'lucide-react';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { compareFacts, curatedPairs, pairSlug } from '@/lib/insights';
+import { COMPARE_INDEXING, compareFacts, curatedPairs, pairSlug } from '@/lib/insights';
 import { getBikeBySlug, bikeTitle, bikeUrl, specValue, visibleSpecFields, winners } from '@/lib/bikes';
 
 type P = Promise<{ pair: string }>;
@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: { params: P }): Promise<Metad
     title: `${bikeTitle(p[0])} vs ${bikeTitle(p[1])}: Price, Specs & Mileage`,
     description: `${compareFacts(p[0], p[1]).slice(0, 3).join(' ')} Compare ${bikeTitle(p[0])} and ${bikeTitle(p[1])} side by side on price, power, mileage or range, weight and features.`.slice(0, 300),
     alternates: { canonical: `/compare/${pairSlug(p[0].slug, p[1].slug)}` },
+    robots: COMPARE_INDEXING ? undefined : { index: false, follow: true },
   };
 }
 

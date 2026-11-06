@@ -7,6 +7,13 @@ export const DATA_UPDATED = (() => {
 })();
 export const DATA_UPDATED_LABEL = new Intl.DateTimeFormat('en-IN', { dateStyle: 'long', timeZone: 'Asia/Kolkata' }).format(DATA_UPDATED);
 
+/**
+ * Generated "A vs B" pages are templated, so a brand-new domain should not expose ~120 of them on day one.
+ * They stay usable for visitors but are noindex and out of the sitemap until INDEX_COMPARE=true is set
+ * (do that about 3 to 4 weeks after launch, once model pages are being indexed and earning impressions).
+ */
+export const COMPARE_INDEXING = process.env.INDEX_COMPARE === 'true';
+
 const listed = (b: Bike) => !b.specsPending;
 const catLower = (b: Bike) => CATEGORY_LABEL[b.category].toLowerCase().replace(' / street', '').replace(' / competition', '');
 
