@@ -4464,12 +4464,19 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 119000,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Metal body with IP67 water resistance",
+   "Range of about 131 km per BikeDekho (ARAI)",
+   "Several variants: C3001, C3503, C3502, C3501",
+   "Top speed 70 km/h on base variant"
+  ],
+  "summary": "The Chetak is Bajaj's electric scooter with a metal body. The entry C3001 pairs a 3 kWh battery with a claimed 131 km range.",
+  "specsPending": false,
   "sources": [
    "https://www.zigwheels.com/bajaj-scooters/",
-   "https://www.chetak.com/"
+   "https://www.chetak.com/",
+   "https://www.chetak.com/series-35/chetak-c3501",
+   "https://www.bikedekho.com/bajaj/chetak"
   ],
   "officialUrl": "https://www.chetak.com/",
   "listingStatus": "listed",
@@ -4535,7 +4542,13 @@
     "sourceUrl": "https://www.bajajauto.com/corporate/media-centre/press-releases/chetak-upgrades-its-portfolio-with-new-in-built-features-including-google-maps"
    }
   ],
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "kerbWeightKg": 116,
+  "seatHeightMm": 775,
+  "batteryKwh": 3.0,
+  "topSpeedKmph": 70,
+  "chargingTime0to80": "2 hr 55 min",
+  "batteryWarranty": "3 years or 50,000 km"
  },
  {
   "brand": "Bajaj",
@@ -4547,15 +4560,29 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 99622,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Perimeter frame with Nitrox rear mono-shock",
+   "Bluetooth digital console with navigation",
+   "LED lighting on LED variants",
+   "Single-channel ABS available only on top LED BT ABS variant"
+  ],
+  "summary": "The Pulsar NS125 is a naked 125 cc fuel-injected street bike with a perimeter frame. It makes 12 PS and 11 Nm.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/bajaj-bikes/"
+   "https://www.zigwheels.com/bajaj-bikes/",
+   "https://www.bajajauto.com/bikes/pulsar/pulsar-ns125/specifications",
+   "https://www.autocarindia.com/bikes/bajaj/pulsar-ns125/standard/specifications"
   ],
   "officialUrl": "https://www.bajajauto.com/bikes",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 124.45,
+  "powerPs": 12,
+  "torqueNm": 11,
+  "gearbox": "5-speed",
+  "fuelTankL": 12,
+  "kerbWeightKg": 144,
+  "seatHeightMm": 805
  },
  {
   "brand": "Bajaj",
@@ -4568,15 +4595,29 @@
   "exShowroomPriceInr": 126000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Oil-cooled twin-spark 4-valve FI engine",
+   "Gear position and distance-to-empty indicators",
+   "H4 headlamp with auto headlamp on",
+   "Dual-channel ABS"
+  ],
+  "summary": "The Pulsar NS160 is a naked 160 cc street bike making 17 PS. It has disc brakes at both ends with dual-channel ABS.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/bajaj-bikes/"
+   "https://www.zigwheels.com/bajaj-bikes/",
+   "https://www.bajajauto.com/bikes/pulsar/pulsar-ns160/specifications"
   ],
   "officialUrl": "https://www.bajajauto.com/bikes",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 160.3,
+  "powerPs": 17,
+  "torqueNm": 14.6,
+  "fuelTankL": 12,
+  "kerbWeightKg": 152,
+  "frontBrake": "300 mm disc",
+  "rearBrake": "230 mm disc",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Bajaj",
@@ -4589,15 +4630,25 @@
   "exShowroomPriceInr": 145000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Bluetooth console with navigation",
+   "Projector headlamp",
+   "Three ride modes",
+   "Traction control"
+  ],
+  "summary": "The Pulsar N250 is a naked 249 cc oil-cooled single making 25 PS. It has dual-channel ABS, ride modes and traction control.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/bajaj-bikes/"
+   "https://www.zigwheels.com/bajaj-bikes/",
+   "https://www.bajajauto.com/bikes/pulsar/pulsar-n250/specifications"
   ],
   "officialUrl": "https://www.bajajauto.com/bikes",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 249,
+  "powerPs": 25,
+  "torqueNm": 22,
+  "fuelTankL": 14
  },
  {
   "brand": "Bajaj",
@@ -4610,15 +4661,27 @@
   "exShowroomPriceInr": 182000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Liquid-cooled 4-valve engine with ETB",
+   "ABS ride modes",
+   "Bluetooth console with turn-by-turn navigation",
+   "Bajaj Ride Connect app support"
+  ],
+  "summary": "The Pulsar RS200 is a fully faired 200 cc liquid-cooled sports bike. It has disc brakes at both ends with dual-channel ABS.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/bajaj-bikes/"
+   "https://www.zigwheels.com/bajaj-bikes/",
+   "https://www.bajajauto.com/bikes/pulsar/pulsar-rs200/specifications"
   ],
   "officialUrl": "https://www.bajajauto.com/bikes",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 199.5,
+  "torqueNm": 18.74,
+  "fuelTankL": 13,
+  "frontBrake": "300 mm disc",
+  "rearBrake": "230 mm disc",
+  "abs": "Dual-channel ABS"
  },
  {
   "brand": "Bajaj",
@@ -4652,11 +4715,18 @@
   "exShowroomPriceInr": 104000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "World's first CNG motorcycle with petrol backup",
+   "Claimed about 100 km/kg on CNG",
+   "Claimed combined range about 330 km",
+   "Electric start"
+  ],
+  "summary": "The Freedom 125 is a 125 cc bike that runs on CNG and can switch to a small petrol tank. It is built as a low-cost commuter.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/bajaj-bikes/"
+   "https://www.zigwheels.com/bajaj-bikes/",
+   "https://www.autocarindia.com/bikes/bajaj/freedom-125/specifications",
+   "https://www.rushlane.com/bajaj-freedom-125-cng-tank-detailed-top-5-things-to-know-12500479.html"
   ],
   "officialUrl": "https://www.bajajauto.com/bikes",
   "listingStatus": "listed",
@@ -4690,7 +4760,14 @@
    }
   ],
   "officialUrlIsModelPage": false,
-  "imageUrl": "https://cdn.bajajauto.com/-/media/images/bajajauto/bajaj-price-page/header-drop-down/webp/freedom-ng04-disc.webp"
+  "imageUrl": "https://cdn.bajajauto.com/-/media/images/bajajauto/bajaj-price-page/header-drop-down/webp/freedom-ng04-disc.webp",
+  "engineCc": 125,
+  "torqueNm": 9.7,
+  "gearbox": "5-speed",
+  "fuelTankL": 2,
+  "startType": "Electric",
+  "kerbWeightKg": 149,
+  "seatHeightMm": 825
  },
  {
   "brand": "Bajaj",
@@ -4703,15 +4780,28 @@
   "exShowroomPriceInr": 187000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Liquid-cooled DOHC single with slipper clutch",
+   "Four ride modes",
+   "37 mm USD front fork",
+   "Full LED headlamp"
+  ],
+  "summary": "The Dominar 250 is a sport-touring 249 cc liquid-cooled bike making 27 PS. It has a 6-speed gearbox and ABS on both discs.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/bajaj-bikes/"
+   "https://www.zigwheels.com/bajaj-bikes/",
+   "https://www.bajajauto.com/bikes/dominar/dominar-250/specifications"
   ],
   "officialUrl": "https://www.bajajauto.com/bikes",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 248.77,
+  "powerPs": 27,
+  "torqueNm": 23.5,
+  "gearbox": "6-speed",
+  "fuelTankL": 13,
+  "kerbWeightKg": 180,
+  "seatHeightMm": 800
  },
  {
   "brand": "Bajaj",
@@ -4724,15 +4814,27 @@
   "exShowroomPriceInr": 135000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Low-slung wide seat with upright bars",
+   "Twin-spark oil-cooled fuel-injected engine",
+   "Twin rear shocks",
+   "Chrome cruiser styling"
+  ],
+  "summary": "The Avenger Cruise 220 is a relaxed cruiser with a 220 cc oil-cooled engine making about 19 PS. It has a front disc and single-channel ABS.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/bajaj-bikes/"
+   "https://www.zigwheels.com/bajaj-bikes/",
+   "https://www.bajajauto.com/bikes/avenger/avenger-cruise-220/specifications"
   ],
   "officialUrl": "https://www.bajajauto.com/bikes",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 220,
+  "powerPs": 19.03,
+  "torqueNm": 17.55,
+  "frontBrake": "280 mm disc",
+  "rearBrake": "130 mm drum",
+  "abs": "Single-channel ABS"
  },
  {
   "brand": "Bajaj",
@@ -4745,15 +4847,29 @@
   "exShowroomPriceInr": 136000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Projector LED headlamp",
+   "Bluetooth LCD console with navigation",
+   "USB charging port",
+   "Oil-cooled 220 cc engine"
+  ],
+  "summary": "The Pulsar 220F is a semi-faired 220 cc sports commuter making about 21 PS. It has a 15 L tank and disc brakes at both ends.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/bajaj-bikes/"
+   "https://www.zigwheels.com/bajaj-bikes/",
+   "https://www.bajajauto.com/bikes/pulsar/pulsar-220f/specifications"
   ],
   "officialUrl": "https://www.bajajauto.com/bikes",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 220,
+  "powerPs": 20.9,
+  "torqueNm": 18.55,
+  "gearbox": "5-speed",
+  "fuelTankL": 15,
+  "kerbWeightKg": 160,
+  "frontBrake": "280 mm disc",
+  "rearBrake": "230 mm disc"
  },
  {
   "brand": "Bajaj",
@@ -4765,15 +4881,32 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 92270,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Counter balancer fitted",
+   "LED headlamp with auto headlamp on",
+   "Bluetooth LCD console with call alerts",
+   "Fuel-injected air-cooled engine"
+  ],
+  "summary": "The Pulsar N125 is a light naked 125 cc commuter making 12 PS. It has a front disc, rear drum and combined braking.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/bajaj-bikes/"
+   "https://www.zigwheels.com/bajaj-bikes/",
+   "https://www.bajajauto.com/bikes/pulsar/pulsar-n125/specifications"
   ],
   "officialUrl": "https://www.bajajauto.com/bikes",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 124.59,
+  "powerPs": 12,
+  "torqueNm": 11,
+  "gearbox": "5-speed",
+  "fuelTankL": 9.5,
+  "startType": "ISG plus kick",
+  "kerbWeightKg": 125,
+  "seatHeightMm": 795,
+  "frontBrake": "240 mm disc",
+  "rearBrake": "130 mm drum",
+  "abs": "CBS"
  },
  {
   "brand": "Bajaj",
@@ -4785,15 +4918,29 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 70511,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Fuel-injected 100 cc engine",
+   "Comfortec long seat and shock absorption",
+   "LED DRL headlamp",
+   "Electric start"
+  ],
+  "summary": "The Platina 100 is an economy 100 cc commuter making 8.2 PS. It uses drum brakes with a combined/anti-skid braking system.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/bajaj-bikes/"
+   "https://www.zigwheels.com/bajaj-bikes/",
+   "https://www.bajajauto.com/bikes/platina/platina-100/specifications"
   ],
   "officialUrl": "https://www.bajajauto.com/bikes",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 99.59,
+  "powerPs": 8.2,
+  "torqueNm": 8.3,
+  "gearbox": "4-speed",
+  "startType": "Electric",
+  "frontBrake": "130 mm drum",
+  "rearBrake": "110 mm drum",
+  "abs": "CBS"
  },
  {
   "brand": "Bajaj",
@@ -4805,15 +4952,27 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 74930,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Crash guard and utility carrier",
+   "Semi-knobby dual-purpose tyres",
+   "Belly pan for engine protection",
+   "Fuel-injected engine with SNS suspension"
+  ],
+  "summary": "The CT 110X is a rugged 115 cc commuter making 9.5 PS. It has a crash guard, carrier and drum brakes with CBS.",
+  "specsPending": false,
   "sources": [
-   "https://www.zigwheels.com/bajaj-bikes/"
+   "https://www.zigwheels.com/bajaj-bikes/",
+   "https://www.bajajauto.com/bikes/ct/ct-110x/specifications"
   ],
   "officialUrl": "https://www.bajajauto.com/bikes",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 115.45,
+  "powerPs": 9.5,
+  "torqueNm": 9.9,
+  "frontBrake": "130 mm drum",
+  "rearBrake": "110 mm drum",
+  "abs": "CBS"
  },
  {
   "brand": "Hero",
