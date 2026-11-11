@@ -82,13 +82,47 @@ export default async function BikePage({ params }: { params: P }) {
       <div className="container mx-auto max-w-5xl px-4 py-4 sm:py-8">
         <Breadcrumbs items={[{ name: 'Bikes', href: '/bikes' }, { name: b.brand, href: `/bikes/${b.brandSlug}` }, { name: b.name, href: bikeUrl(b) }]} />
 
-        <section className="overflow-hidden rounded-2xl border border-border bg-card">
-          <div className="flex gap-4 p-4 sm:p-6">
-            <BikeMark bike={b} className="h-20 w-20 shrink-0 rounded-2xl text-3xl sm:h-28 sm:w-28 sm:text-5xl" />
-            <div className="min-w-0">
-              <p className="text-xs font-semibold text-primary">{CATEGORY_LABEL[b.category]}{ev ? ' · Electric' : b.fuelType === 'cng' ? ' · CNG' : ''}</p>
-              <h1 className="text-2xl font-black leading-tight tracking-tight sm:text-3xl">{bikeTitle(b)}</h1>
-              <p className="mt-2 text-xl font-extrabold">
+        <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+          <div className="grid gap-6 p-4 sm:p-6 md:grid-cols-12 md:items-center">
+            <div className="flex items-center justify-center rounded-xl bg-gradient-to-b from-muted/50 via-muted/20 to-background p-4 md:col-span-5 lg:col-span-5">
+              {img ? (
+                <div className="relative flex w-full flex-col items-center justify-center">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={img.src}
+                    alt={bikeTitle(b)}
+                    fetchPriority="high"
+                    decoding="async"
+                    className="max-h-64 w-full object-contain drop-shadow-md sm:max-h-72"
+                  />
+                  {img.credit && (
+                    <span className="mt-2 block text-center text-[10px] text-muted-foreground">
+                      Photo: {img.credit}
+                    </span>
+                  )}
+                </div>
+              ) : (
+                <div className="flex h-48 w-full items-center justify-center">
+                  <BikeMark bike={b} className="h-28 w-28 rounded-2xl text-4xl" />
+                </div>
+              )}
+            </div>
+
+            <div className="min-w-0 md:col-span-7 lg:col-span-7">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="rounded-md bg-primary/10 px-2 py-0.5 text-xs font-semibold text-primary">
+                  {CATEGORY_LABEL[b.category]}{ev ? ' · Electric' : b.fuelType === 'cng' ? ' · CNG' : ''}
+                </span>
+                {b.listingStatus === 'prebook' && (
+                  <span className="rounded-md bg-amber-500/10 px-2 py-0.5 text-xs font-semibold text-amber-600">
+                    Pre-booking
+                  </span>
+                )}
+              </div>
+              <h1 className="mt-2 text-2xl font-black leading-tight tracking-tight sm:text-3xl lg:text-4xl">
+                {bikeTitle(b)}
+              </h1>
+              <p className="mt-2 text-2xl font-extrabold text-foreground sm:text-3xl">
                 {price ?? <span className="text-base font-semibold text-muted-foreground">Price not confirmed</span>}
                 {price && <span className="ml-1 text-sm font-normal text-muted-foreground">ex-showroom</span>}
               </p>
@@ -96,17 +130,35 @@ export default async function BikePage({ params }: { params: P }) {
                 <p className="mt-1 text-sm text-foreground/80">
                   EMI from about <span className="font-bold">₹{exampleEmi(b.exShowroomPriceInr).toLocaleString('en-IN')}/month</span>
                   <span className="text-muted-foreground"> (10% down, 3 years, 10% interest). </span>
-                  <Link href={`/tools/emi-calculator?bike=${b.slug}`} className="font-semibold text-primary">Change it</Link>
+                  <Link href={`/tools/emi-calculator?bike=${b.slug}`} className="font-semibold text-primary hover:underline">Change it</Link>
                 </p>
               )}
-              {price && b.priceAsOf && <p className="text-xs text-muted-foreground">Price as of: {b.priceAsOf}. Starting variant, Delhi. Confirm with your dealer.</p>}
+              {price && b.priceAsOf && <p className="mt-1 text-xs text-muted-foreground">Price as of: {b.priceAsOf}. Starting variant, Delhi. Confirm with your dealer.</p>}
               {b.priceNote && <p className="mt-1 text-xs text-muted-foreground">{b.priceNote}</p>}
+
+              {(b.officialUrl || b.brochureUrl) && (
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {b.officialUrl && (
+                    <a href={b.officialUrl} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex min-h-9 items-center gap-1.5 rounded-lg border border-border bg-background px-3 text-xs font-semibold hover:bg-muted active:bg-muted">
+                      <ExternalLink className="h-3.5 w-3.5 text-primary" />
+                      {b.officialUrlIsModelPage ? 'Official model page' : 'Manufacturer site'}
+                    </a>
+                  )}
+                  {b.brochureUrl && (
+                    <a href={b.brochureUrl} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex min-h-9 items-center gap-1.5 rounded-lg border border-border bg-background px-3 text-xs font-semibold hover:bg-muted active:bg-muted">
+                      <FileText className="h-3.5 w-3.5 text-primary" />
+                      Brochure
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           </div>
+
           <div className="grid grid-cols-3 border-t border-border bg-muted/30 text-center sm:grid-cols-3">
-            <Link href={`/compare?a=${b.slug}`} className="flex min-h-14 flex-col items-center justify-center gap-0.5 py-2 text-xs font-semibold active:bg-muted"><GitCompare className="h-4 w-4 text-primary" />Compare</Link>
-            <Link href={`/tools/emi-calculator?bike=${b.slug}`} className="flex min-h-14 flex-col items-center justify-center gap-0.5 border-x border-border py-2 text-xs font-semibold active:bg-muted"><Calculator className="h-4 w-4 text-primary" />EMI</Link>
-            <Link href={`/tools/fuel-cost-calculator?bike=${b.slug}`} className="flex min-h-14 flex-col items-center justify-center gap-0.5 py-2 text-xs font-semibold active:bg-muted"><Fuel className="h-4 w-4 text-primary" />Running cost</Link>
+            <Link href={`/compare?a=${b.slug}`} className="flex min-h-14 flex-col items-center justify-center gap-0.5 py-2 text-xs font-semibold hover:bg-muted/60 active:bg-muted"><GitCompare className="h-4 w-4 text-primary" />Compare</Link>
+            <Link href={`/tools/emi-calculator?bike=${b.slug}`} className="flex min-h-14 flex-col items-center justify-center gap-0.5 border-x border-border py-2 text-xs font-semibold hover:bg-muted/60 active:bg-muted"><Calculator className="h-4 w-4 text-primary" />EMI</Link>
+            <Link href={`/tools/fuel-cost-calculator?bike=${b.slug}`} className="flex min-h-14 flex-col items-center justify-center gap-0.5 py-2 text-xs font-semibold hover:bg-muted/60 active:bg-muted"><Fuel className="h-4 w-4 text-primary" />Running cost</Link>
           </div>
         </section>
 
@@ -120,21 +172,6 @@ export default async function BikePage({ params }: { params: P }) {
               Check with an authorised dealer before you decide.
             </p>
           </div>
-        )}
-
-        {(b.officialUrl || b.brochureUrl) && (
-          <div className="mt-4 flex flex-wrap gap-2">
-            {b.officialUrl && <a href={b.officialUrl} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex min-h-10 items-center gap-1.5 rounded-xl border border-border bg-card px-4 text-sm font-semibold active:bg-muted"><ExternalLink className="h-4 w-4 text-primary" />{b.officialUrlIsModelPage ? 'Official model page' : 'Manufacturer site'}</a>}
-            {b.brochureUrl && <a href={b.brochureUrl} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex min-h-10 items-center gap-1.5 rounded-xl border border-border bg-card px-4 text-sm font-semibold active:bg-muted"><FileText className="h-4 w-4 text-primary" />Brochure</a>}
-          </div>
-        )}
-
-        {img && (
-          <figure className="mt-5 overflow-hidden rounded-2xl border border-border bg-card">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={img.src} alt={bikeTitle(b)} fetchPriority="high" decoding="async" className="max-h-[420px] w-full object-cover" />
-            {img.credit && <figcaption className="px-4 py-2 text-[11px] text-muted-foreground">Image: {img.credit}</figcaption>}
-          </figure>
         )}
 
         <div className="mt-5 grid gap-5 lg:grid-cols-5">

@@ -96,7 +96,7 @@
   },
   "tvs": {
     "src": "/logos/tvs.svg",
-    "mono": true,
+    "mono": false,
     "credit": "upload.wikimedia.org"
   },
   "ather": {

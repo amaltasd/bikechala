@@ -30,9 +30,9 @@
   "fetchedAt": "2026-11-11"
  },
  "royal-enfield-hunter-350": {
-  "src": "/images/bikes/royal-enfield-hunter-350.avif",
+  "src": "/images/bikes/royal-enfield-hunter-350.jpg",
   "credit": "royalenfield.com",
-  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/hunter-350/new-gallery/thumbnail/gallery-thumbnail-1.jpeg",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/hunter-350.webp",
   "fetchedAt": "2026-11-11"
  },
  "honda-shine-100": {
@@ -87,6 +87,330 @@
   "src": "/images/bikes/suzuki-e-access.png",
   "credit": "s3.ap-south-1.amazonaws.com",
   "sourceUrl": "https://s3.ap-south-1.amazonaws.com/suzuki-website-s3/public-live/images/website/logo.jpg",
+  "fetchedAt": "2026-11-11"
+ },
+ "yamaha-fz-s-fi": {
+  "src": "/images/bikes/yamaha-fz-s-fi.webp",
+  "credit": "yamaha-motor-india.com",
+  "sourceUrl": "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "yamaha-fzs-fi-v4": {
+  "src": "/images/bikes/yamaha-fzs-fi-v4.webp",
+  "credit": "yamaha-motor-india.com",
+  "sourceUrl": "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/home/select_your_bike/FZ_Series/Thumbnail/Fzs-fi-v4-dlx-vermillion.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "yamaha-fz-fi": {
+  "src": "/images/bikes/yamaha-fz-fi.webp",
+  "credit": "yamaha-motor-india.com",
+  "sourceUrl": "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/home/select_your_bike/FZ_Series/Thumbnail/fz-fi.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "yamaha-fz-x": {
+  "src": "/images/bikes/yamaha-fz-x.webp",
+  "credit": "yamaha-motor-india.com",
+  "sourceUrl": "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/home/select_your_bike/FZ_Series/Thumbnail/fzs-fi-hybrid.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "yamaha-r15-v4": {
+  "src": "/images/bikes/yamaha-r15-v4.webp",
+  "credit": "yamaha-motor-india.com",
+  "sourceUrl": "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/home/select_your_bike/R_Series/Thumbnail/r15v4-blue.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "yamaha-r15s": {
+  "src": "/images/bikes/yamaha-r15s.webp",
+  "credit": "yamaha-motor-india.com",
+  "sourceUrl": "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/home/select_your_bike/R_Series/Thumbnail/r15s-black.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "yamaha-mt-15-v2": {
+  "src": "/images/bikes/yamaha-mt-15-v2.webp",
+  "credit": "yamaha-motor-india.com",
+  "sourceUrl": "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/home/select_your_bike/MT_Series/Thumbnail/MT15.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "yamaha-xsr-155": {
+  "src": "/images/bikes/yamaha-xsr-155.webp",
+  "credit": "yamaha-motor-india.com",
+  "sourceUrl": "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/home/select_your_bike/X_Series/Thumbnail/xsr.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "yamaha-aerox-155": {
+  "src": "/images/bikes/yamaha-aerox-155.webp",
+  "credit": "yamaha-motor-india.com",
+  "sourceUrl": "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/home/select_your_bike/Maxi/Thumbnail/aerox155.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "yamaha-rayzr-125-fi-hybrid": {
+  "src": "/images/bikes/yamaha-rayzr-125-fi-hybrid.webp",
+  "credit": "yamaha-motor-india.com",
+  "sourceUrl": "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/home/select_your_bike/Street/Thumbnail/rayZR.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "yamaha-fascino-125-fi-hybrid": {
+  "src": "/images/bikes/yamaha-fascino-125-fi-hybrid.webp",
+  "credit": "yamaha-motor-india.com",
+  "sourceUrl": "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/home/select_your_bike/Fashion/Thumbnail/fascinoS_thumbnail.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "yamaha-aerox-e": {
+  "src": "/images/bikes/yamaha-aerox-e.webp",
+  "credit": "yamaha-motor-india.com",
+  "sourceUrl": "https://www.yamaha-motor-india.com/theme/v4/images/webp_images/home/select_your_bike/ev/Thumbnail/aerox_e.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-classic-350": {
+  "src": "/images/bikes/royal-enfield-classic-350.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/classic-350.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-bullet-350": {
+  "src": "/images/bikes/royal-enfield-bullet-350.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/bullet-350.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-meteor-350": {
+  "src": "/images/bikes/royal-enfield-meteor-350.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/meteor-350-new.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-classic-650": {
+  "src": "/images/bikes/royal-enfield-classic-650.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/classic-650.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-shotgun-650": {
+  "src": "/images/bikes/royal-enfield-shotgun-650.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/shotgun-650.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-interceptor-650": {
+  "src": "/images/bikes/royal-enfield-interceptor-650.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/interceptor-650.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-continental-gt-650": {
+  "src": "/images/bikes/royal-enfield-continental-gt-650.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/continental-gt.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-super-meteor-650": {
+  "src": "/images/bikes/royal-enfield-super-meteor-650.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/super-meteor-650.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-himalayan-450": {
+  "src": "/images/bikes/royal-enfield-himalayan-450.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/new-himalayan.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-guerrilla-450": {
+  "src": "/images/bikes/royal-enfield-guerrilla-450.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/guerrilla-450.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-bear-650": {
+  "src": "/images/bikes/royal-enfield-bear-650.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/bear-650.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-goan-classic-350": {
+  "src": "/images/bikes/royal-enfield-goan-classic-350.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/goan-classic-350.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-scram-440": {
+  "src": "/images/bikes/royal-enfield-scram-440.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/scram-440.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-himalayan-440": {
+  "src": "/images/bikes/royal-enfield-himalayan-440.jpg",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield-revamp/header/shop/configure/himalayan-440.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "bajaj-pulsar-150": {
+  "src": "/images/bikes/bajaj-pulsar-150.webp",
+  "credit": "cdn.bajajauto.com",
+  "sourceUrl": "https://cdn.bajajauto.com/-/media/assets/bajajauto/bikes/new-images/plp-pages/header-drop-down-mob/pulsar-150.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "bajaj-pulsar-n160": {
+  "src": "/images/bikes/bajaj-pulsar-n160.webp",
+  "credit": "cdn.bajajauto.com",
+  "sourceUrl": "https://cdn.bajajauto.com/-/media/assets/bajajauto/bikes/new-images/plp-pages/header-drop-down-mob/n160.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "bajaj-pulsar-ns400z": {
+  "src": "/images/bikes/bajaj-pulsar-ns400z.webp",
+  "credit": "cdn.bajajauto.com",
+  "sourceUrl": "https://cdn.bajajauto.com/-/media/assets/bajajauto/bikes/new-images/plp-pages/header-drop-down-mob/ns400z.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "bajaj-pulsar-rs200": {
+  "src": "/images/bikes/bajaj-pulsar-rs200.webp",
+  "credit": "cdn.bajajauto.com",
+  "sourceUrl": "https://cdn.bajajauto.com/-/media/assets/bajajauto/bikes/new-images/plp-pages/header-drop-down-mob/rs200.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "bajaj-dominar-400": {
+  "src": "/images/bikes/bajaj-dominar-400.webp",
+  "credit": "cdn.bajajauto.com",
+  "sourceUrl": "https://cdn.bajajauto.com/-/media/assets/bajajauto/bikes/new-images/plp-pages/header-drop-down-mob/dominar-400.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "bajaj-dominar-250": {
+  "src": "/images/bikes/bajaj-dominar-250.webp",
+  "credit": "cdn.bajajauto.com",
+  "sourceUrl": "https://cdn.bajajauto.com/-/media/assets/bajajauto/bikes/new-images/plp-pages/header-drop-down-mob/dominar-250.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "hero-xtreme-160r-4v": {
+  "src": "/images/bikes/hero-xtreme-160r-4v.png",
+  "credit": "heromotocorp.com",
+  "sourceUrl": "https://www.heromotocorp.com/content/dam/hero-eds-website/xtreme-160r-4v-new-layout/find-your-ride-xtreme-160r-4v.png",
+  "fetchedAt": "2026-11-11"
+ },
+ "hero-splendor-plus": {
+  "src": "/images/bikes/hero-splendor-plus.jpg",
+  "credit": "upload.wikimedia.org",
+  "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Hero_Honda_Splendor_2007.jpg",
+  "fetchedAt": "2026-11-11"
+ },
+ "tvs-apache-rtr-160": {
+  "src": "/images/bikes/tvs-apache-rtr-160.jpg",
+  "credit": "upload.wikimedia.org",
+  "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Apache_RTR_160.jpg",
+  "fetchedAt": "2026-11-11"
+ },
+ "tvs-apache-rtr-180": {
+  "src": "/images/bikes/tvs-apache-rtr-180.jpg",
+  "credit": "upload.wikimedia.org",
+  "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Apache_RTR_160.jpg",
+  "fetchedAt": "2026-11-11"
+ },
+ "tvs-apache-rtr-310": {
+  "src": "/images/bikes/tvs-apache-rtr-310.jpg",
+  "credit": "upload.wikimedia.org",
+  "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Apache_rtr_310.jpg",
+  "fetchedAt": "2026-11-11"
+ },
+ "ktm-390-duke": {
+  "src": "/images/bikes/ktm-390-duke.jpg",
+  "credit": "upload.wikimedia.org",
+  "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Ktm_duke_390.jpg",
+  "fetchedAt": "2026-11-11"
+ },
+ "tvs-jupiter": {
+  "src": "/images/bikes/tvs-jupiter.jpg",
+  "credit": "Wikipedia (TVS Jupiter)",
+  "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/TVS_Jupiter.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "fetchedAt": "2026-11-11"
+ },
+ "tvs-apache-rtr-200-4v": {
+  "src": "/images/bikes/tvs-apache-rtr-200-4v.jpg",
+  "credit": "Wikipedia (TVS Apache)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Apache_rtr_310.jpg/960px-Apache_rtr_310.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "suzuki-access-125": {
+  "src": "/images/bikes/suzuki-access-125.jpg",
+  "credit": "Wikipedia (Suzuki Access 125)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Japan-Mobility-Show-2025-RuinDig_2481.jpg/960px-Japan-Mobility-Show-2025-RuinDig_2481.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "suzuki-gixxer": {
+  "src": "/images/bikes/suzuki-gixxer.jpg",
+  "credit": "Wikipedia (Suzuki Gixxer)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Osaka_Motor_Show_2015_%28136%29_-_Suzuki_GIXXER.JPG/960px-Osaka_Motor_Show_2015_%28136%29_-_Suzuki_GIXXER.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "suzuki-v-strom-sx": {
+  "src": "/images/bikes/suzuki-v-strom-sx.jpg",
+  "credit": "Wikipedia (Suzuki V-Strom 250)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Suzuki_V-Strom_250_in_Athens_on_11-1-2023.jpg/960px-Suzuki_V-Strom_250_in_Athens_on_11-1-2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "suzuki-burgman-street": {
+  "src": "/images/bikes/suzuki-burgman-street.jpg",
+  "credit": "Wikipedia (Suzuki Burgman)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/BURGMAN650_K6.JPG/960px-BURGMAN650_K6.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "suzuki-hayabusa": {
+  "src": "/images/bikes/suzuki-hayabusa.jpg",
+  "credit": "Wikipedia (Suzuki Hayabusa)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/SUZUKI_Hayabusa_2007TMS.jpg/960px-SUZUKI_Hayabusa_2007TMS.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "ktm-390-adventure": {
+  "src": "/images/bikes/ktm-390-adventure.jpg",
+  "credit": "Wikipedia (KTM 390 series)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Ktm_duke_390.jpg/960px-Ktm_duke_390.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "hero-passion-plus": {
+  "src": "/images/bikes/hero-passion-plus.jpg",
+  "credit": "Wikipedia (Hero Passion)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Hero_Honda_Passion.jpg/960px-Hero_Honda_Passion.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "kawasaki-ninja-300": {
+  "src": "/images/bikes/kawasaki-ninja-300.jpg",
+  "credit": "Wikipedia (Kawasaki Ninja 300)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/2026-06-27_Moscow_electric_vehicle_parade%2C_display_20_Kawasaki_Ninja.jpg/960px-2026-06-27_Moscow_electric_vehicle_parade%2C_display_20_Kawasaki_Ninja.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "kawasaki-z900": {
+  "src": "/images/bikes/kawasaki-z900.jpg",
+  "credit": "Wikipedia (Kawasaki Z900)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Kawasaki_Z900%2C_green.jpg/960px-Kawasaki_Z900%2C_green.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "kawasaki-z650": {
+  "src": "/images/bikes/kawasaki-z650.jpg",
+  "credit": "Wikipedia (Kawasaki Z650)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/H2RICKKZ650C2.JPG/960px-H2RICKKZ650C2.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "kawasaki-ninja-zx-6r": {
+  "src": "/images/bikes/kawasaki-ninja-zx-6r.jpg",
+  "credit": "Wikipedia (Kawasaki Ninja ZX-6R)",
+  "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/2013_Kawasaki_ZX-6R.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "fetchedAt": "2026-11-11"
+ },
+ "kawasaki-w175": {
+  "src": "/images/bikes/kawasaki-w175.jpg",
+  "credit": "Wikipedia (Kawasaki W175)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Kawasaki_W175_SE.jpg/960px-Kawasaki_W175_SE.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "ducati-monster": {
+  "src": "/images/bikes/ducati-monster.jpg",
+  "credit": "Wikipedia (Ducati Monster)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/2003_Ducati_Monster_S4R.jpg/960px-2003_Ducati_Monster_S4R.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "fetchedAt": "2026-11-11"
+ },
+ "vespa-125": {
+  "src": "/images/bikes/vespa-125.jpg",
+  "credit": "Wikipedia (Vespa)",
+  "sourceUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/PerthVespa.jpg/960px-PerthVespa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
   "fetchedAt": "2026-11-11"
  }
 }
