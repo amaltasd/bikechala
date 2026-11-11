@@ -106,36 +106,43 @@ export function RunningCostCalculator({ bikes, initialSlug = '' }: { bikes: Calc
   const start = bikes.find((b) => b.slug === initialSlug);
   const [slug, setSlug] = useState(start?.slug ?? '');
   const [electric, setElectric] = useState(start?.fuelType === 'electric');
-  const [km, setKm] = useState('600');
+  const [km, setKm] = useState('800');
   const [fuelPrice, setFuelPrice] = useState('100');
-  const [mileage, setMileage] = useState(String(start?.mileage ?? 50));
-  const [pctPetrol, setPctPetrol] = useState('85');
+  const [mileage, setMileage] = useState(String(start?.mileage ?? 45));
   const [tariff, setTariff] = useState('8');
-  const [kwhPerKm, setKwhPerKm] = useState(start?.batteryKwh && start?.rangeKm ? (start.batteryKwh / start.rangeKm).toFixed(3) : '0.030');
-  const [pctEv, setPctEv] = useState('75');
+  const [kwhPerKm, setKwhPerKm] = useState(String(start?.batteryKwh && start?.rangeKm ? (start.batteryKwh / start.rangeKm).toFixed(3) : 0.025));
+  const [pctPetrol, setPctPetrol] = useState('85');
+  const [pctEv, setPctEv] = useState('80');
 
   const pick = (s: string) => {
     setSlug(s);
     const b = bikes.find((x) => x.slug === s);
     if (!b) return;
-    setElectric(b.fuelType === 'electric');
+    const isEv = b.fuelType === 'electric';
+    setElectric(isEv);
     if (b.mileage) setMileage(String(b.mileage));
     if (b.batteryKwh && b.rangeKm) setKwhPerKm((b.batteryKwh / b.rangeKm).toFixed(3));
   };
 
   const r = useMemo(() => {
     const d = num(km);
-    const perKm = electric
-      ? (num(kwhPerKm) / Math.max(num(pctEv, 100) / 100, 0.01)) * num(tariff)
-      : num(fuelPrice) / Math.max(num(mileage) * (num(pctPetrol, 100) / 100), 0.01);
-    return { perKm, month: perKm * d, year: perKm * d * 12 };
-  }, [km, electric, kwhPerKm, pctEv, tariff, fuelPrice, mileage, pctPetrol]);
+    if (electric) {
+      const realKwhPerKm = num(kwhPerKm) / (Math.max(10, num(pctEv)) / 100);
+      const perKm = realKwhPerKm * num(tariff);
+      const month = d * perKm;
+      return { perKm, month, year: month * 12 };
+    }
+    const realMileage = num(mileage) * (Math.max(10, num(pctPetrol)) / 100);
+    const perKm = realMileage > 0 ? num(fuelPrice) / realMileage : 0;
+    const month = d * perKm;
+    return { perKm, month, year: month * 12 };
+  }, [electric, km, fuelPrice, mileage, tariff, kwhPerKm, pctPetrol, pctEv]);
 
   return (
     <div className={shell}>
       <div className={panel}>
         <BikeSelect bikes={bikes} value={slug} onChange={pick} />
-        <div className="grid grid-cols-2 gap-2 rounded-xl bg-muted p-1" role="tablist" aria-label="Fuel type">
+        <div role="tablist" aria-label="Vehicle type" className="grid grid-cols-2 rounded-xl bg-muted p-1">
           {[['Petrol', false], ['Electric', true]].map(([l, v]) => (
             <button key={String(l)} type="button" role="tab" aria-selected={electric === v} onClick={() => setElectric(v as boolean)} className={`min-h-11 rounded-lg text-sm font-bold ${electric === v ? 'bg-background text-primary shadow-sm' : 'text-muted-foreground'}`}>{l as string}</button>
           ))}
@@ -166,18 +173,52 @@ export function RunningCostCalculator({ bikes, initialSlug = '' }: { bikes: Calc
   );
 }
 
+export const FuelCostCalculator = RunningCostCalculator;
+
+const STATE_RTO_RATES = [
+  { name: 'Manual / custom rate', rate: null },
+  { name: 'Delhi (~8%)', rate: 8 },
+  { name: 'Maharashtra (~10%)', rate: 10 },
+  { name: 'Karnataka (~12%)', rate: 12 },
+  { name: 'Tamil Nadu (~8%)', rate: 8 },
+  { name: 'Uttar Pradesh (~8%)', rate: 8 },
+  { name: 'Gujarat (~6%)', rate: 6 },
+  { name: 'Kerala (~10%)', rate: 10 },
+  { name: 'Rajasthan (~9%)', rate: 9 },
+  { name: 'Telangana (~9%)', rate: 9 },
+  { name: 'West Bengal (~8%)', rate: 8 },
+  { name: 'Haryana (~8%)', rate: 8 },
+  { name: 'Punjab (~9%)', rate: 9 },
+];
+
 export function OnRoadCalculator({ bikes, initialSlug = '' }: { bikes: CalcBike[]; initialSlug?: string }) {
   const start = bikes.find((b) => b.slug === initialSlug);
   const [slug, setSlug] = useState(start?.slug ?? '');
   const [ex, setEx] = useState(String(start?.price ?? 100000));
+  const [stateName, setStateName] = useState('');
   const [tax, setTax] = useState('8');
   const [ins, setIns] = useState('5');
   const [other, setOther] = useState('3000');
+
+  const selectedBike = bikes.find((x) => x.slug === slug);
+  const isEv = selectedBike?.fuelType === 'electric';
 
   const pick = (s: string) => {
     setSlug(s);
     const b = bikes.find((x) => x.slug === s);
     if (b?.price) setEx(String(b.price));
+    if (b?.fuelType === 'electric') {
+      setTax('0');
+      setStateName('EV (0% Road Tax in most states)');
+    }
+  };
+
+  const onStateChange = (st: string) => {
+    setStateName(st);
+    const match = STATE_RTO_RATES.find((x) => x.name === st);
+    if (match && match.rate !== null) {
+      setTax(String(match.rate));
+    }
   };
 
   const r = useMemo(() => {
@@ -191,8 +232,15 @@ export function OnRoadCalculator({ bikes, initialSlug = '' }: { bikes: CalcBike[
     <div className={shell}>
       <div className={panel}>
         <BikeSelect bikes={bikes.filter((b) => b.price)} value={slug} onChange={pick} />
+        <label className="block">
+          <span className="mb-1 block text-sm font-semibold">State / RTO preset</span>
+          <select value={stateName} onChange={(e) => onStateChange(e.target.value)} className="h-12 w-full rounded-xl border border-border bg-background px-3">
+            {isEv && <option value="EV (0% Road Tax in most states)">EV (0% Road Tax in most states)</option>}
+            {STATE_RTO_RATES.map((st) => <option key={st.name} value={st.name}>{st.name}</option>)}
+          </select>
+        </label>
         <Field label="Ex-showroom price" value={ex} onChange={setEx} suffix="₹" />
-        <Field label="Registration and road tax" value={tax} onChange={setTax} suffix="%" step="0.1" hint="Varies by state and bike. Edit to match your state." />
+        <Field label="Registration and road tax" value={tax} onChange={setTax} suffix="%" step="0.1" hint={isEv ? 'Many Indian states waive 100% of road tax for electric two-wheelers.' : 'Varies by state and bike. Pick a state above or edit directly.'} />
         <Field label="Insurance (first year)" value={ins} onChange={setIns} suffix="%" step="0.1" hint="Rough share of ex-showroom price; your quote will differ." />
         <Field label="Other charges" value={other} onChange={setOther} suffix="₹" hint="Handling, plates, accessories. Ask the dealer for an itemised list." />
       </div>

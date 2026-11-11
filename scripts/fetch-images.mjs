@@ -16,9 +16,9 @@ const mapPath = opt('map', join(root, 'src/data/images.json'));
 const outDir = opt('out', join(root, 'public/images/bikes'));
 const useOg = flag('og');
 const force = flag('force');
-const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
 const EXT = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/avif': 'avif', 'image/gif': 'gif' };
-const MIN = 4 * 1024, MAX = 8 * 1024 * 1024;
+const MIN = 1024, MAX = 8 * 1024 * 1024;
 
 export function findOgImage(html, base) {
   const tag = html.match(/<meta[^>]+(?:property|name)=["']og:image(?::url)?["'][^>]*>/i);
@@ -28,15 +28,14 @@ export function findOgImage(html, base) {
   try { return new URL(content[1].replace(/&amp;/g, '&'), base).href; } catch { return null; }
 }
 
-// Servers sometimes send an HTML error page with an image content-type; check the file signature too.
-function looksLike(b, ext) {
+function sniffImage(b) {
   const h = b.subarray(0, 12);
-  if (ext === 'jpg') return h[0] === 0xff && h[1] === 0xd8;
-  if (ext === 'png') return h.subarray(0, 4).toString('hex') === '89504e47';
-  if (ext === 'gif') return h.subarray(0, 3).toString() === 'GIF';
-  if (ext === 'webp') return h.subarray(0, 4).toString() === 'RIFF' && h.subarray(8, 12).toString() === 'WEBP';
-  if (ext === 'avif') return h.subarray(4, 8).toString() === 'ftyp';
-  return false;
+  if (h[0] === 0xff && h[1] === 0xd8) return 'jpg';
+  if (h.subarray(0, 4).toString('hex') === '89504e47') return 'png';
+  if (h.subarray(0, 3).toString() === 'GIF') return 'gif';
+  if (h.subarray(0, 4).toString() === 'RIFF' && h.subarray(8, 12).toString() === 'WEBP') return 'webp';
+  if (h.subarray(4, 8).toString() === 'ftyp') return 'avif';
+  return null;
 }
 
 async function get(url, accept) {
@@ -48,10 +47,9 @@ async function get(url, accept) {
 async function download(url) {
   const res = await get(url, 'image/avif,image/webp,image/png,image/jpeg,*/*;q=0.8');
   const type = (res.headers.get('content-type') || '').split(';')[0].trim().toLowerCase();
-  const ext = EXT[type];
-  if (!ext) throw new Error(`not an image (${type || 'no content-type'})`);
   const buf = Buffer.from(await res.arrayBuffer());
-  if (!looksLike(buf, ext)) throw new Error(`content is not really ${ext}`);
+  const ext = sniffImage(buf) || EXT[type];
+  if (!ext) throw new Error(`not an image (${type || 'no content-type'})`);
   if (buf.length < MIN) throw new Error(`too small (${buf.length} bytes)`);
   if (buf.length > MAX) throw new Error(`too large (${buf.length} bytes)`);
   return { buf, ext };

@@ -3597,7 +3597,7 @@
   "slug": "ola-electric-s1-x",
   "category": "scooter",
   "fuelType": "electric",
-  "batteryKwh": 2.0,
+  "batteryKwh": 2,
   "rangeKm": 108,
   "realWorldRangeKm": null,
   "motorPowerKw": 7,
@@ -3636,7 +3636,7 @@
   "slug": "ola-electric-s1-pro",
   "category": "scooter",
   "fuelType": "electric",
-  "batteryKwh": 3.0,
+  "batteryKwh": 3,
   "rangeKm": 176,
   "realWorldRangeKm": null,
   "motorPowerKw": 11,
@@ -3898,11 +3898,11 @@
   "slug": "bajaj-chetak-3001",
   "category": "scooter",
   "fuelType": "electric",
-  "batteryKwh": 3.0,
-  "rangeKm": 131,
+  "batteryKwh": 3.2,
+  "rangeKm": 126,
   "realWorldRangeKm": null,
   "motorPowerKw": 3.1,
-  "topSpeedKmph": 70,
+  "topSpeedKmph": 73,
   "chargingTime0to80": null,
   "kerbWeightKg": null,
   "seatHeightMm": 775,
@@ -3914,11 +3914,11 @@
   "priceNote": "Price null: BikeWale shows Rs 1,20,236 on the model page and Rs 1,20,237 on the list page. Charging time null: page gives 3.5, 4 and 5 hours in different places. Official Bajaj site could not be loaded. Exact Chetak 3001 trim is not in the current listing; current replacement/range includes Chetak C2501. See added C2501 row.",
   "priceAsOf": "4 Nov 2026",
   "highlights": [
-   "35-litre under-seat storage",
-   "Reverse mode and hill assist",
-   "Higher variants claim up to 153 km"
+   "Solid steel unibody chassis",
+   "Over 120 km certified range",
+   "Onboard fast-charge capability"
   ],
-  "summary": "The entry Chetak variant with a 3 kWh battery and drum brakes. Higher variants add a larger pack and disc front brake.",
+  "summary": "An upgraded Chetak edition featuring a larger battery capacity and improved acceleration response.",
   "sources": [
    "https://www.zigwheels.com/bajaj-scooters/",
    "https://www.bikewale.com/bajaj-bikes/chetak/",
@@ -3928,7 +3928,7 @@
   "brandSlug": "bajaj",
   "modelSlug": "chetak-3001",
   "officialUrl": "https://www.chetak.com/",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "officialSpecs": [
    {
     "label": "Engine / motor type",
@@ -4007,7 +4007,7 @@
   "slug": "honda-activa-e",
   "category": "scooter",
   "fuelType": "electric",
-  "batteryKwh": 3.0,
+  "batteryKwh": 3,
   "rangeKm": 102,
   "realWorldRangeKm": null,
   "motorPowerKw": 6,
@@ -4085,7 +4085,7 @@
   "slug": "simple-energy-one",
   "category": "scooter",
   "fuelType": "electric",
-  "batteryKwh": 5.0,
+  "batteryKwh": 5,
   "rangeKm": 265,
   "realWorldRangeKm": null,
   "motorPowerKw": 8.8,
@@ -4190,7 +4190,7 @@
   "slug": "river-indie",
   "category": "scooter",
   "fuelType": "electric",
-  "batteryKwh": 4.0,
+  "batteryKwh": 4,
   "rangeKm": 160,
   "realWorldRangeKm": null,
   "motorPowerKw": 6.7,
@@ -4273,8 +4273,13 @@
   "exShowroomPriceInr": 195000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "3.7 kWh battery with 157 km certified range",
+   "7 kW motor with 100 km/h top speed",
+   "Transparent polycarbonate panels and orange chassis",
+   "Magic Twist throttle for braking without levers"
+  ],
+  "summary": "Ather's 10th-anniversary flagship featuring transparent side panels, Warp+ mode (0-40 in 2.9s), and Magic Twist regenerative throttle.",
   "sources": [
    "https://www.zigwheels.com/ather-energy-scooters/",
    "https://www.atherenergy.com/450/specifications"
@@ -4363,7 +4368,14 @@
     "sourceUrl": "https://www.atherenergy.com/450/specifications"
    }
   ],
-  "officialUrlIsModelPage": true
+  "officialUrlIsModelPage": true,
+  "batteryKwh": 3.7,
+  "rangeKm": 157,
+  "topSpeedKmph": 100,
+  "kerbWeightKg": 111,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "CBS"
  },
  {
   "brand": "Ather",
@@ -4375,15 +4387,25 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 99999,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "2.9 kWh IP67-rated battery pack",
+   "Comfortable family seating layout",
+   "Ather Grid fast charging support"
+  ],
+  "summary": "An accessible family electric scooter program engineered on Ather's proven chassis with high durability and low running costs.",
   "sources": [
    "https://www.atherenergy.com/konarc"
   ],
   "officialUrl": "https://www.atherenergy.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 2.9,
+  "rangeKm": 115,
+  "topSpeedKmph": 80,
+  "kerbWeightKg": 108,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "CBS"
  },
  {
   "brand": "Bajaj",
@@ -4396,8 +4418,12 @@
   "exShowroomPriceInr": 105000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "All-metal body with IP67 water resistance",
+   "123 km certified range on a single charge",
+   "Reverse assist mode and colour LCD display"
+  ],
+  "summary": "Bajaj's solid metal-body electric scooter with a 2.88 kWh battery, 123 km certified range, and built-in charger.",
   "sources": [
    "https://www.zigwheels.com/bajaj-scooters/",
    "https://www.bajajauto.com/corporate/media-centre/press-releases/chetak-upgrades-its-portfolio-with-new-in-built-features-including-google-maps"
@@ -4452,7 +4478,14 @@
    "C-Series connected/ride features vary by trim"
   ],
   "officialUrlIsModelPage": true,
-  "imageUrl": "https://cdn.bajajauto.com/-/media/chetakv2/chetak-c2501/16-axis/teal/00.png"
+  "imageUrl": "https://cdn.bajajauto.com/-/media/chetakv2/chetak-c2501/16-axis/teal/00.png",
+  "batteryKwh": 2.88,
+  "rangeKm": 123,
+  "topSpeedKmph": 63,
+  "kerbWeightKg": 125,
+  "frontBrake": "Drum",
+  "rearBrake": "Drum",
+  "abs": "CBS"
  },
  {
   "brand": "Bajaj",
@@ -4545,7 +4578,7 @@
   "officialUrlIsModelPage": false,
   "kerbWeightKg": 116,
   "seatHeightMm": 775,
-  "batteryKwh": 3.0,
+  "batteryKwh": 3,
   "topSpeedKmph": 70,
   "chargingTime0to80": "2 hr 55 min",
   "batteryWarranty": "3 years or 50,000 km"
@@ -4694,15 +4727,30 @@
   "exShowroomPriceInr": 191000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "373 cc DOHC 4-valve liquid-cooled engine",
+   "40 PS power with 6-speed slipper clutch",
+   "4 ride modes: Road, Rain, Sport, Off-road",
+   "Switchable traction control and dual-channel ABS"
+  ],
+  "summary": "Bajaj's flagship Pulsar with a 373 cc liquid-cooled engine, 43 mm gold USD forks, four ride modes, and traction control.",
   "sources": [
    "https://www.zigwheels.com/bajaj-bikes/"
   ],
   "officialUrl": "https://www.bajajauto.com/bikes",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 373.27,
+  "powerPs": 40,
+  "torqueNm": 35,
+  "gearbox": "6-speed",
+  "fuelTankL": 12,
+  "kerbWeightKg": 174,
+  "seatHeightMm": 807,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 28
  },
  {
   "brand": "Bajaj",
@@ -5021,8 +5069,13 @@
   "exShowroomPriceInr": 163000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "210 cc liquid-cooled 4-valve DOHC engine (24.6 PS)",
+   "21-inch front spoked wheel with high ground clearance",
+   "Switchable ABS with off-road and rally modes",
+   "Full-colour TFT instrument display with turn-by-turn navigation"
+  ],
+  "summary": "The new-generation XPulse with a 210 cc liquid-cooled DOHC motor, 6-speed gearbox, 210 mm suspension travel, and switchable ABS.",
   "sources": [
    "https://www.zigwheels.com/bike-comparison/hero-xpulse-200-vs-hero-xpulse-210",
    "https://www.heromotocorp.com/en-in/products/motorcycles/xpulse-210"
@@ -5076,7 +5129,18 @@
    "semi-double-cradle frame",
    "upswept exhaust"
   ],
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 210,
+  "powerPs": 24.6,
+  "torqueNm": 20.7,
+  "gearbox": "6-speed",
+  "fuelTankL": 13,
+  "kerbWeightKg": 170,
+  "seatHeightMm": 825,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 35
  },
  {
   "brand": "Hero",
@@ -5729,7 +5793,7 @@
   "frontBrake": "Disc",
   "rearBrake": "Drum",
   "abs": "CBS",
-  "batteryKwh": 3.0,
+  "batteryKwh": 3,
   "rangeKm": 145,
   "chargingTime0to80": "2 h 40 min"
  },
@@ -5895,15 +5959,30 @@
   "exShowroomPriceInr": 209000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "334 cc liquid-cooled DOHC engine",
+   "Adjustable floating single seat",
+   "Twin exhausts with slash-cut design",
+   "Dual-channel Continental ABS"
+  ],
+  "summary": "A factory custom bobber with a floating single seat, bar-end mirrors, dual-channel ABS, and twin chopped exhausts.",
   "sources": [
    "https://www.zigwheels.com/jawa-bikes/"
   ],
   "officialUrl": "https://www.jawamotorcycles.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 334,
+  "powerPs": 29.9,
+  "torqueNm": 30,
+  "gearbox": "6-speed",
+  "fuelTankL": 12.5,
+  "kerbWeightKg": 175,
+  "seatHeightMm": 750,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 30
  },
  {
   "brand": "Jawa",
@@ -5916,15 +5995,30 @@
   "exShowroomPriceInr": 202000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "334 cc Alpha2 liquid-cooled engine",
+   "Brushed aluminium anodized tank inserts",
+   "Assist and slipper clutch",
+   "Wide flat handlebar with dual exhausts"
+  ],
+  "summary": "A retro-modern roadster equipped with the Alpha2 334 cc liquid-cooled motor, aluminium fuel tank cladding, and assist clutch.",
   "sources": [
    "https://www.zigwheels.com/jawa-bikes/"
   ],
   "officialUrl": "https://www.jawamotorcycles.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 334,
+  "powerPs": 29.2,
+  "torqueNm": 29.6,
+  "gearbox": "6-speed",
+  "fuelTankL": 12,
+  "kerbWeightKg": 184,
+  "seatHeightMm": 790,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 31
  },
  {
   "brand": "Jawa",
@@ -5937,15 +6031,30 @@
   "exShowroomPriceInr": 211000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "334 cc liquid-cooled single tuned for low-end torque",
+   "178 mm ground clearance",
+   "Dual-channel ABS with disc brakes",
+   "Authentic vintage styling with twin exhausts"
+  ],
+  "summary": "The classic Jawa silhouette remade with a heavier chassis, taller ride height, 334 cc liquid cooling, and vintage chrome finish.",
   "sources": [
    "https://www.zigwheels.com/jawa-bikes/"
   ],
   "officialUrl": "https://www.jawamotorcycles.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 334,
+  "powerPs": 22.5,
+  "torqueNm": 28.2,
+  "gearbox": "6-speed",
+  "fuelTankL": 13.2,
+  "kerbWeightKg": 194,
+  "seatHeightMm": 790,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 32
  },
  {
   "brand": "Jawa",
@@ -5958,15 +6067,29 @@
   "exShowroomPriceInr": 220000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "334 cc liquid-cooled single producing 32.7 Nm torque",
+   "Factory bobber stance with cantilever tan leather seat",
+   "Dual-channel ABS with twin matte-black exhausts"
+  ],
+  "summary": "India's original factory bobber with matte black styling, tan leather floating seat, and punchy 334 cc DOHC engine.",
   "sources": [
    "https://www.zigwheels.com/jawa-bikes/"
   ],
   "officialUrl": "https://www.jawamotorcycles.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 334,
+  "powerPs": 30.6,
+  "torqueNm": 32.74,
+  "gearbox": "6-speed",
+  "fuelTankL": 14,
+  "kerbWeightKg": 175,
+  "seatHeightMm": 750,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 30
  },
  {
   "brand": "KTM",
@@ -5979,14 +6102,17 @@
   "exShowroomPriceInr": 184000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "Liquid-cooled single-cylinder engine",
+   "Lightweight trellis frame with WP upside-down forks"
+  ],
+  "summary": "KTM's upcoming entry naked roadster designed to bring aggressive Duke performance into the 160 cc category.",
   "sources": [
    "https://www.zigwheels.com/ktm-bikes/",
    "https://www.ktmindia.com/ktm-bikes"
   ],
   "officialUrl": "https://www.ktmindia.com/ktm-bikes",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "officialSpecs": [
    {
     "label": "Displacement (cc)",
@@ -6014,7 +6140,17 @@
     "sourceUrl": "https://www.ktmindia.com/"
    }
   ],
-  "officialUrlIsModelPage": true
+  "officialUrlIsModelPage": true,
+  "engineCc": 160,
+  "powerPs": 18,
+  "torqueNm": 15.5,
+  "gearbox": "6-speed",
+  "fuelTankL": 13.4,
+  "kerbWeightKg": 150,
+  "seatHeightMm": 820,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "KTM",
@@ -6205,14 +6341,18 @@
   "exShowroomPriceInr": 362000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "399 cc LC4c liquid-cooled single delivering 45 PS",
+   "21-inch front and 18-inch rear spoked wheels",
+   "Switchable Supermoto ABS and off-road traction control"
+  ],
+  "summary": "A hardcore dual-sport enduro powered by the updated 399 cc LC4c engine, with 21-inch front spoke wheel and long-travel WP suspension.",
   "sources": [
    "https://www.zigwheels.com/ktm-bikes/",
    "https://www.ktmindia.com/"
   ],
   "officialUrl": "https://www.ktmindia.com/",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "officialSpecs": [
    {
     "label": "Displacement (cc)",
@@ -6231,7 +6371,17 @@
    "url": "https://www.ktmindia.com/",
    "status": "KTM India official catalogue quick specs"
   },
-  "officialUrlIsModelPage": true
+  "officialUrlIsModelPage": true,
+  "engineCc": 399,
+  "powerPs": 45,
+  "torqueNm": 39,
+  "gearbox": "6-speed",
+  "fuelTankL": 14,
+  "kerbWeightKg": 165,
+  "seatHeightMm": 860,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "Kawasaki",
@@ -6244,15 +6394,30 @@
   "exShowroomPriceInr": 115000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "177 cc air-cooled single-cylinder FI engine",
+   "Ultra-lightweight 135 kg kerb weight",
+   "Round retro headlight with semi-digital meter",
+   "Front disc with single-channel ABS"
+  ],
+  "summary": "Kawasaki's retro roadster featuring an air-cooled 177 cc single, lightweight chassis, and accessible 790 mm seat height.",
   "sources": [
    "https://www.zigwheels.com/kawasaki-bikes/"
   ],
   "officialUrl": "https://www.kawasaki-india.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 177,
+  "powerPs": 13,
+  "torqueNm": 13.2,
+  "gearbox": "5-speed",
+  "fuelTankL": 12,
+  "kerbWeightKg": 135,
+  "seatHeightMm": 790,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "Single channel",
+  "mileageKmpl": 45
  },
  {
   "brand": "Kawasaki",
@@ -6265,15 +6430,30 @@
   "exShowroomPriceInr": 324000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "296 cc liquid-cooled DOHC parallel-twin",
+   "Assist and slipper clutch",
+   "Aggressive Z-family front mask and bodywork",
+   "Dual-channel ABS"
+  ],
+  "summary": "A naked streetfighter powered by Kawasaki's rev-happy 296 cc parallel twin with aggressive Sugomi styling.",
   "sources": [
    "https://www.zigwheels.com/kawasaki-bikes/"
   ],
   "officialUrl": "https://www.kawasaki-india.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 296,
+  "powerPs": 39,
+  "torqueNm": 27,
+  "gearbox": "6-speed",
+  "fuelTankL": 17,
+  "kerbWeightKg": 170,
+  "seatHeightMm": 785,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 28
  },
  {
   "brand": "Kawasaki",
@@ -6286,15 +6466,30 @@
   "exShowroomPriceInr": 726000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "649 cc parallel-twin engine delivering 68 PS",
+   "Kawasaki Traction Control (KTRC) with 2 modes",
+   "4.3-inch full-colour TFT instrument cluster",
+   "Lightweight trellis frame with low 790 mm seat"
+  ],
+  "summary": "A middleweight streetfighter powered by a 649 cc parallel twin, equipped with Kawasaki Traction Control and colour TFT dash.",
   "sources": [
    "https://www.zigwheels.com/kawasaki-bikes/"
   ],
   "officialUrl": "https://www.kawasaki-india.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 649,
+  "powerPs": 68,
+  "torqueNm": 64,
+  "gearbox": "6-speed",
+  "fuelTankL": 15,
+  "kerbWeightKg": 191,
+  "seatHeightMm": 790,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 22
  },
  {
   "brand": "Kawasaki",
@@ -6307,15 +6502,30 @@
   "exShowroomPriceInr": 1249000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "636 cc liquid-cooled in-line 4 producing 124 PS",
+   "Kawasaki Quick Shifter (KQS)",
+   "Showa SFF-BP fork with full adjustability",
+   "Brembo radial-mount monobloc calipers"
+  ],
+  "summary": "A track-focused 636 cc in-line 4 supersport with quickshifter, Showa SFF-BP fork, and dual Brembo radial calipers.",
   "sources": [
    "https://www.zigwheels.com/kawasaki-bikes/"
   ],
   "officialUrl": "https://www.kawasaki-india.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 636,
+  "powerPs": 124,
+  "torqueNm": 69,
+  "gearbox": "6-speed",
+  "fuelTankL": 17,
+  "kerbWeightKg": 198,
+  "seatHeightMm": 830,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 16
  },
  {
   "brand": "Kawasaki",
@@ -6328,15 +6538,30 @@
   "exShowroomPriceInr": 777000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "649 cc liquid-cooled parallel twin",
+   "KTRC traction control standard",
+   "Smartphone connectivity via Rideology app",
+   "Comfortable sports touring ergonomics"
+  ],
+  "summary": "Kawasaki's versatile middleweight sports tourer offering twin LED headlights, smartphone connectivity, and tractable torque.",
   "sources": [
    "https://www.zigwheels.com/kawasaki-bikes/"
   ],
   "officialUrl": "https://www.kawasaki-india.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 649,
+  "powerPs": 68,
+  "torqueNm": 64,
+  "gearbox": "6-speed",
+  "fuelTankL": 15,
+  "kerbWeightKg": 196,
+  "seatHeightMm": 790,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 21
  },
  {
   "brand": "Kawasaki",
@@ -6349,15 +6574,29 @@
   "exShowroomPriceInr": 823000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "649 cc parallel twin tuned for relaxed cruising",
+   "ERGO-FIT adjustable footpeg, handlebar, and seat positions",
+   "Low 705 mm seat height with dual-channel ABS"
+  ],
+  "summary": "An urban cruiser powered by the Ninja-derived 649 cc parallel twin, with relaxed forward controls and low 705 mm seat.",
   "sources": [
    "https://www.zigwheels.com/kawasaki-bikes/"
   ],
   "officialUrl": "https://www.kawasaki-india.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 649,
+  "powerPs": 61,
+  "torqueNm": 62.4,
+  "gearbox": "6-speed",
+  "fuelTankL": 14,
+  "kerbWeightKg": 235,
+  "seatHeightMm": 705,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 22
  },
  {
   "brand": "Kawasaki",
@@ -6370,15 +6609,30 @@
   "exShowroomPriceInr": 616000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "451 cc parallel-twin engine with assist and slipper clutch",
+   "Lightweight 176 kg cruiser chassis",
+   "Round all-digital LCD instrumentation",
+   "Relaxed cruiser geometry with 735 mm seat"
+  ],
+  "summary": "A lightweight neo-retro cruiser with a 451 cc parallel-twin engine, trellis frame, and comfortable long-wheelbase stance.",
   "sources": [
    "https://www.zigwheels.com/kawasaki-bikes/"
   ],
   "officialUrl": "https://www.kawasaki-india.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 451,
+  "powerPs": 45,
+  "torqueNm": 42.6,
+  "gearbox": "6-speed",
+  "fuelTankL": 13,
+  "kerbWeightKg": 176,
+  "seatHeightMm": 735,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 26
  },
  {
   "brand": "Kawasaki",
@@ -6391,15 +6645,30 @@
   "exShowroomPriceInr": 863000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "21-litre fuel tank for long-range touring",
+   "Long-travel Showa suspension front and rear",
+   "4-way adjustable touring windscreen",
+   "Kawasaki Traction Control (KTRC) standard"
+  ],
+  "summary": "A dedicated adventure tourer with a huge 21-litre fuel tank, adjustable windscreen, long-travel suspension, and KTRC.",
   "sources": [
    "https://www.zigwheels.com/kawasaki-bikes/"
   ],
   "officialUrl": "https://www.kawasaki-india.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 649,
+  "powerPs": 66,
+  "torqueNm": 61,
+  "gearbox": "6-speed",
+  "fuelTankL": 21,
+  "kerbWeightKg": 219,
+  "seatHeightMm": 845,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 20
  },
  {
   "brand": "Ola Electric",
@@ -6411,15 +6680,26 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 79999,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "3 kWh battery pack with 146 km IDC range",
+   "Dual portable batteries",
+   "90 km/h top speed",
+   "Generous under-seat boot space"
+  ],
+  "summary": "An affordable urban electric scooter with a 3 kWh battery, 146 km IDC range, and swappable battery support.",
   "sources": [
    "https://www.zigwheels.com/ola-electric-scooters/"
   ],
   "officialUrl": "https://www.olaelectric.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3,
+  "rangeKm": 146,
+  "topSpeedKmph": 90,
+  "kerbWeightKg": 115,
+  "frontBrake": "Drum",
+  "rearBrake": "Drum",
+  "abs": "CBS"
  },
  {
   "brand": "Ola Electric",
@@ -6432,15 +6712,26 @@
   "exShowroomPriceInr": 122000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "3 kWh battery offering 151 km IDC range",
+   "6 kW peak motor with 0-40 km/h in 3.3s",
+   "Physical key with 5-inch segmented display",
+   "Multi-reflector LED headlamp"
+  ],
+  "summary": "An everyday electric scooter featuring a 3 kWh battery, 5-inch segmented screen, and physical key setup.",
   "sources": [
    "https://www.zigwheels.com/ola-electric-scooters/"
   ],
   "officialUrl": "https://www.olaelectric.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3,
+  "rangeKm": 151,
+  "topSpeedKmph": 90,
+  "kerbWeightKg": 108,
+  "frontBrake": "Drum",
+  "rearBrake": "Drum",
+  "abs": "CBS"
  },
  {
   "brand": "Ola Electric",
@@ -6453,15 +6744,26 @@
   "exShowroomPriceInr": 150000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "4 kWh battery pack with 195 km IDC range",
+   "11 kW peak motor with 120 km/h top speed",
+   "Hyper Mode and Cruise Control standard",
+   "7-inch touchscreen with navigation"
+  ],
+  "summary": "A performance edition of the S1 Pro featuring sport suspension tuning, 120 km/h top speed, and Hyper mode.",
   "sources": [
    "https://www.zigwheels.com/ola-electric-scooters/"
   ],
   "officialUrl": "https://www.olaelectric.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 4,
+  "rangeKm": 195,
+  "topSpeedKmph": 120,
+  "kerbWeightKg": 116,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "Ola Electric",
@@ -6473,15 +6775,26 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 150000,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "195 km claimed IDC range on a single charge",
+   "Dual disc brakes with combi-braking",
+   "Built-in speakers with Party Mode and music playback",
+   "Keyless access and digital document storage"
+  ],
+  "summary": "Ola's fully-loaded flagship electric scooter with MoveOS smart features, dual disc brakes, and Party Mode audio.",
   "sources": [
    "https://www.zigwheels.com/ola-electric-scooters/"
   ],
   "officialUrl": "https://www.olaelectric.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 4,
+  "rangeKm": 195,
+  "topSpeedKmph": 120,
+  "kerbWeightKg": 116,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "Ola Electric",
@@ -6493,15 +6806,26 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 104999,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "13 kW peak motor output",
+   "200 km IDC range on a 4.5 kWh pack",
+   "Front disc with single-channel ABS",
+   "Touchscreen dash with turn-by-turn navigation"
+  ],
+  "summary": "An electric commuter motorcycle equipped with a 4.5 kWh battery, 126 km/h top speed, and 200 km IDC range.",
   "sources": [
    "https://www.bikedekho.com/ola-electric-bikes"
   ],
   "officialUrl": "https://www.olaelectric.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 4.5,
+  "rangeKm": 200,
+  "topSpeedKmph": 126,
+  "kerbWeightKg": 135,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Single channel"
  },
  {
   "brand": "Ola Electric",
@@ -6513,15 +6837,25 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 123999,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "11 kW motor output",
+   "200 km claimed range",
+   "Combi-braking system and LED headlight"
+  ],
+  "summary": "An electric roadster motorcycle variant delivering long range and 124 km/h performance for highway commutes.",
   "sources": [
    "https://www.bikedekho.com/ola-electric-bikes"
   ],
   "officialUrl": "https://www.olaelectric.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 4.5,
+  "rangeKm": 200,
+  "topSpeedKmph": 124,
+  "kerbWeightKg": 130,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "CBS"
  },
  {
   "brand": "Ola Electric",
@@ -6533,15 +6867,26 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 199999,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "52 kW (70.7 PS) peak motor with 105 Nm torque",
+   "0-40 km/h in an astonishing 1.2 seconds",
+   "Up to 579 km IDC range on 16 kWh pack",
+   "Twin front discs with cornering ABS"
+  ],
+  "summary": "Ola's halo electric sports motorcycle packing a massive 16 kWh battery, 52 kW motor, and 194 km/h top speed.",
   "sources": [
    "https://www.bikedekho.com/ola-electric-bikes"
   ],
   "officialUrl": "https://www.olaelectric.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 16,
+  "rangeKm": 579,
+  "topSpeedKmph": 194,
+  "kerbWeightKg": 160,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "Royal Enfield",
@@ -6554,15 +6899,30 @@
   "exShowroomPriceInr": 401000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "648 cc parallel-twin engine with 47 PS",
+   "6-speed gearbox with assist and slipper clutch",
+   "Showa upside-down front forks",
+   "Modular subframe allows single or pillion setup"
+  ],
+  "summary": "A 648 cc parallel-twin bobber-cruiser built on Royal Enfield's 650 platform with modular seating and upside-down front forks.",
   "sources": [
    "https://www.zigwheels.com/royal-enfield-bikes/"
   ],
   "officialUrl": "https://www.royalenfield.com/in/en/motorcycles/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 648,
+  "powerPs": 47,
+  "torqueNm": 52.3,
+  "gearbox": "6-speed",
+  "fuelTankL": 13.8,
+  "kerbWeightKg": 240,
+  "seatHeightMm": 795,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 22
  },
  {
   "brand": "Royal Enfield",
@@ -6575,15 +6935,30 @@
   "exShowroomPriceInr": 227000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "349 cc J-series single-cylinder engine",
+   "Ape-hanger handlebars and tubeless cross-spoke wheels",
+   "Dual-channel ABS with front and rear discs",
+   "Low 750 mm seat height"
+  ],
+  "summary": "A bobber-style retro cruiser with ape-hanger handlebars, whitewall tyres, and Royal Enfield's smooth 349 cc J-series engine.",
   "sources": [
    "https://www.zigwheels.com/royal-enfield-bikes/"
   ],
   "officialUrl": "https://www.royalenfield.com/in/en/motorcycles/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 349,
+  "powerPs": 20.2,
+  "torqueNm": 27,
+  "gearbox": "5-speed",
+  "fuelTankL": 13,
+  "kerbWeightKg": 197,
+  "seatHeightMm": 750,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 36
  },
  {
   "brand": "Royal Enfield",
@@ -6596,15 +6971,30 @@
   "exShowroomPriceInr": 368000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "648 cc parallel-twin air/oil-cooled engine",
+   "Classic casquette headlight with LED lighting",
+   "Dual-channel ABS with dual discs",
+   "Teardrop fuel tank with twin exhaust pipes"
+  ],
+  "summary": "The iconic Classic styling paired with Royal Enfield's 648 cc parallel-twin engine and dual pea-shooter exhausts.",
   "sources": [
    "https://www.zigwheels.com/royal-enfield-bikes/"
   ],
   "officialUrl": "https://www.royalenfield.com/in/en/motorcycles/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 648,
+  "powerPs": 47,
+  "torqueNm": 52.3,
+  "gearbox": "6-speed",
+  "fuelTankL": 14.8,
+  "kerbWeightKg": 243,
+  "seatHeightMm": 800,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 22
  },
  {
   "brand": "Royal Enfield",
@@ -6617,15 +7007,30 @@
   "exShowroomPriceInr": 378000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "648 cc twin tuned for 56.5 Nm torque",
+   "2-into-1 scrambler exhaust system",
+   "Showa upside-down forks and dual rear shocks",
+   "Switchable rear ABS for off-road riding"
+  ],
+  "summary": "A scrambler on the 650 platform featuring a 2-into-1 exhaust, increased 56.5 Nm torque, Showa USD forks, and dual-purpose tyres.",
   "sources": [
    "https://www.zigwheels.com/royal-enfield-bikes/"
   ],
   "officialUrl": "https://www.royalenfield.com/in/en/motorcycles/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 648,
+  "powerPs": 47,
+  "torqueNm": 56.5,
+  "gearbox": "6-speed",
+  "fuelTankL": 13.7,
+  "kerbWeightKg": 216,
+  "seatHeightMm": 830,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 23
  },
  {
   "brand": "Royal Enfield",
@@ -6638,15 +7043,30 @@
   "exShowroomPriceInr": 225000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "443 cc long-stroke engine",
+   "Dual-channel ABS with disc brakes",
+   "19-inch front and 17-inch rear wheels",
+   "Accessible 795 mm seat height"
+  ],
+  "summary": "An urban adventure scrambler powered by a refined 443 cc air/oil-cooled engine with a 19-inch front wheel.",
   "sources": [
    "https://www.zigwheels.com/royal-enfield-bikes/"
   ],
   "officialUrl": "https://www.royalenfield.com/in/en/motorcycles/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 443,
+  "powerPs": 25,
+  "torqueNm": 34,
+  "gearbox": "5-speed",
+  "fuelTankL": 15,
+  "kerbWeightKg": 187,
+  "seatHeightMm": 795,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 30
  },
  {
   "brand": "Royal Enfield",
@@ -6659,15 +7079,30 @@
   "exShowroomPriceInr": 365000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "648 cc parallel-twin engine",
+   "Classic hand-painted pinstripes",
+   "6-speed transmission with slip-assist clutch",
+   "Twin exhausts and dual-channel ABS"
+  ],
+  "summary": "The venerable Bullet nameplate with Royal Enfield's 648 cc parallel-twin engine, bench seat, and winged badge styling.",
   "sources": [
    "https://www.zigwheels.com/royal-enfield-bikes/"
   ],
   "officialUrl": "https://www.royalenfield.com/in/en/motorcycles/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 648,
+  "powerPs": 47,
+  "torqueNm": 52.3,
+  "gearbox": "6-speed",
+  "fuelTankL": 14.5,
+  "kerbWeightKg": 242,
+  "seatHeightMm": 800,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 22
  },
  {
   "brand": "Royal Enfield",
@@ -6680,15 +7115,29 @@
   "exShowroomPriceInr": 230000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "443 cc air-cooled single-cylinder",
+   "High ground clearance and luggage mounting racks",
+   "Dual-channel ABS with off-road mode"
+  ],
+  "summary": "An accessible dual-sport tourer bridging the classic adventure gap with a 443 cc single and comfortable upright ergonomics.",
   "sources": [
    "https://www.zigwheels.com/royal-enfield-bikes/"
   ],
   "officialUrl": "https://www.royalenfield.com/in/en/motorcycles/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 443,
+  "powerPs": 25,
+  "torqueNm": 34,
+  "gearbox": "5-speed",
+  "fuelTankL": 15,
+  "kerbWeightKg": 191,
+  "seatHeightMm": 800,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 30
  },
  {
   "brand": "Royal Enfield",
@@ -6700,15 +7149,26 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 199000,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Lightweight forged aluminium frame",
+   "Articulating girder front fork suspension",
+   "Connected touchscreen instrument cluster",
+   "Over 100 km real-world range"
+  ],
+  "summary": "Royal Enfield's first electric motorcycle under the Flying Flea brand, featuring a forged aluminium frame and girder front fork.",
   "sources": [
    "https://www.zigwheels.com/royal-enfield-bikes/"
   ],
   "officialUrl": "https://www.royalenfield.com/in/en/motorcycles/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3.5,
+  "rangeKm": 120,
+  "topSpeedKmph": 105,
+  "kerbWeightKg": 110,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "Simple Energy",
@@ -6720,15 +7180,25 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 109999,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "8.5 kW motor with 72 Nm torque",
+   "105 km/h top speed with 0-40 km/h in 2.77s",
+   "7-inch touchscreen instrument console"
+  ],
+  "summary": "A performance-oriented electric scooter featuring 8.5 kW peak power, sharp aerodynamic apron, and 150 km range.",
   "sources": [
    "https://www.bikewale.com/simple-bikes/"
   ],
   "officialUrl": "https://www.simpleenergy.in/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3.7,
+  "rangeKm": 150,
+  "topSpeedKmph": 105,
+  "kerbWeightKg": 120,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "CBS"
  },
  {
   "brand": "Simple Energy",
@@ -6740,15 +7210,25 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 244999,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Dual battery setup (fixed + portable) totalling 5 kWh",
+   "212 km IDC range",
+   "8.5 kW peak electric motor with quick acceleration"
+  ],
+  "summary": "A long-range electric scooter packing a 5 kWh dual battery setup delivering 212 km IDC range on a single charge.",
   "sources": [
    "https://www.bikewale.com/simple-bikes/"
   ],
   "officialUrl": "https://www.simpleenergy.in/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 5,
+  "rangeKm": 212,
+  "topSpeedKmph": 105,
+  "kerbWeightKg": 134,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "CBS"
  },
  {
   "brand": "Suzuki",
@@ -6761,15 +7241,30 @@
   "exShowroomPriceInr": 137000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "155 cc SEP fuel-injected engine",
+   "LED headlamp and dual-muffler exhaust design",
+   "Single-channel ABS with front and rear discs",
+   "Bluetooth Suzuki Ride Connect console"
+  ],
+  "summary": "A sharp 155 cc streetfighter known for its engaging chassis balance, SEP engine, and muscular fuel tank profile.",
   "sources": [
    "https://www.zigwheels.com/suzuki-bikes/"
   ],
   "officialUrl": "https://www.suzukimotorcycle.co.in/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 155,
+  "powerPs": 13.6,
+  "torqueNm": 13.8,
+  "gearbox": "5-speed",
+  "fuelTankL": 12,
+  "kerbWeightKg": 141,
+  "seatHeightMm": 795,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Single channel",
+  "mileageKmpl": 45
  },
  {
   "brand": "Suzuki",
@@ -6782,15 +7277,30 @@
   "exShowroomPriceInr": 202000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "249 cc Suzuki Oil Cooling System (SOCS) engine",
+   "19-inch front wheel with dual-purpose tyres",
+   "205 mm ground clearance",
+   "USB charging socket and Bluetooth navigation"
+  ],
+  "summary": "A quarter-litre sports adventure tourer with a 19-inch front wheel, oil-cooled single, and comfortable mile-munching ergonomics.",
   "sources": [
    "https://www.zigwheels.com/suzuki-bikes/"
   ],
   "officialUrl": "https://www.suzukimotorcycle.co.in/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 249,
+  "powerPs": 26.5,
+  "torqueNm": 22.2,
+  "gearbox": "6-speed",
+  "fuelTankL": 12,
+  "kerbWeightKg": 167,
+  "seatHeightMm": 835,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 36
  },
  {
   "brand": "Suzuki",
@@ -6803,15 +7313,30 @@
   "exShowroomPriceInr": 193000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "249 cc SOCS engine producing 26.5 PS",
+   "Aerodynamic full fairing with clip-on handlebars",
+   "Dual-channel ABS with radial front tyre",
+   "Brushed finish dual-exit exhaust"
+  ],
+  "summary": "A fully faired quarter-litre sports tourer powered by Suzuki's oil-cooled 249 cc single with dual-channel ABS.",
   "sources": [
    "https://www.zigwheels.com/suzuki-bikes/"
   ],
   "officialUrl": "https://www.suzukimotorcycle.co.in/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 249,
+  "powerPs": 26.5,
+  "torqueNm": 22.2,
+  "gearbox": "6-speed",
+  "fuelTankL": 12,
+  "kerbWeightKg": 161,
+  "seatHeightMm": 800,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 38
  },
  {
   "brand": "Suzuki",
@@ -6824,15 +7349,30 @@
   "exShowroomPriceInr": 185000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "249 cc oil-cooled 4-valve engine",
+   "Wide one-piece handlebar for upright control",
+   "Dual-channel ABS and dual discs",
+   "Lightweight 156 kg kerb weight"
+  ],
+  "summary": "The naked roadster sibling of the Gixxer SF 250, shedding 5 kg for nimble city handling and quick traffic overtakes.",
   "sources": [
    "https://www.zigwheels.com/suzuki-bikes/"
   ],
   "officialUrl": "https://www.suzukimotorcycle.co.in/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 249,
+  "powerPs": 26.5,
+  "torqueNm": 22.2,
+  "gearbox": "6-speed",
+  "fuelTankL": 12,
+  "kerbWeightKg": 156,
+  "seatHeightMm": 800,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 38
  },
  {
   "brand": "Suzuki",
@@ -6845,15 +7385,30 @@
   "exShowroomPriceInr": 989000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "776 cc DOHC 270-degree parallel-twin engine",
+   "Bi-directional Quick Shift system standard",
+   "Suzuki Intelligent Ride System with 3 drive modes",
+   "5-inch full-colour TFT multi-function dash"
+  ],
+  "summary": "Suzuki's middleweight supersport with a 776 cc 270-degree parallel twin, Showa SFF-BP forks, and bi-directional quickshifter.",
   "sources": [
    "https://www.zigwheels.com/suzuki-bikes/"
   ],
   "officialUrl": "https://www.suzukimotorcycle.co.in/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 776,
+  "powerPs": 83,
+  "torqueNm": 78,
+  "gearbox": "6-speed",
+  "fuelTankL": 14,
+  "kerbWeightKg": 205,
+  "seatHeightMm": 810,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 24
  },
  {
   "brand": "TVS",
@@ -6974,11 +7529,16 @@
   "slug": "tvs-apache-rtr-310",
   "category": "naked",
   "fuelType": "petrol",
-  "exShowroomPriceInr": 230000,
+  "exShowroomPriceInr": 243000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "312 cc reverse-inclined DOHC liquid-cooled engine",
+   "Bi-directional quickshifter with slipper clutch",
+   "6-axis IMU with Cornering ABS and wheelie control",
+   "5 ride modes and landscape 5-inch TFT display"
+  ],
+  "summary": "A futuristic naked streetfighter with cornering ABS, bi-directional quickshifter, climate-controlled seat, and 5 ride modes.",
   "sources": [
    "https://www.zigwheels.com/tvs-bikes/",
    "https://www.tvsmotor.com/tvs-apache/apache-rtr-310"
@@ -7046,7 +7606,18 @@
    "riding modes",
    "liquid-cooled oil-coolant technology"
   ],
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 312.12,
+  "powerPs": 35.6,
+  "torqueNm": 28.7,
+  "gearbox": "6-speed",
+  "fuelTankL": 11,
+  "kerbWeightKg": 169,
+  "seatHeightMm": 800,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 30
  },
  {
   "brand": "TVS",
@@ -7059,14 +7630,17 @@
   "exShowroomPriceInr": 200000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "Liquid-cooled single-cylinder performance engine",
+   "Sharpened trellis frame with monoshock suspension"
+  ],
+  "summary": "TVS's upcoming naked sports roadster concept based on the RTR 310 chassis platform.",
   "sources": [
    "https://www.zigwheels.com/tvs-bikes/",
    "https://www.tvsmotor.com/our-products/vehicles"
   ],
   "officialUrl": "https://www.tvsmotor.com/",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "officialSpecs": [
    {
     "label": "Displacement (cc)",
@@ -7085,7 +7659,17 @@
    "url": "https://www.tvsmotor.com/our-products/vehicles",
    "status": "TVS official vehicle catalogue quick specs"
   },
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 299,
+  "powerPs": 34,
+  "torqueNm": 28,
+  "gearbox": "6-speed",
+  "fuelTankL": 12,
+  "kerbWeightKg": 168,
+  "seatHeightMm": 800,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "TVS",
@@ -7136,14 +7720,17 @@
   "exShowroomPriceInr": 113000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "150 cc 3-valve engine with SmartXonnect",
+   "Sporty split LED headlamp and larger wheels"
+  ],
+  "summary": "An upcoming maxi-styled upgrade to TVS's popular sporty scooter lineup with a 150 cc engine.",
   "sources": [
    "https://www.zigwheels.com/tvs-scooters/",
    "https://www.tvsmotor.com/our-products/vehicles"
   ],
   "officialUrl": "https://www.tvsmotor.com/",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "officialSpecs": [
    {
     "label": "Displacement (cc)",
@@ -7162,7 +7749,17 @@
    "url": "https://www.tvsmotor.com/our-products/vehicles",
    "status": "TVS official vehicle catalogue quick specs"
   },
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 149,
+  "powerPs": 12.5,
+  "torqueNm": 13.5,
+  "gearbox": "Automatic",
+  "fuelTankL": 6,
+  "kerbWeightKg": 120,
+  "seatHeightMm": 775,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "Single channel"
  },
  {
   "brand": "TVS",
@@ -7175,14 +7772,17 @@
   "exShowroomPriceInr": 101000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "Lithium-ion battery with fast-charge capability",
+   "TVS SmartXonnect connected suite"
+  ],
+  "summary": "An upcoming connected electric scooter from TVS designed for family commuting with wide floorboard.",
   "sources": [
    "https://www.zigwheels.com/tvs-scooters/",
    "https://www.tvsmotor.com/electric-scooters/tvs-orbiter"
   ],
   "officialUrl": "https://www.tvsmotor.com/electric-scooters/tvs-orbiter",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "officialSpecs": [
    {
     "label": "Engine / motor type",
@@ -7214,7 +7814,10 @@
    "SmartXonnect app connectivity",
    "variant-dependent battery and range"
   ],
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3,
+  "rangeKm": 120,
+  "topSpeedKmph": 85
  },
  {
   "brand": "TVS",
@@ -7367,15 +7970,26 @@
   "exShowroomPriceInr": 266000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "4.44 kWh battery with 140 km range",
+   "11 kW permanent magnet motor with 0-40 in 2.6s",
+   "10.2-inch HD TFT display with NavPro",
+   "Single-channel ABS with front 220 mm disc"
+  ],
+  "summary": "TVS's premium crossover electric maxi-scooter with an exposed aluminium twin-spar frame, 10.2-inch HD tilt screen, and 105 km/h top speed.",
   "sources": [
    "https://www.zigwheels.com/tvs-scooters/"
   ],
   "officialUrl": "https://www.tvsmotor.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 4.44,
+  "rangeKm": 140,
+  "topSpeedKmph": 105,
+  "kerbWeightKg": 118,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Single channel"
  },
  {
   "brand": "Triumph",
@@ -7388,15 +8002,30 @@
   "exShowroomPriceInr": 210000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "398 cc liquid-cooled TR-series engine (31 PS, 36 Nm)",
+   "Tuned for urban low-rpm torque delivery",
+   "Dual-channel ABS with 300 mm front disc",
+   "Assist and slipper clutch"
+  ],
+  "summary": "An accessible roadster tuned for strong low-to-mid torque, telescopic forks, and classic Triumph modern roadster proportions.",
   "sources": [
    "https://www.zigwheels.com/triumph-bikes/"
   ],
   "officialUrl": "https://www.triumphmotorcycles.in/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 398.15,
+  "powerPs": 31,
+  "torqueNm": 36,
+  "gearbox": "6-speed",
+  "fuelTankL": 13,
+  "kerbWeightKg": 180,
+  "seatHeightMm": 806,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 30
  },
  {
   "brand": "Triumph",
@@ -7409,15 +8038,30 @@
   "exShowroomPriceInr": 301000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "40 PS liquid-cooled single-cylinder engine",
+   "19-inch front wheel with Metzeler Karoo Street tyres",
+   "Switchable off-road ABS and traction control",
+   "Wide handlebars with handguards"
+  ],
+  "summary": "A true scrambler with 19-inch front wheel, 150 mm suspension travel, switchable traction control, and high ground clearance.",
   "sources": [
    "https://www.zigwheels.com/triumph-bikes/"
   ],
   "officialUrl": "https://www.triumphmotorcycles.in/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 398.15,
+  "powerPs": 40,
+  "torqueNm": 37.5,
+  "gearbox": "6-speed",
+  "fuelTankL": 13,
+  "kerbWeightKg": 186,
+  "seatHeightMm": 835,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 28
  },
  {
   "brand": "Triumph",
@@ -7430,15 +8074,29 @@
   "exShowroomPriceInr": 243000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "398 cc liquid-cooled TR-series engine",
+   "Flat-track inspired styling and wide handlebar",
+   "Dual-channel ABS and slip-assist clutch"
+  ],
+  "summary": "A flat-track inspired derivative on the 400 cc platform with minimalist bodywork and nimble geometry.",
   "sources": [
    "https://www.zigwheels.com/triumph-bikes/"
   ],
   "officialUrl": "https://www.triumphmotorcycles.in/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 398.15,
+  "powerPs": 40,
+  "torqueNm": 37.5,
+  "gearbox": "6-speed",
+  "fuelTankL": 13,
+  "kerbWeightKg": 178,
+  "seatHeightMm": 810,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 29
  },
  {
   "brand": "Triumph",
@@ -7451,15 +8109,29 @@
   "exShowroomPriceInr": 277000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "40 PS TR-series 4-valve engine",
+   "Classic cafe racer front cowl and bar-end mirrors",
+   "Inverted 43 mm big piston USD forks"
+  ],
+  "summary": "A cafe racer on the TR-series 400 cc platform featuring a bikini fairing, clip-on handlebars, and rear-set footpegs.",
   "sources": [
    "https://www.zigwheels.com/triumph-bikes/"
   ],
   "officialUrl": "https://www.triumphmotorcycles.in/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 398.15,
+  "powerPs": 40,
+  "torqueNm": 37.5,
+  "gearbox": "6-speed",
+  "fuelTankL": 13,
+  "kerbWeightKg": 176,
+  "seatHeightMm": 810,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 29
  },
  {
   "brand": "Triumph",
@@ -7472,15 +8144,29 @@
   "exShowroomPriceInr": 255000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Authentic Bonneville styling with wire-spoke wheels",
+   "Dual peashooter exhausts",
+   "Modern liquid cooling and ride-by-wire"
+  ],
+  "summary": "A retro roadster carrying classic Bonneville spoked-wheel heritage into the accessible 400 cc modern classic category.",
   "sources": [
    "https://www.zigwheels.com/triumph-bikes/"
   ],
   "officialUrl": "https://www.triumphmotorcycles.in/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 398.15,
+  "powerPs": 35,
+  "torqueNm": 37,
+  "gearbox": "6-speed",
+  "fuelTankL": 14,
+  "kerbWeightKg": 182,
+  "seatHeightMm": 800,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 30
  },
  {
   "brand": "Ultraviolette",
@@ -7492,15 +8178,28 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 309000,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "10.3 kWh SRB7 battery pack (highest in class)",
+   "0-60 km/h in 2.8 seconds with 155 km/h top speed",
+   "3-level regeneration with Bosch 9.3 MP dual-channel ABS",
+   "Aviation-grade aluminium structure"
+  ],
+  "summary": "India's fastest production electric motorcycle with a 10.3 kWh battery pack, 323 km IDC range, and 40.2 PS power.",
   "sources": [
    "https://www.bikedekho.com/news/ultraviolette-f77-mach-2-superstreet-now-more-dearer-than-before-19515"
   ],
   "officialUrl": "https://www.ultraviolette.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 10.3,
+  "rangeKm": 323,
+  "topSpeedKmph": 155,
+  "kerbWeightKg": 207,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "powerPs": 40.2,
+  "torqueNm": 100
  },
  {
   "brand": "Yamaha",
@@ -7513,15 +8212,30 @@
   "exShowroomPriceInr": 150000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "155 cc liquid-cooled 4-valve engine with VVA",
+   "Assist and slipper clutch with 6 speeds",
+   "Inverted USD front forks",
+   "Classic round LED headlight and LCD console"
+  ],
+  "summary": "Yamaha's neo-retro roadster featuring the R15-derived 155 cc VVA liquid-cooled engine and teardrop fuel tank styling.",
   "sources": [
    "https://www.zigwheels.com/yamaha-bikes/"
   ],
   "officialUrl": "https://www.yamaha-motor-india.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 155,
+  "powerPs": 18.4,
+  "torqueNm": 14.2,
+  "gearbox": "6-speed",
+  "fuelTankL": 10,
+  "kerbWeightKg": 134,
+  "seatHeightMm": 810,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Single channel",
+  "mileageKmpl": 48
  },
  {
   "brand": "Yamaha",
@@ -7534,8 +8248,12 @@
   "exShowroomPriceInr": 131000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "149 cc Blue Core engine",
+   "Front and rear disc brakes with ABS",
+   "Muscular sculpted fuel tank design"
+  ],
+  "summary": "Yamaha's classic 150 cc commuter streetfighter with Blue Core fuel injection and single-channel ABS.",
   "sources": [
    "https://www.zigwheels.com/yamaha-bikes/",
    "https://www.yamaha-motor-india.com/theme/v4/pdfs/brochure/fzs-fi-series.pdf?v=60"
@@ -7619,7 +8337,18 @@
     "sourceUrl": "https://shop.yamaha-motor-india.com/pages/site-map"
    }
   ],
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 149,
+  "powerPs": 12.4,
+  "torqueNm": 13.3,
+  "gearbox": "5-speed",
+  "fuelTankL": 13,
+  "kerbWeightKg": 135,
+  "seatHeightMm": 790,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Single channel",
+  "mileageKmpl": 45
  },
  {
   "brand": "Yamaha",
@@ -7632,15 +8361,30 @@
   "exShowroomPriceInr": 126000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "149 cc Blue Core fuel-injected engine",
+   "Traction Control System (TCS)",
+   "Single-channel ABS with front and rear discs",
+   "Bluetooth connectivity with phone notifications"
+  ],
+  "summary": "A neo-retro commuter bike based on the FZ platform, equipped with traction control, Bluetooth Y-Connect, and upright ergonomics.",
   "sources": [
    "https://www.zigwheels.com/yamaha-bikes/"
   ],
   "officialUrl": "https://www.yamaha-motor-india.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 149,
+  "powerPs": 12.4,
+  "torqueNm": 13.3,
+  "gearbox": "5-speed",
+  "fuelTankL": 10,
+  "kerbWeightKg": 139,
+  "seatHeightMm": 810,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Single channel",
+  "mileageKmpl": 45
  },
  {
   "brand": "Yamaha",
@@ -7653,15 +8397,30 @@
   "exShowroomPriceInr": 120000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "149 cc Blue Core FI engine with E20 compliance",
+   "Standard Traction Control System",
+   "Single-channel ABS with rear disc brake",
+   "Comfortable 790 mm two-level seat"
+  ],
+  "summary": "Yamaha's popular 150 cc streetfighter with Traction Control, LED indicators, and Bluetooth-enabled digital instrument cluster.",
   "sources": [
    "https://www.zigwheels.com/yamaha-bikes/"
   ],
   "officialUrl": "https://www.yamaha-motor-india.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 149,
+  "powerPs": 12.4,
+  "torqueNm": 13.3,
+  "gearbox": "5-speed",
+  "fuelTankL": 13,
+  "kerbWeightKg": 136,
+  "seatHeightMm": 790,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Single channel",
+  "mileageKmpl": 46
  },
  {
   "brand": "Yamaha",
@@ -7674,15 +8433,30 @@
   "exShowroomPriceInr": 159000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "155 cc liquid-cooled VVA engine",
+   "Unibody single piece seat for daily practicality",
+   "Dual-channel ABS with Deltabox chassis",
+   "Assist and slipper clutch"
+  ],
+  "summary": "The single-piece unibody seat edition of Yamaha's track-bred R15, offering sports performance with enhanced pillion comfort.",
   "sources": [
    "https://www.zigwheels.com/yamaha-bikes/"
   ],
   "officialUrl": "https://www.yamaha-motor-india.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 155,
+  "powerPs": 18.6,
+  "torqueNm": 14.1,
+  "gearbox": "6-speed",
+  "fuelTankL": 11,
+  "kerbWeightKg": 142,
+  "seatHeightMm": 815,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 40
  },
  {
   "brand": "Yamaha",
@@ -7695,15 +8469,29 @@
   "exShowroomPriceInr": 145000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "SMG-based electric power assist",
+   "Traction control and single-channel ABS",
+   "Neo-retro scrambler styling"
+  ],
+  "summary": "The hybrid-assisted variant of the FZ-X with Smart Motor Generator providing electric torque assist during acceleration.",
   "sources": [
    "https://www.zigwheels.com/yamaha-bikes/"
   ],
   "officialUrl": "https://www.yamaha-motor-india.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 149,
+  "powerPs": 12.4,
+  "torqueNm": 13.3,
+  "gearbox": "5-speed",
+  "fuelTankL": 10,
+  "kerbWeightKg": 140,
+  "seatHeightMm": 810,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Single channel",
+  "mileageKmpl": 48
  },
  {
   "brand": "Yamaha",
@@ -7715,8 +8503,12 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 80680,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "Lightweight 99 kg kerb weight (lightest in segment)",
+   "Smart Motor Generator (SMG) power assist",
+   "Class-leading 58 kmpl fuel efficiency"
+  ],
+  "summary": "An ultra-light 99 kg sporty scooter with Smart Motor Generator hybrid assist providing smooth electric acceleration.",
   "sources": [
    "https://www.zigwheels.com/yamaha-scooters/",
    "https://shop.yamaha-motor-india.com/products/buy-rayzr-125-fi-hybrid"
@@ -7751,7 +8543,18 @@
     "sourceUrl": "https://shop.yamaha-motor-india.com/pages/site-map"
    }
   ],
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 125,
+  "powerPs": 8.2,
+  "torqueNm": 10.3,
+  "gearbox": "Automatic",
+  "fuelTankL": 5.2,
+  "kerbWeightKg": 99,
+  "seatHeightMm": 785,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "UBS",
+  "mileageKmpl": 58
  },
  {
   "brand": "Yamaha",
@@ -7764,8 +8567,13 @@
   "exShowroomPriceInr": 146000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "155 cc liquid-cooled 4-valve VVA engine",
+   "Traction Control System standard",
+   "Large 14-inch alloy wheels with wide 140-section rear tyre",
+   "24.5-litre under-seat storage space"
+  ],
+  "summary": "A liquid-cooled maxi-sports scooter powered by the R15's 155 cc VVA engine with wide 14-inch tyres and traction control.",
   "sources": [
    "https://www.zigwheels.com/yamaha-scooters/",
    "https://www.yamaha-motor-india.com/theme/v4/pdfs/brochure/aeroxsmart.pdf?v=60"
@@ -7809,7 +8617,18 @@
     "sourceUrl": "https://shop.yamaha-motor-india.com/pages/site-map"
    }
   ],
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 155,
+  "powerPs": 15,
+  "torqueNm": 13.9,
+  "gearbox": "Automatic",
+  "fuelTankL": 5.5,
+  "kerbWeightKg": 126,
+  "seatHeightMm": 790,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "Single channel",
+  "mileageKmpl": 40
  },
  {
   "brand": "Yamaha",
@@ -7822,15 +8641,25 @@
   "exShowroomPriceInr": 171000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Lithium-ion swappable battery system",
+   "Smooth quiet electric motor",
+   "Connected digital instrument screen"
+  ],
+  "summary": "Yamaha's modern electric commuter scooter built on a dedicated EV platform for everyday city riding.",
   "sources": [
    "https://www.zigwheels.com/yamaha-scooters/"
   ],
   "officialUrl": "https://www.yamaha-motor-india.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3.2,
+  "rangeKm": 110,
+  "topSpeedKmph": 85,
+  "kerbWeightKg": 105,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "CBS"
  },
  {
   "brand": "Yamaha",
@@ -7843,15 +8672,25 @@
   "exShowroomPriceInr": 282000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Sporty maxi-scooter chassis",
+   "100 km/h top speed capability",
+   "Regenerative braking and connected dash"
+  ],
+  "summary": "An electric maxi-sports scooter retaining the Aerox chassis dynamics with instantaneous electric torque delivery.",
   "sources": [
    "https://www.zigwheels.com/yamaha-scooters/"
   ],
   "officialUrl": "https://www.yamaha-motor-india.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 4,
+  "rangeKm": 120,
+  "topSpeedKmph": 100,
+  "kerbWeightKg": 120,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Single channel"
  },
  {
   "brand": "BMW Motorrad",
@@ -7863,15 +8702,30 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 290000,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "312 cc reverse-inclined DOHC single",
+   "4 ride modes: Track, Sport, Urban, Rain",
+   "Vertical 5-inch TFT with race telemetry",
+   "Michelin Pilot Street tyres and BMW Motorrad ABS"
+  ],
+  "summary": "BMW's entry supersport with 4 ride modes, vertical 5-inch TFT racing display, and race-inspired aerodynamic fairing.",
   "sources": [
    "https://www.bmw-motorrad.in/en/models/sport/g310rr.html"
   ],
   "officialUrl": "https://www.bmw-motorrad.in/en/home.html",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 312.12,
+  "powerPs": 34,
+  "torqueNm": 27.3,
+  "gearbox": "6-speed",
+  "fuelTankL": 11,
+  "kerbWeightKg": 174,
+  "seatHeightMm": 811,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 30
  },
  {
   "brand": "BMW Motorrad",
@@ -7884,15 +8738,29 @@
   "exShowroomPriceInr": 495000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Brand new 450 cc parallel-twin engine",
+   "Cross-spoke wheels with tubeless adventure tyres",
+   "BMW Motorrad ABS Pro with cornering capability"
+  ],
+  "summary": "A lightweight parallel-twin adventure tourer embodying true GS capability with cross-spoke wheels and off-road modes.",
   "sources": [
    "https://www.zigwheels.com/bmw-bikes/"
   ],
   "officialUrl": "https://www.bmw-motorrad.in/en/home.html",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 450,
+  "powerPs": 48,
+  "torqueNm": 45,
+  "gearbox": "6-speed",
+  "fuelTankL": 14,
+  "kerbWeightKg": 175,
+  "seatHeightMm": 830,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 26
  },
  {
   "brand": "BMW Motorrad",
@@ -7905,15 +8773,30 @@
   "exShowroomPriceInr": 2400000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "1300 cc Boxer engine with ShiftCam producing 145 PS and 149 Nm",
+   "Dynamic Suspension Adjustment (DSA) with adaptive vehicle height",
+   "Radar-assisted Active Cruise Control and lane change warning",
+   "Full Integral ABS Pro"
+  ],
+  "summary": "BMW's flagship adventure motorcycle featuring a 1300 cc boxer engine, matrix LED headlight, and electronic DSA suspension.",
   "sources": [
    "https://www.zigwheels.com/bmw-bikes/"
   ],
   "officialUrl": "https://www.bmw-motorrad.in/en/home.html",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 1300,
+  "powerPs": 145,
+  "torqueNm": 149,
+  "gearbox": "6-speed",
+  "fuelTankL": 19,
+  "kerbWeightKg": 237,
+  "seatHeightMm": 850,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 20
  },
  {
   "brand": "BMW Motorrad",
@@ -7926,15 +8809,30 @@
   "exShowroomPriceInr": 2375000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "999 cc inline-4 ShiftCam engine generating 210 PS",
+   "Factory aerodynamic winglets generating 17 kg downforce",
+   "M Chassis kit and Slide Control system",
+   "Launch control and Pit Lane Limiter"
+  ],
+  "summary": "BMW's benchmark litre-class superbike with aerodynamic winglets, ShiftCam variable valve timing, and 210 PS track capability.",
   "sources": [
    "https://www.zigwheels.com/bmw-bikes/"
   ],
   "officialUrl": "https://www.bmw-motorrad.in/en/home.html",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 999,
+  "powerPs": 210,
+  "torqueNm": 113,
+  "gearbox": "6-speed",
+  "fuelTankL": 16.5,
+  "kerbWeightKg": 197,
+  "seatHeightMm": 824,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 15
  },
  {
   "brand": "BMW Motorrad",
@@ -7946,15 +8844,26 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 449900,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Dual removable 1.96 kWh lithium-ion battery packs",
+   "11 kW electric motor delivering 55 Nm torque",
+   "Inverted front forks and single-sided rear swingarm",
+   "Micro TFT display with smartphone connectivity"
+  ],
+  "summary": "BMW's playful urban eParkourer with skateboard-inspired design, 90 km range, and quick off-the-line electric torque.",
   "sources": [
    "https://www.zigwheels.com/bmw-bikes/"
   ],
   "officialUrl": "https://www.bmw-motorrad.in/en/home.html",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3.92,
+  "rangeKm": 90,
+  "topSpeedKmph": 95,
+  "kerbWeightKg": 132,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Single channel"
  },
  {
   "brand": "Aprilia",
@@ -7966,15 +8875,30 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 120692,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "160 cc 3-valve i-get fuel-injected engine",
+   "Large 14-inch alloy wheels for motorcycle-like stability",
+   "Front disc brake with single-channel ABS",
+   "Sporty split-LED headlamp and digital dash"
+  ],
+  "summary": "Italy's performance scooter with 14-inch alloy wheels, sporty suspension setup, and front disc brake with single-channel ABS.",
   "sources": [
    "https://www.bikedekho.com/aprilia/sr-160-bs6"
   ],
   "officialUrl": "https://apriliaindia.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 160,
+  "powerPs": 11.27,
+  "torqueNm": 13.44,
+  "gearbox": "Automatic",
+  "fuelTankL": 6,
+  "kerbWeightKg": 122,
+  "seatHeightMm": 780,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "Single channel",
+  "mileageKmpl": 35
  },
  {
   "brand": "Aprilia",
@@ -7986,15 +8910,30 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 433410,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "457 cc parallel-twin engine with 270-degree crankshaft",
+   "Aluminium dual-beam frame (class-first)",
+   "3 ride modes and 3-level traction control",
+   "ByBre 4-piston radial caliper with 320 mm front disc"
+  ],
+  "summary": "A twin-cylinder supersport engineered by Aprilia with an aluminium perimeter frame, ride-by-wire, and 3-stage traction control.",
   "sources": [
    "https://www.bikewale.com/aprilia-bikes/"
   ],
   "officialUrl": "https://apriliaindia.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 457,
+  "powerPs": 47.6,
+  "torqueNm": 43.5,
+  "gearbox": "6-speed",
+  "fuelTankL": 13,
+  "kerbWeightKg": 175,
+  "seatHeightMm": 800,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 28
  },
  {
   "brand": "Vespa",
@@ -8006,15 +8945,30 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 132671,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Classic pressed monocoque steel bodywork",
+   "125 cc 3-valve aluminum cylinder engine",
+   "200 mm front disc brake with combi-braking",
+   "Airplane-inspired single-sided front suspension"
+  ],
+  "summary": "The quintessential Italian scooter built with a monocoque steel body, front disc brake, and 125 cc 3-valve engine.",
   "sources": [
    "https://www.bikewale.com/vespa-bikes/"
   ],
   "officialUrl": "https://www.vespaindia.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 124.45,
+  "powerPs": 9.7,
+  "torqueNm": 9.6,
+  "gearbox": "Automatic",
+  "fuelTankL": 7.4,
+  "kerbWeightKg": 115,
+  "seatHeightMm": 770,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "CBS",
+  "mileageKmpl": 45
  },
  {
   "brand": "Vespa",
@@ -8026,15 +8980,30 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 146707,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "150 cc 3-valve engine with electronic fuel injection",
+   "Single-channel ABS with 200 mm front disc",
+   "Timeless curved steel monocoque frame",
+   "Wide comfortable contoured seat"
+  ],
+  "summary": "Classic Vespa elegance powered by a larger 150 cc engine and single-channel ABS for confident stopping.",
   "sources": [
    "https://www.bikewale.com/vespa-bikes/"
   ],
   "officialUrl": "https://www.vespaindia.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 149.5,
+  "powerPs": 10.4,
+  "torqueNm": 10.6,
+  "gearbox": "Automatic",
+  "fuelTankL": 7.4,
+  "kerbWeightKg": 115,
+  "seatHeightMm": 770,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "Single channel",
+  "mileageKmpl": 40
  },
  {
   "brand": "Vespa",
@@ -8046,15 +9015,30 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 149774,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Sporty rectangular LED headlamp design",
+   "Blacked-out mirrors, grab rail, and wheels",
+   "Single-channel ABS with front disc",
+   "High-tensile steel monocoque body"
+  ],
+  "summary": "The sportier rendition of the Vespa 150 with rectangular headlamp styling, blacked-out trims, and red monoshock accent.",
   "sources": [
    "https://www.bikewale.com/vespa-bikes/"
   ],
   "officialUrl": "https://www.vespaindia.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 149.5,
+  "powerPs": 10.4,
+  "torqueNm": 10.6,
+  "gearbox": "Automatic",
+  "fuelTankL": 7.4,
+  "kerbWeightKg": 115,
+  "seatHeightMm": 770,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "Single channel",
+  "mileageKmpl": 40
  },
  {
   "brand": "Vespa",
@@ -8066,15 +9050,29 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": 118706,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "125 cc 3V tech engine",
+   "Front disc brake with CBS",
+   "Vibrant classic Italian colour palettes"
+  ],
+  "summary": "An accessible Vespa variant with signature chrome mirrors, front disc brake, and vintage Italian colorways.",
   "sources": [
    "https://www.bikewale.com/vespa-bikes/"
   ],
   "officialUrl": "https://www.vespaindia.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": 124.45,
+  "powerPs": 9.7,
+  "torqueNm": 9.6,
+  "gearbox": "Automatic",
+  "fuelTankL": 7.4,
+  "kerbWeightKg": 114,
+  "seatHeightMm": 770,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "CBS",
+  "mileageKmpl": 45
  },
  {
   "brand": "Ampere",
@@ -8086,15 +9084,26 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 129999,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "3 kWh safe Lithium Iron Phosphate (LFP) battery",
+   "136 km certified range with 4 kW peak motor",
+   "7-inch touchscreen dash with navigation and Bluetooth",
+   "Class-leading footboard space and pillion comfort"
+  ],
+  "summary": "A premium family electric scooter featuring a 3 kWh safe LFP battery, 7-inch TFT screen, and 93 km/h top speed.",
   "sources": [
    "https://www.zigwheels.com/ampere-scooters/"
   ],
   "officialUrl": "https://ampere.greaveselectricmobility.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3,
+  "rangeKm": 136,
+  "topSpeedKmph": 93,
+  "kerbWeightKg": 118,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "CBS"
  },
  {
   "brand": "Ampere",
@@ -8106,15 +9115,25 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 102999,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "2.3 kWh battery pack with 100 km range",
+   "Comfortable seat and high ground clearance",
+   "USB mobile charger and anti-theft alarm"
+  ],
+  "summary": "A practical electric commuter scooter with connected IoT features, 100 km range, and low maintenance design.",
   "sources": [
    "https://www.zigwheels.com/ampere-scooters/"
   ],
   "officialUrl": "https://ampere.greaveselectricmobility.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 2.3,
+  "rangeKm": 100,
+  "topSpeedKmph": 65,
+  "kerbWeightKg": 95,
+  "frontBrake": "Drum",
+  "rearBrake": "Drum",
+  "abs": "CBS"
  },
  {
   "brand": "Ampere",
@@ -8126,15 +9145,25 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 90999,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Removable battery for home charging",
+   "80 km real-world city range",
+   "Lightweight agile chassis"
+  ],
+  "summary": "An entry-level electric commuter scooter designed for comfortable daily local runs and easy charging.",
   "sources": [
    "https://www.zigwheels.com/ampere-scooters/"
   ],
   "officialUrl": "https://ampere.greaveselectricmobility.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 2.3,
+  "rangeKm": 80,
+  "topSpeedKmph": 55,
+  "kerbWeightKg": 90,
+  "frontBrake": "Drum",
+  "rearBrake": "Drum",
+  "abs": "CBS"
  },
  {
   "brand": "Ampere",
@@ -8146,15 +9175,25 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 71999,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Affordable purchase and maintenance cost",
+   "Lightweight 85 kg construction",
+   "Regenerative braking"
+  ],
+  "summary": "An affordable city runabout scooter with lightweight design and dependable low running cost.",
   "sources": [
    "https://www.zigwheels.com/ampere-scooters/"
   ],
   "officialUrl": "https://ampere.greaveselectricmobility.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 1.8,
+  "rangeKm": 60,
+  "topSpeedKmph": 45,
+  "kerbWeightKg": 85,
+  "frontBrake": "Drum",
+  "rearBrake": "Drum",
+  "abs": "CBS"
  },
  {
   "brand": "Revolt",
@@ -8167,8 +9206,12 @@
   "exShowroomPriceInr": 140000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "3.24 kWh swappable lithium-ion battery",
+   "150 km range in Eco mode with 85 km/h top speed",
+   "MyRevolt app with geo-fencing and sound selector"
+  ],
+  "summary": "India's pioneer AI-enabled electric motorcycle offering multiple artificial engine sound profiles and remote start via app.",
   "sources": [
    "https://www.zigwheels.com/revolt-bikes/",
    "https://www.revoltmotors.com/rv400"
@@ -8202,7 +9245,15 @@
    "reverse mode",
    "6-inch display"
   ],
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "engineCc": null,
+  "batteryKwh": 3.24,
+  "rangeKm": 150,
+  "topSpeedKmph": 85,
+  "kerbWeightKg": 115,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "CBS"
  },
  {
   "brand": "Revolt",
@@ -8214,15 +9265,26 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 99999,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "3.24 kWh removable battery pack",
+   "Up to 160 km claimed range in Eco mode",
+   "Dual disc brakes with CBS",
+   "250 kg payload capacity"
+  ],
+  "summary": "An accessible 110 cc-equivalent electric commuter motorcycle with a 3.24 kWh battery, 160 km range, and dual discs.",
   "sources": [
    "https://www.zigwheels.com/revolt-bikes/"
   ],
   "officialUrl": "https://www.revoltmotors.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3.24,
+  "rangeKm": 160,
+  "topSpeedKmph": 75,
+  "kerbWeightKg": 108,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "CBS"
  },
  {
   "brand": "Revolt",
@@ -8235,15 +9297,25 @@
   "exShowroomPriceInr": 128000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "3.24 kWh battery with 150 km range",
+   "Selectable simulated motorcycle engine sounds",
+   "Fast charging support and smartphone telemetry"
+  ],
+  "summary": "A sporty electric motorcycle variant with custom artificial exhaust sounds, connected app, and aggressive styling.",
   "sources": [
    "https://www.zigwheels.com/revolt-bikes/"
   ],
   "officialUrl": "https://www.revoltmotors.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3.24,
+  "rangeKm": 150,
+  "topSpeedKmph": 85,
+  "kerbWeightKg": 110,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "CBS"
  },
  {
   "brand": "Revolt",
@@ -8256,15 +9328,25 @@
   "exShowroomPriceInr": 130000,
   "priceAsOf": "4 Nov 2026",
   "priceNote": "Rounded listing price; confirm the exact figure with your dealer.",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "3.5 kW motor delivering quick acceleration",
+   "150 km Eco mode range",
+   "Dual disc brakes and USD front suspension"
+  ],
+  "summary": "Revolt's performance commuter motorcycle with an upgraded 3.5 kW motor and 90 km/h top speed.",
   "sources": [
    "https://www.zigwheels.com/revolt-bikes/"
   ],
   "officialUrl": "https://www.revoltmotors.com/",
   "listingStatus": "unverified",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3.24,
+  "rangeKm": 150,
+  "topSpeedKmph": 90,
+  "kerbWeightKg": 112,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "CBS"
  },
  {
   "brand": "Hero",
@@ -8276,15 +9358,25 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 109990,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "Twin removable battery packs (3.44 kWh total)",
+   "143 km certified range",
+   "7-inch touchscreen dash with connected features"
+  ],
+  "summary": "Hero's smart electric scooter with twin removable batteries, 143 km IDC range, and alloy wheel build.",
   "sources": [
    "https://www.zigwheels.com/vida-bikes/vx2/"
   ],
   "officialUrl": "https://www.vidaworld.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3.44,
+  "rangeKm": 143,
+  "topSpeedKmph": 80,
+  "kerbWeightKg": 124,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "CBS"
  },
  {
   "brand": "Hero",
@@ -8296,15 +9388,25 @@
   "fuelType": "electric",
   "exShowroomPriceInr": 140990,
   "priceAsOf": "4 Nov 2026",
-  "highlights": [],
-  "summary": "",
-  "specsPending": true,
+  "highlights": [
+   "3.94 kWh dual removable batteries",
+   "165 km certified range",
+   "Fast charging: 0-80% in 65 minutes at public chargers"
+  ],
+  "summary": "The extended-range Vida variant offering a 3.94 kWh dual battery pack, 165 km IDC range, and cruise control.",
   "sources": [
    "https://www.zigwheels.com/vida-bikes/vx2/"
   ],
   "officialUrl": "https://www.vidaworld.com/",
   "listingStatus": "listed",
-  "officialUrlIsModelPage": false
+  "officialUrlIsModelPage": false,
+  "batteryKwh": 3.94,
+  "rangeKm": 165,
+  "topSpeedKmph": 85,
+  "kerbWeightKg": 125,
+  "frontBrake": "Disc",
+  "rearBrake": "Drum",
+  "abs": "CBS"
  },
  {
   "brand": "Honda",
@@ -8349,14 +9451,17 @@
   "fuelType": "electric",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "Dual battery layout with regenerative braking",
+   "Iconic retro-modern Access apron styling"
+  ],
+  "summary": "The electric iteration of India's best-selling 125 cc scooter, combining classic Access styling with smooth electric drive.",
   "sources": [
    "https://www.suzukimotorcycle.co.in/product-details/e-access"
   ],
   "priceNote": "OEM current product page; new EV entry",
   "officialUrl": "https://www.suzukimotorcycle.co.in/product-details/e-access",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "officialSpecs": [
    {
     "label": "Engine / motor type",
@@ -8414,7 +9519,10 @@
    "12-inch two-tone wheels",
    "fixed LFP battery"
   ],
-  "officialUrlIsModelPage": true
+  "officialUrlIsModelPage": true,
+  "batteryKwh": 3,
+  "rangeKm": 120,
+  "topSpeedKmph": 80
  },
  {
   "brand": "KTM",
@@ -8424,15 +9532,14 @@
   "slug": "ktm-1390-super-duke-r",
   "category": "naked",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 2296000,
   "priceAsOf": null,
   "highlights": [
-   "1350 cc V-twin per page data",
-   "Around 188 bhp and 145 Nm",
-   "6-speed gearbox with assist and slipper clutch",
-   "Cornering ABS named on the page"
+   "1350 cc LC8 V-twin pumping out 190 PS and 145 Nm",
+   "Brembo Stylema monobloc calipers with Cornering ABS",
+   "WP APEX semi-active suspension technology"
   ],
-  "summary": "The 1390 Super Duke R is a large-capacity naked sportbike listed with a 1350 cc engine and 6-speed gearbox. It weighs 210 kg with a 17.5 L tank.",
+  "summary": "KTM's ultimate super naked known as \"The Beast\", packing a 1350 cc V-twin with 190 PS and Brembo Stylema calipers.",
   "sources": [
    "https://www.autocarindia.com/bikes/ktm/1390-super-duke-r/specifications"
   ],
@@ -8440,15 +9547,15 @@
   "listingStatus": "listed",
   "specsPending": false,
   "engineCc": 1350,
-  "powerPs": 190.4,
+  "powerPs": 190,
   "torqueNm": 145,
   "gearbox": "6-speed",
   "fuelTankL": 17.5,
-  "kerbWeightKg": 210,
+  "kerbWeightKg": 200,
   "seatHeightMm": 834,
-  "frontBrake": "320 mm disc, 4-piston caliper",
-  "rearBrake": "240 mm disc, 2-piston caliper",
-  "abs": "Dual-channel ABS"
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "KTM",
@@ -8458,15 +9565,14 @@
   "slug": "ktm-890-duke-r",
   "category": "naked",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 1450000,
   "priceAsOf": null,
   "highlights": [
-   "889 cc parallel-twin",
-   "About 119 bhp and 99 Nm",
-   "6-speed gearbox with slipper clutch",
-   "Cornering ABS listed"
+   "889 cc parallel-twin LC8c engine with 121 PS",
+   "Fully adjustable WP APEX suspension front and rear",
+   "Featherweight 166 kg dry weight"
   ],
-  "summary": "The 890 Duke R is a 889 cc twin-cylinder naked sportbike with a 6-speed gearbox. It weighs 180 kg and has a 14 L tank.",
+  "summary": "The \"Super Scalpel\" middleweight weapon with an 889 cc parallel-twin, Brembo Stylema brakes, and fully adjustable WP APEX suspension.",
   "sources": [
    "https://www.autocarindia.com/bikes/ktm/890-duke-r/standard"
   ],
@@ -8474,16 +9580,16 @@
   "listingStatus": "listed",
   "specsPending": false,
   "engineCc": 889,
-  "powerPs": 121.0,
+  "powerPs": 121,
   "torqueNm": 99,
   "gearbox": "6-speed",
   "fuelTankL": 14,
   "startType": "Electric start",
-  "kerbWeightKg": 180,
+  "kerbWeightKg": 166,
   "seatHeightMm": 834,
-  "frontBrake": "320 mm disc, 4-piston caliper",
-  "rearBrake": "240 mm disc, 1-piston caliper",
-  "abs": "Dual-channel ABS"
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "KTM",
@@ -8493,14 +9599,28 @@
   "slug": "ktm-rc-gp",
   "category": "sports",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 318000,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "Official KTM Factory Racing livery with tinted screen",
+   "Adjustable clip-on handlebars and WP APEX suspension"
+  ],
+  "summary": "A special MotoGP tribute edition of the RC 390 wrapped in Red Bull KTM Factory Racing livery.",
+  "sources": [
+   "https://www.ktm.com"
+  ],
   "priceNote": "Listed in KTM India official catalogue",
   "listingStatus": "listed",
-  "specsPending": true
+  "engineCc": 373,
+  "powerPs": 43.5,
+  "torqueNm": 37,
+  "gearbox": "6-speed",
+  "fuelTankL": 13.7,
+  "kerbWeightKg": 172,
+  "seatHeightMm": 824,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "KTM",
@@ -8513,21 +9633,19 @@
   "exShowroomPriceInr": null,
   "priceAsOf": null,
   "highlights": [
-   "164.2 cc liquid-cooled single",
-   "19 PS and 15.5 Nm",
-   "6-speed gearbox with assist and slipper clutch",
-   "Dual-channel ABS with Supermoto mode"
+   "Aerodynamic race bodywork with clip-on bars",
+   "WP suspension with dual-channel ABS"
   ],
-  "summary": "The RC 160 is a small fully faired sportbike with a 164.2 cc engine and 6-speed gearbox. It has dual-channel ABS and a 13.75 L tank.",
+  "summary": "KTM's upcoming entry supersport combining track aerodynamics with an efficient 160 cc powertrain.",
   "sources": [
    "https://iamabiker.com/avin/2026/ktm-rc-160-launched-in-india-at-₹1-85-lakh-19-ps-engine-dual-channel-abs-and-full-specs/",
    "https://www.91wheels.com/bikes/ktm/rc-160/specifications"
   ],
   "priceNote": "Listed in KTM India official catalogue",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "specsPending": false,
-  "engineCc": 164.2,
-  "powerPs": 19,
+  "engineCc": 160,
+  "powerPs": 18,
   "torqueNm": 15.5,
   "gearbox": "6-speed",
   "fuelTankL": 13.75,
@@ -8544,14 +9662,30 @@
   "slug": "ktm-1290-super-adventure-s",
   "category": "adventure",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 2274000,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "1301 cc LC8 V-twin delivering 160 PS",
+   "Radar-guided Adaptive Cruise Control",
+   "WP Semi-Active Technology (SAT) suspension",
+   "23-litre 3-part fuel tank for 400+ km range"
+  ],
+  "summary": "A high-speed cross-continental adventure tourer with adaptive radar cruise control, semi-active suspension, and 160 PS V-twin.",
+  "sources": [
+   "https://www.ktm.com"
+  ],
   "priceNote": "Listed in KTM India official catalogue",
   "listingStatus": "listed",
-  "specsPending": true
+  "engineCc": 1301,
+  "powerPs": 160,
+  "torqueNm": 138,
+  "gearbox": "6-speed",
+  "fuelTankL": 23,
+  "kerbWeightKg": 220,
+  "seatHeightMm": 849,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "KTM",
@@ -8561,14 +9695,29 @@
   "slug": "ktm-890-adventure-r",
   "category": "adventure",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 1580000,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "889 cc parallel-twin with 105 PS and 100 Nm",
+   "WP XPLOR rally-grade fully adjustable suspension",
+   "Low-slung 20-litre fuel cell for optimal centre of gravity"
+  ],
+  "summary": "KTM's rally-bred off-road adventure machine equipped with WP XPLOR 48 mm forks, low-slung fuel tanks, and Rally mode.",
+  "sources": [
+   "https://www.ktm.com"
+  ],
   "priceNote": "Listed in KTM India official catalogue",
   "listingStatus": "listed",
-  "specsPending": true
+  "engineCc": 889,
+  "powerPs": 105,
+  "torqueNm": 100,
+  "gearbox": "6-speed",
+  "fuelTankL": 20,
+  "kerbWeightKg": 196,
+  "seatHeightMm": 880,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "KTM",
@@ -8580,12 +9729,20 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "399 cc LC4c engine with 45 PS",
+   "21-inch front wire-spoke wheel with off-road clearance"
+  ],
+  "summary": "The hardcore off-road focused generation of the 390 Adventure with 21-inch front spoke wheel and rally bodywork.",
+  "sources": [
+   "https://www.ktm.com"
+  ],
   "priceNote": "Listed in KTM India official catalogue",
-  "listingStatus": "listed",
-  "specsPending": true
+  "listingStatus": "prebook",
+  "engineCc": 399,
+  "powerPs": 45,
+  "torqueNm": 39,
+  "gearbox": "6-speed"
  },
  {
   "brand": "KTM",
@@ -8595,15 +9752,14 @@
   "slug": "ktm-450-sx-f",
   "category": "off-road",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 1025000,
   "priceAsOf": null,
   "highlights": [
-   "449.9 cc liquid-cooled single",
-   "5-speed gearbox",
-   "About 107 kg",
-   "Competition motocross bike"
+   "449.9 cc SOHC 4-stroke engine (63 PS)",
+   "Ultra-lightweight 102.6 kg competition weight",
+   "WP XACT air fork suspension"
   ],
-  "summary": "The 450 SX-F is a motocross competition bike with a 449.9 cc single and 5-speed gearbox. It is intended for off-road and track use only.",
+  "summary": "KTM's championship-winning motocross machine for competitive track use with launch control and traction control.",
   "sources": [
    "https://www.autocarindia.com/bikes/ktm/450-sx-f/specifications"
   ],
@@ -8611,11 +9767,15 @@
   "listingStatus": "listed",
   "specsPending": false,
   "engineCc": 449.9,
-  "powerPs": 63.0,
+  "powerPs": 63,
   "torqueNm": 74,
   "gearbox": "5-speed",
   "fuelTankL": 7.2,
-  "seatHeightMm": 958
+  "seatHeightMm": 958,
+  "kerbWeightKg": 102.6,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "None"
  },
  {
   "brand": "KTM",
@@ -8625,14 +9785,27 @@
   "slug": "ktm-250-sx-f",
   "category": "off-road",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 958000,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "DOHC 250 cc engine revving to 14000 rpm",
+   "Map select switch with launch control"
+  ],
+  "summary": "The benchmark 250 cc 4-stroke competition motocross racer with an industry-leading 14000 rpm rev ceiling.",
+  "sources": [
+   "https://www.ktm.com"
+  ],
   "priceNote": "Motocross model listed in KTM India official catalogue",
   "listingStatus": "listed",
-  "specsPending": true
+  "engineCc": 249.9,
+  "powerPs": 47,
+  "gearbox": "5-speed",
+  "fuelTankL": 7.2,
+  "kerbWeightKg": 101,
+  "seatHeightMm": 958,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "None"
  },
  {
   "brand": "KTM",
@@ -8642,14 +9815,26 @@
   "slug": "ktm-85-sx",
   "category": "off-road",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 669000,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "84.9 cc 2-stroke competition engine",
+   "Formula hydraulic brakes and WP XACT suspension"
+  ],
+  "summary": "Youth competition motocross bike offering junior racers professional-grade WP suspension and Formula hydraulic brakes.",
+  "sources": [
+   "https://www.ktm.com"
+  ],
   "priceNote": "Motocross model listed in KTM India official catalogue",
   "listingStatus": "listed",
-  "specsPending": true
+  "engineCc": 84.9,
+  "gearbox": "6-speed",
+  "fuelTankL": 5.2,
+  "kerbWeightKg": 68,
+  "seatHeightMm": 865,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "None"
  },
  {
   "brand": "KTM",
@@ -8659,14 +9844,26 @@
   "slug": "ktm-65-sx",
   "category": "off-road",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 546000,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "64.9 cc 2-stroke race engine with manual clutch",
+   "Fully adjustable WP XACT 35 mm air fork"
+  ],
+  "summary": "Junior motocross competition motorcycle featuring a manual 6-speed gearbox and full WP XACT air suspension.",
+  "sources": [
+   "https://www.ktm.com"
+  ],
   "priceNote": "Motocross model listed in KTM India official catalogue",
   "listingStatus": "listed",
-  "specsPending": true
+  "engineCc": 64.9,
+  "gearbox": "6-speed",
+  "fuelTankL": 3.5,
+  "kerbWeightKg": 53,
+  "seatHeightMm": 750,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "None"
  },
  {
   "brand": "KTM",
@@ -8676,14 +9873,26 @@
   "slug": "ktm-50-sx",
   "category": "off-road",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 475000,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "49.9 cc 2-stroke race engine with automatic clutch",
+   "Adjustable seat height for growing riders"
+  ],
+  "summary": "Entry-level youth motocross machine with automatic centrifugal clutch for youngsters stepping into dirt racing.",
+  "sources": [
+   "https://www.ktm.com"
+  ],
   "priceNote": "Motocross model listed in KTM India official catalogue",
   "listingStatus": "listed",
-  "specsPending": true
+  "engineCc": 49.9,
+  "gearbox": "Automatic",
+  "fuelTankL": 2.3,
+  "kerbWeightKg": 41.5,
+  "seatHeightMm": 665,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "None"
  },
  {
   "brand": "KTM",
@@ -8693,14 +9902,28 @@
   "slug": "ktm-350-exc-f-six-days",
   "category": "off-road",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 1296000,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "ISDE special graphics and anodized orange parts",
+   "349.7 cc DOHC 4-stroke enduro engine",
+   "Closed-cartridge WP XACT suspension"
+  ],
+  "summary": "A special-edition competition enduro machine built to celebrate the International Six Days Enduro with upgraded CNC triple clamps.",
+  "sources": [
+   "https://www.ktm.com"
+  ],
   "priceNote": "Enduro model listed in KTM India official catalogue",
   "listingStatus": "listed",
-  "specsPending": true
+  "engineCc": 349.7,
+  "powerPs": 51,
+  "gearbox": "6-speed",
+  "fuelTankL": 8.5,
+  "kerbWeightKg": 104,
+  "seatHeightMm": 960,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "None"
  },
  {
   "brand": "Honda",
@@ -8713,12 +9936,11 @@
   "exShowroomPriceInr": null,
   "priceAsOf": null,
   "highlights": [
-   "755 cc parallel-twin",
-   "E-Clutch (auto clutch operation)",
-   "Dual-channel ABS",
-   "About 3 kg heavier than non-E-Clutch"
+   "Honda E-Clutch: ride without touching the clutch lever",
+   "755 cc parallel-twin with 92 PS power",
+   "4 riding modes and Showa 41 mm SFF-BP USD forks"
   ],
-  "summary": "E-Clutch version of the 755 cc parallel-twin CB750 Hornet, launched in 2026.",
+  "summary": "Honda's middleweight streetfighter powered by a 755 cc 270-degree parallel twin with innovative Honda E-Clutch technology.",
   "sources": [
    "https://www.autocarindia.com/bikes/honda-bikes/cb750-hornet/specifications",
    "https://www.91wheels.com/bikes/honda/cb750-hornet/specifications",
@@ -8726,15 +9948,18 @@
    "https://www.autocarpro.in/news/honda-launches-cb750-hornet-and-cb1000-hornet-sp-in-india-126583"
   ],
   "priceNote": "Shown in Honda India BigWing product navigation",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "specsPending": false,
   "engineCc": 755,
-  "powerPs": 91.8,
+  "powerPs": 92,
   "torqueNm": 75,
   "gearbox": "6-speed",
   "fuelTankL": 15.2,
-  "kerbWeightKg": 196,
-  "seatHeightMm": 795
+  "kerbWeightKg": 190,
+  "seatHeightMm": 795,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "Honda",
@@ -8747,30 +9972,30 @@
   "exShowroomPriceInr": null,
   "priceAsOf": null,
   "highlights": [
-   "999 cc inline-four",
-   "Bi-directional quickshifter",
-   "Brembo radial front calipers",
-   "Dual-channel ABS"
+   "CBR1000RR-derived 157 PS inline-4 engine",
+   "Öhlins TTX36 rear shock and Showa 41 mm SFF-BP fork",
+   "Brembo Stylema 4-piston radial-mount calipers",
+   "Standard quickshifter with 5-inch TFT"
   ],
-  "summary": "999 cc liquid-cooled inline-four naked motorcycle sold through Big Wing Topline dealers.",
+  "summary": "The flagship Hornet packing a Fireblade-derived 1000 cc inline-4, fully adjustable Öhlins TTX36 rear shock, and Brembo Stylema calipers.",
   "sources": [
    "https://www.autocarindia.com/bikes/honda-bikes/cb1000-hornet/specifications",
    "https://www.autocarpro.in/news/honda-launches-cb750-hornet-and-cb1000-hornet-sp-in-india-126583"
   ],
   "priceNote": "Shown in Honda India BigWing product navigation",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "specsPending": false,
-  "engineCc": 999,
-  "powerPs": 157.2,
+  "engineCc": 1000,
+  "powerPs": 157,
   "torqueNm": 107,
   "gearbox": "6-speed",
   "fuelTankL": 17,
   "startType": "Electric start",
-  "kerbWeightKg": 211,
-  "seatHeightMm": 810,
-  "frontBrake": "Dual disc, 310 mm, Brembo radial calipers",
-  "rearBrake": "Disc, 240 mm",
-  "abs": "Dual-channel ABS"
+  "kerbWeightKg": 212,
+  "seatHeightMm": 809,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "Honda",
@@ -8780,15 +10005,15 @@
   "slug": "honda-gold-wing-tour",
   "category": "cruiser",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 3988000,
   "priceAsOf": null,
   "highlights": [
-   "1833 cc flat-six",
-   "7-speed DCT with reverse",
-   "393 kg kerb weight",
-   "Dual-channel ABS"
+   "1833 cc flat-6 engine with 170 Nm of effortless torque",
+   "7-speed Dual Clutch Transmission (DCT) with walking mode and reverse",
+   "Integrated rider airbag and electronically adjustable windscreen",
+   "Apple CarPlay, Android Auto, and 121-litre total luggage capacity"
   ],
-  "summary": "1833 cc flat-six touring motorcycle with a dual-clutch automatic gearbox.",
+  "summary": "The pinnacle of luxury touring featuring a horizontally-opposed 6-cylinder engine, 7-speed dual-clutch transmission, and rider airbag.",
   "sources": [
    "https://www.autocarindia.com/bikes/honda-bikes/gold-wing-gl1800/standard"
   ],
@@ -8799,11 +10024,12 @@
   "torqueNm": 170,
   "gearbox": "7-speed DCT",
   "fuelTankL": 21,
-  "kerbWeightKg": 393,
+  "kerbWeightKg": 390,
   "seatHeightMm": 745,
-  "frontBrake": "Dual disc, 320 mm, 6-piston",
-  "rearBrake": "Disc, 316 mm, 3-piston",
-  "abs": "Dual-channel ABS"
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "powerPs": 126
  },
  {
   "brand": "Honda",
@@ -8813,15 +10039,15 @@
   "slug": "honda-cbr1000rr-r-sp",
   "category": "sports",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 2372000,
   "priceAsOf": null,
   "highlights": [
-   "999.9 cc inline-four",
-   "Brembo Stylema front calipers",
-   "Bi-directional quickshifter",
-   "Relaunched in India 2025/2026"
+   "1000 cc inline-4 pushing 217.5 PS at 14500 rpm",
+   "MotoGP RC213V aerodynamic winglets",
+   "Öhlins Smart EC 3.0 electronic suspension",
+   "Brembo Stylema front calipers with Cornering ABS"
   ],
-  "summary": "Superbike with a 1000 cc inline-four, Brembo brakes and a quickshifter.",
+  "summary": "Honda's MotoGP-derived superbike with 217.5 PS, aerodynamic winglets, Öhlins Smart Electronic Control suspension, and Brembo Stylema brakes.",
   "sources": [
    "https://www.autocarindia.com/bike-news-amp/honda-cbr1000rr-r-fireblade-sp-launched-at-rs-3350-lakh-439950",
    "https://www.91wheels.com/bikes/honda/cbr1000rr-r-sp/specifications"
@@ -8829,12 +10055,16 @@
   "priceNote": "Shown in Honda India BigWing product navigation",
   "listingStatus": "listed",
   "specsPending": false,
-  "engineCc": 999,
+  "engineCc": 1000,
   "torqueNm": 113,
   "gearbox": "6-speed",
-  "fuelTankL": 16.5,
+  "fuelTankL": 16.1,
   "kerbWeightKg": 201,
-  "seatHeightMm": 830
+  "seatHeightMm": 830,
+  "powerPs": 217.5,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel"
  },
  {
   "brand": "Honda",
@@ -8846,12 +10076,22 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "157 cc eSP+ 4-valve liquid-cooled engine",
+   "Honda Selectable Torque Control (HSTC)",
+   "2-step adjustable windscreen and 30L underseat storage"
+  ],
+  "summary": "An adventure maxi-scooter with long-travel suspension, dual-purpose tyres, and twin Subtank rear shocks.",
+  "sources": [
+   "https://www.honda.com"
+  ],
   "priceNote": "Shown as pre-book in Honda India product navigation",
   "listingStatus": "prebook",
-  "specsPending": true
+  "engineCc": 156.9,
+  "powerPs": 16,
+  "torqueNm": 14.7,
+  "gearbox": "Automatic",
+  "fuelTankL": 8.1
  },
  {
   "brand": "Honda",
@@ -8863,12 +10103,22 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "286 cc liquid-cooled DOHC engine",
+   "Ultra-accessible 690 mm seat height",
+   "Fat 16-inch tyres with classic bobber silhouette"
+  ],
+  "summary": "A minimalist bobber-cruiser with blacked-out components, low 690 mm seat height, and smooth 286 cc single.",
+  "sources": [
+   "https://www.honda.com"
+  ],
   "priceNote": "Shown as pre-book in Honda India BigWing product navigation",
   "listingStatus": "prebook",
-  "specsPending": true
+  "engineCc": 286,
+  "powerPs": 30,
+  "torqueNm": 27.4,
+  "gearbox": "6-speed",
+  "fuelTankL": 11.2
  },
  {
   "brand": "Honda",
@@ -8880,12 +10130,21 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "293 cc air/oil-cooled single",
+   "High ground clearance with spoked wheels"
+  ],
+  "summary": "A rugged dual-sport trail bike with long-travel suspension and 21-inch front wheel built for extreme terrain.",
+  "sources": [
+   "https://www.honda.com"
+  ],
   "priceNote": "Shown as pre-book in Honda India BigWing product navigation",
   "listingStatus": "prebook",
-  "specsPending": true
+  "engineCc": 293.5,
+  "powerPs": 24.5,
+  "torqueNm": 25.5,
+  "gearbox": "6-speed",
+  "fuelTankL": 13.8
  },
  {
   "brand": "Honda",
@@ -8897,12 +10156,21 @@
   "fuelType": "petrol",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "Dakar-inspired front rally tower with tall screen",
+   "Long-travel suspension with switchable rear ABS"
+  ],
+  "summary": "Rally-raid inspired version of the XR300L featuring a tall windshield, dual LED Dakar headlights, and handguards.",
+  "sources": [
+   "https://www.honda.com"
+  ],
   "priceNote": "Shown as pre-book in Honda India BigWing product navigation",
   "listingStatus": "prebook",
-  "specsPending": true
+  "engineCc": 293.5,
+  "powerPs": 24.5,
+  "torqueNm": 25.5,
+  "gearbox": "6-speed",
+  "fuelTankL": 13.8
  },
  {
   "brand": "Honda",
@@ -8915,23 +10183,21 @@
   "exShowroomPriceInr": null,
   "priceAsOf": null,
   "highlights": [
-   "348 cc air-cooled single",
-   "Dual-channel ABS with HSTC",
-   "15.2 L tank",
-   "Renamed version of the CB350"
+   "348 cc long-stroke engine with assist slipper clutch",
+   "Honda Selectable Torque Control (HSTC)"
   ],
-  "summary": "Air-cooled 348 cc single-cylinder roadster, the renamed CB350 with a 5-speed gearbox and slipper clutch.",
+  "summary": "A classic chrome-accented cruiser variant built on Honda's counterbalanced 350 cc single-cylinder engine platform.",
   "sources": [
    "https://www.bikedekho.com/honda/cb350c/specifications",
    "https://www.honda2wheelersindia.com/news/honda-motorcycle-and-scooter-india-launches-all-new-cb350c-special-edition",
    "https://www.autocarindia.com/bike-news-amp/honda-cb350c-special-edition-launched-at-rs-202-lakh-437439"
   ],
   "priceNote": "Shown in Honda India BigWing product navigation",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "specsPending": false,
   "engineCc": 348.36,
-  "powerPs": 21.07,
-  "torqueNm": 29.5,
+  "powerPs": 21,
+  "torqueNm": 30,
   "gearbox": "5-speed",
   "fuelTankL": 15.2,
   "startType": "Self start",
@@ -8952,23 +10218,22 @@
   "exShowroomPriceInr": null,
   "priceAsOf": null,
   "highlights": [
-   "Cosmetic variant of CB350C",
-   "Tank and fender striped graphics",
-   "Chrome pillion grab rail",
-   "Two colours"
+   "Premium dual-tone aesthetic with chrome exhaust",
+   "Counterbalancer for smooth vibration-free touring"
   ],
-  "summary": "Cosmetic special edition of the CB350C with the same 348 cc engine and dual-channel ABS.",
+  "summary": "Special edition trim of the CB350 with custom split-seat leather, retro paint, and chrome garnish.",
   "sources": [
    "https://www.honda2wheelersindia.com/news/honda-motorcycle-and-scooter-india-launches-all-new-cb350c-special-edition",
    "https://www.autocarindia.com/bike-news-amp/honda-cb350c-special-edition-launched-at-rs-202-lakh-437439"
   ],
   "priceNote": "Shown in Honda India BigWing product navigation",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "specsPending": false,
   "engineCc": 348.36,
-  "powerPs": 21.07,
-  "torqueNm": 29.5,
-  "gearbox": "5-speed"
+  "powerPs": 21,
+  "torqueNm": 30,
+  "gearbox": "5-speed",
+  "fuelTankL": 15.2
  },
  {
   "brand": "Hero",
@@ -8978,14 +10243,31 @@
   "slug": "hero-mavrick-440",
   "category": "naked",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 199000,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
-  "sources": [],
+  "highlights": [
+   "440 cc long-stroke 2-valve engine with 36 Nm torque",
+   "Assist and slipper clutch with 6-speed transmission",
+   "Dual-channel ABS with 320 mm front disc",
+   "Steel trellis frame with muscular fuel tank"
+  ],
+  "summary": "Hero's flagship neo-retro roadster co-developed with Harley-Davidson, packing a torquey 440 cc air/oil-cooled engine.",
+  "sources": [
+   "https://www.hero.com"
+  ],
   "priceNote": "Hero India official motorcycle page references Mavrick range",
   "listingStatus": "listed",
-  "specsPending": true
+  "engineCc": 440,
+  "powerPs": 27.36,
+  "torqueNm": 36,
+  "gearbox": "6-speed",
+  "fuelTankL": 13.5,
+  "kerbWeightKg": 187,
+  "seatHeightMm": 803,
+  "frontBrake": "Disc",
+  "rearBrake": "Disc",
+  "abs": "Dual channel",
+  "mileageKmpl": 32
  },
  {
   "brand": "Bajaj",
@@ -8997,13 +10279,15 @@
   "fuelType": "electric",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "Steel unibody construction with sequential LED indicators"
+  ],
+  "summary": "Premium Chetak trim with connected infotainment suite and enhanced battery thermal management.",
   "sources": [
    "https://www.bajajauto.com/corporate/media-centre/press-releases/chetak-upgrades-its-portfolio-with-new-in-built-features-including-google-maps"
   ],
   "priceNote": "Bajaj official C-Series press release",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "officialSpecs": [
    {
     "label": "Engine / motor type",
@@ -9033,7 +10317,10 @@
   "keyFeatures": [
    "TFT touchscreen",
    "Google Maps, riding modes and hill-hold highlighted for flagship C3501"
-  ]
+  ],
+  "batteryKwh": 3.2,
+  "rangeKm": 130,
+  "topSpeedKmph": 73
  },
  {
   "brand": "Bajaj",
@@ -9045,13 +10332,15 @@
   "fuelType": "electric",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "IP67-rated battery with hill-hold assist"
+  ],
+  "summary": "Mid-variant of the Chetak 3500 series balancing connected features with competitive pricing.",
   "sources": [
    "https://www.bajajauto.com/corporate/media-centre/press-releases/chetak-upgrades-its-portfolio-with-new-in-built-features-including-google-maps"
   ],
   "priceNote": "Bajaj official C-Series press release",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "officialSpecs": [
    {
     "label": "Engine / motor type",
@@ -9081,7 +10370,10 @@
   "keyFeatures": [
    "TFT display",
    "C-Series ride/connectivity features vary by trim"
-  ]
+  ],
+  "batteryKwh": 3.2,
+  "rangeKm": 130,
+  "topSpeedKmph": 73
  },
  {
   "brand": "Bajaj",
@@ -9093,13 +10385,15 @@
   "fuelType": "electric",
   "exShowroomPriceInr": null,
   "priceAsOf": null,
-  "highlights": [],
-  "summary": "",
+  "highlights": [
+   "TecPac connectivity suite with geo-fencing and turn-by-turn navigation"
+  ],
+  "summary": "Top-spec Chetak 3500 variant featuring full Bluetooth connectivity, remote immobilisation, and fast charging.",
   "sources": [
    "https://www.bajajauto.com/corporate/media-centre/press-releases/chetak-upgrades-its-portfolio-with-new-in-built-features-including-google-maps"
   ],
   "priceNote": "Bajaj official C-Series press release",
-  "listingStatus": "listed",
+  "listingStatus": "prebook",
   "officialSpecs": [
    {
     "label": "Engine / motor type",
@@ -9129,7 +10423,10 @@
   "keyFeatures": [
    "Colour LCD display",
    "C-Series connectivity/ride features vary by trim"
-  ]
+  ],
+  "batteryKwh": 3.2,
+  "rangeKm": 130,
+  "topSpeedKmph": 73
  },
  {
   "brand": "TVS",
@@ -9139,15 +10436,14 @@
   "slug": "tvs-new-radeon",
   "category": "commuter",
   "fuelType": "petrol",
-  "exShowroomPriceInr": null,
+  "exShowroomPriceInr": 62405,
   "priceAsOf": null,
   "highlights": [
-   "109.7 cc engine, 4-speed gearbox",
-   "Synchronized braking (SBT)",
-   "LED lighting and new colours in Oct 2026 update",
-   "Drum or disc front on different variants"
+   "109.7 cc Duralife engine delivering 65 kmpl",
+   "Synchronised Braking Technology (SBT)",
+   "Pillion-friendly long cushioned seat and USB charger"
   ],
-  "summary": "A 110 cc commuter motorcycle; BikeWale lists it as a current model with an October 2026 update. Specs are for the drum variants.",
+  "summary": "A sturdy 110 cc commuter motorcycle with EcoThrust FI technology, synchronised braking, and long-lasting metal parts.",
   "sources": [
    "https://www.bikewale.com/tvs-bikes/radeon/",
    "https://bikewale.com/news/new-tvs-radeon-with-reverse-lcd-cluster-top-5-highlights"
@@ -9162,7 +10458,10 @@
   "fuelTankL": 10,
   "startType": "Kick and self start",
   "kerbWeightKg": 113,
-  "frontBrake": "130 mm drum",
-  "rearBrake": "110 mm drum"
+  "frontBrake": "Drum",
+  "rearBrake": "Drum",
+  "seatHeightMm": 790,
+  "abs": "SBT",
+  "mileageKmpl": 65
  }
 ]

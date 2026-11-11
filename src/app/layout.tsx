@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -12,6 +13,7 @@ import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 const displayFont = Outfit({ variable: "--font-display", subsets: ["latin"], display: "swap" });
 const bodyFont = Plus_Jakarta_Sans({ variable: "--font-sans", subsets: ["latin"], display: "swap" });
+const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -42,6 +44,19 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${bodyFont.variable} ${displayFont.variable} flex min-h-screen flex-col font-sans antialiased`}>
+        {gaId && (
+          <>
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} strategy="afterInteractive" />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}', { page_path: window.location.pathname });
+              `}
+            </Script>
+          </>
+        )}
         <JsonLd data={[
           { '@context': 'https://schema.org', '@type': 'Organization', name: SITE_NAME, url: SITE_URL, logo: `${SITE_URL}/icons/icon-512.png` },
           { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE_NAME, url: SITE_URL, inLanguage: 'en-IN', potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/bikes?q={search_term_string}` }, 'query-input': 'required name=search_term_string' } },

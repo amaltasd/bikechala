@@ -1,1 +1,92 @@
-{}
+{
+ "honda-sp125": {
+  "src": "/images/bikes/honda-sp125.jpg",
+  "credit": "edge.sitecorecloud.io",
+  "sourceUrl": "https://edge.sitecorecloud.io/hondamotorc388f-hmsi8ece-prodb777-e813/media/Project/HONDA2WI/honda2wheelersindia/new_asset_compressed/Redwings/SP125/banner/desktop-sp125.jpg?h=824&iar=0&w=1920",
+  "fetchedAt": "2026-11-11"
+ },
+ "hero-hf-deluxe": {
+  "src": "/images/bikes/hero-hf-deluxe.jpg",
+  "credit": "heromotocorp.com",
+  "sourceUrl": "https://www.heromotocorp.com/content/dam/hero-commerce/in/en/products/practical/content-fragments/hf-deluxe/assets/hf-deluxe-mobile-banner_720x564pxl.jpg",
+  "fetchedAt": "2026-11-11"
+ },
+ "honda-activa": {
+  "src": "/images/bikes/honda-activa.jpg",
+  "credit": "edge.sitecorecloud.io",
+  "sourceUrl": "https://edge.sitecorecloud.io/hondamotorc388f-hmsi8ece-prodb777-e813/media/Project/HONDA2WI/honda2wheelersindia/new_asset_compressed/meta/Scooters/Activa-110.jpg?h=630&iar=0&w=1200",
+  "fetchedAt": "2026-11-11"
+ },
+ "honda-shine": {
+  "src": "/images/bikes/honda-shine.jpg",
+  "credit": "edge.sitecorecloud.io",
+  "sourceUrl": "https://edge.sitecorecloud.io/hondamotorc388f-hmsi8ece-prodb777-e813/media/Project/HONDA2WI/honda2wheelersindia/new_asset_compressed/meta/Motorcycle/Redwing/Shine-125.jpg?h=630&iar=0&w=1200",
+  "fetchedAt": "2026-11-11"
+ },
+ "honda-unicorn": {
+  "src": "/images/bikes/honda-unicorn.jpg",
+  "credit": "edge.sitecorecloud.io",
+  "sourceUrl": "https://edge.sitecorecloud.io/hondamotorc388f-hmsi8ece-prodb777-e813/media/Project/HONDA2WI/honda2wheelersindia/new_asset_compressed/meta/Motorcycle/Redwing/Unicorn.jpg?h=630&iar=0&w=1200",
+  "fetchedAt": "2026-11-11"
+ },
+ "royal-enfield-hunter-350": {
+  "src": "/images/bikes/royal-enfield-hunter-350.avif",
+  "credit": "royalenfield.com",
+  "sourceUrl": "https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/hunter-350/new-gallery/thumbnail/gallery-thumbnail-1.jpeg",
+  "fetchedAt": "2026-11-11"
+ },
+ "honda-shine-100": {
+  "src": "/images/bikes/honda-shine-100.jpg",
+  "credit": "edge.sitecorecloud.io",
+  "sourceUrl": "https://edge.sitecorecloud.io/hondamotorc388f-hmsi8ece-prodb777-e813/media/Project/HONDA2WI/honda2wheelersindia/new_asset_compressed/meta/Motorcycle/Redwing/Shine-100.jpg?h=630&iar=0&w=1200",
+  "fetchedAt": "2026-11-11"
+ },
+ "honda-cb350": {
+  "src": "/images/bikes/honda-cb350.jpg",
+  "credit": "edge.sitecorecloud.io",
+  "sourceUrl": "https://edge.sitecorecloud.io/hondamotorc388f-hmsi8ece-prodb777-e813/media/Project/HONDA2WI/honda2wheelersindia/new_asset_compressed/meta/Motorcycle/Bigwing/CB-751.jpg?h=630&iar=0&w=1200",
+  "fetchedAt": "2026-11-11"
+ },
+ "ktm-200-duke": {
+  "src": "/images/bikes/ktm-200-duke.webp",
+  "credit": "bau-p-001.sitecorecontenthub.cloud",
+  "sourceUrl": "https://bau-p-001.sitecorecontenthub.cloud/api/public/content/prod-126781-duke-1390-lifestyle",
+  "fetchedAt": "2026-11-11"
+ },
+ "ktm-160-duke": {
+  "src": "/images/bikes/ktm-160-duke.webp",
+  "credit": "bau-p-001.sitecorecontenthub.cloud",
+  "sourceUrl": "https://bau-p-001.sitecorecontenthub.cloud/api/public/content/prod-126781-duke-1390-lifestyle",
+  "fetchedAt": "2026-11-11"
+ },
+ "bajaj-pulsar-ns200": {
+  "src": "/images/bikes/bajaj-pulsar-ns200.webp",
+  "credit": "cdn.bajajauto.com",
+  "sourceUrl": "https://cdn.bajajauto.com/-/media/assets/bajajauto/bikes/new-images/plp-pages/header-drop-down-mob/ns200.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "honda-activa-125": {
+  "src": "/images/bikes/honda-activa-125.jpg",
+  "credit": "edge.sitecorecloud.io",
+  "sourceUrl": "https://edge.sitecorecloud.io/hondamotorc388f-hmsi8ece-prodb777-e813/media/Project/HONDA2WI/honda2wheelersindia/new_asset_compressed/meta/Scooters/Activa-125.jpg?h=630&iar=0&w=1200",
+  "fetchedAt": "2026-11-11"
+ },
+ "bajaj-chetak-c2501": {
+  "src": "/images/bikes/bajaj-chetak-c2501.webp",
+  "credit": "cdn.bajajauto.com",
+  "sourceUrl": "https://cdn.bajajauto.com/-/media/chetakv2/chetak-c2501/16-axis/teal/00.png",
+  "fetchedAt": "2026-11-11"
+ },
+ "bajaj-freedom-125": {
+  "src": "/images/bikes/bajaj-freedom-125.webp",
+  "credit": "cdn.bajajauto.com",
+  "sourceUrl": "https://cdn.bajajauto.com/-/media/images/bajajauto/bajaj-price-page/header-drop-down/webp/freedom-ng04-disc.webp",
+  "fetchedAt": "2026-11-11"
+ },
+ "suzuki-e-access": {
+  "src": "/images/bikes/suzuki-e-access.png",
+  "credit": "s3.ap-south-1.amazonaws.com",
+  "sourceUrl": "https://s3.ap-south-1.amazonaws.com/suzuki-website-s3/public-live/images/website/logo.jpg",
+  "fetchedAt": "2026-11-11"
+ }
+}

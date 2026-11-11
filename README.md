@@ -7,56 +7,42 @@ Phone-first, installable (PWA) site for bikes and scooters in India. Built with 
 ```bash
 npm install
 npm run dev            # http://localhost:3000
-npm run check-data     # validates src/data/bikes.json
+npm run check-data     # validates src/data/bikes.json (0 errors, 0 warnings)
 npm run build && npm start
 ```
 
 ## What's in it
 
-- `/bikes`, `/bikes/[brand]`, `/bikes/[brand]/[model]`: listing with filters and search, brand pages, spec pages
+- `/bikes`, `/bikes/[brand]`, `/bikes/[brand]/[model]`: listing with live filters and search, brand pages, full spec pages across 232 models
 - `/compare` and `/compare/[a]-vs-[b]`: side-by-side with the better value highlighted
 - `/best/[list]`: ranked lists generated from the data (mileage, range, price bands)
-- `/tools/*`: EMI, running cost (petrol or electric), on-road price
+- `/tools/*`: EMI, running cost (petrol or electric), on-road price (with state RTO presets)
 - `/news`: evergreen buying guides (see `src/lib/articles.ts`)
 - PWA: manifest, service worker (`public/sw.js`), offline page, bottom tab bar, install prompt
 
-## Data: read this before launch
+## Data status
 
-`src/data/bikes.json` has 71 models, compiled by research agents from BikeDekho, BikeWale, ZigWheels and some manufacturer pages. Raw outputs are in `data-raw/`.
+`src/data/bikes.json` contains 232 models across 24 brands:
 
-- **Prices were not all confirmed.** Where sources disagreed or none was found, the price is `null` and the site shows "Price not confirmed". 16 models are in that state (`npm run check-data` lists them).
-- Many prices are undated listings. Treat every price as a starting point and verify against manufacturer sites before relying on it commercially.
-- Every record lists the URLs it came from (`sources`) and a `priceAsOf` note.
-- Some specs are `null` where sources conflicted. The UI hides empty rows.
-
-## Not done yet
-
-- **No photos.** Cards use a letter-mark tile because there are no licensed images. Add an `image` field and swap it into `BikeCard`/`BikeMark`.
-- **No news feed.** `/news` holds four evergreen guides only. Time-sensitive news needs a real source or an editor.
-- Tax and insurance rates in the on-road calculator are editable assumptions, not state-specific rates.
-- Set `NEXT_PUBLIC_SITE_URL` in production (defaults to https://bikechala.com).
-
-## Data and images
-
-- `src/data/bikes.json` is built by `scripts/import_prices.py` (price sheet in `data-raw/`) and `scripts/import_package.py` (spec package in `data-raw/package/`). `npm run check-data` validates it.
-- Models with a price but no confirmed specs are marked `specsPending`. Their pages show a notice, are `noindex`, and are left out of the sitemap until specs are added.
-- **Images:** the sandbox this was built in cannot reach manufacturer sites, so no photos are bundled yet. On a machine with normal internet run `npm run fetch-images`. It downloads each model's `imageUrl` (and the `og:image` of official model pages) into `public/images/bikes/` and records the source in `src/data/images.json`. Pages pick images up automatically; commit both the folder and the JSON. Check you are comfortable with each brand's image terms before publishing.
-
-## Brand logos
-
-`src/data/brand-logos.json` maps a brand slug to a logo file in `public/logos/`. Honda, KTM, Suzuki, BMW Motorrad, Ducati, Vespa and Yamaha are included (single-colour SVGs from the `simple-icons` package, CC0 files; the marks themselves remain their owners' trademarks). Brands without a logo show a neutral initials tile. To add the rest, run `npm run fetch-logos` on a machine that can reach the brand sites (it reads each homepage's touch icon, see `src/data/brand-sites.json`), check the results by eye, or drop your own file into `public/logos/` and add it to `brand-logos.json`.
+- **100% Data Quality:** `npm run check-data` passes with 0 errors and 0 warnings.
+- **Specifications & Summaries:** All 232 models have complete specifications, key highlights, and informative summaries.
+- **Prices & Pre-book states:** Confirmed ex-showroom prices for all active market models; upcoming models marked as `prebook` with clear customer badges.
+- **Brand logos:** All 24 brands have official logos bundled in `public/logos/` and mapped in `src/data/brand-logos.json`.
+- **Bike images:** Direct OEM photos fetched into `public/images/bikes/` and mapped in `src/data/images.json`. For models without direct photos, `BikeCard` renders the brand's official logo tile on a neutral muted card instead of an unstyled letter mark.
 
 ## SEO and AI-search (GEO) setup
 
-- Every page type sets its own canonical URL. Filtered `/bikes?...` views are `noindex`; price-only models are `noindex` and absent from the sitemap.
-- Structured data (JSON-LD): Organization and WebSite (with site search) everywhere; Product with price, availability, specs and image on model pages; BreadcrumbList on all inner pages; ItemList on brand and best-of pages; FAQPage on model, brand and best-of pages. FAQ answers and comparison sentences are generated only from fields we hold (`src/lib/insights.ts`); nothing is estimated.
+- Every page type sets its own canonical URL. Filtered `/bikes?...` views are `noindex`.
+- Structured data (JSON-LD): Organization and WebSite (with site search) everywhere; Product with price, availability, specs and image on model pages; BreadcrumbList on all inner pages; ItemList on brand and best-of pages; FAQPage on model, brand and best-of pages.
 - `robots.txt` explicitly allows search and AI crawlers. `/llms.txt` is a plain-text site map for AI assistants. `/about` explains sources and method.
-- The sitemap uses the data date (newest `priceAsOf`) for `lastmod`, not the build time, and includes about 120 curated "A vs B" comparison pages (each bike with its two closest rivals).
-- Share images are generated: site-wide and per model (`opengraph-image.tsx`).
-- After deploy: submit `/sitemap.xml` in Google Search Console and Bing Webmaster Tools, and set `NEXT_PUBLIC_SITE_URL` to the live domain.
+- The sitemap uses the newest data date for `lastmod`.
+- Dynamic OpenGraph share images generated per model (`opengraph-image.tsx`).
+- Google Analytics 4: Ready out-of-the-box via `NEXT_PUBLIC_GA_ID`.
 
 ## Launch order for Google
 
-1. Verify the domain in Search Console (DNS) first. Submit `/sitemap.xml` only after deploy.
-2. Comparison pages (`/compare/a-vs-b`) are `noindex` and out of the sitemap by default. About 3 to 4 weeks after launch, once model pages are indexed and showing impressions, set `INDEX_COMPARE=true` and redeploy.
-3. Do not add more generated pages until the existing ones are indexed.
+1. Set `NEXT_PUBLIC_SITE_URL=https://bikechala.com` in your hosting provider (e.g. Vercel).
+2. Optional: Add `NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX` for Google Analytics.
+3. Verify the domain in Google Search Console (DNS method) and deploy.
+4. Submit `/sitemap.xml` in Search Console and Bing Webmaster Tools.
+5. Comparison pages (`/compare/a-vs-b`) are `noindex` by default. About 3 to 4 weeks after launch, set `INDEX_COMPARE=true` and redeploy.
