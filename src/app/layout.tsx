@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import BottomNav from "@/components/BottomNav";
 import PwaClient from "@/components/PwaClient";
 import { CompareProvider } from "@/components/CompareStore";
+import { CityProvider } from "@/components/CityStore";
 import CompareTray from "@/components/CompareTray";
 import JsonLd from "@/components/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/lib/seo";
@@ -141,13 +142,15 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           ]}
         />
         <CompareProvider>
-          <Header />
-          <main className="flex flex-1 flex-col">{children}</main>
-          <Footer />
-          <div aria-hidden className="h-[calc(4rem+env(safe-area-inset-bottom))] lg:hidden" />
-          <BottomNav />
-          <CompareTray />
-          <PwaClient />
+          <CityProvider>
+            <Header />
+            <main className="flex flex-1 flex-col">{children}</main>
+            <Footer />
+            <div aria-hidden className="h-[calc(4rem+env(safe-area-inset-bottom))] lg:hidden" />
+            <BottomNav />
+            <CompareTray />
+            <PwaClient />
+          </CityProvider>
         </CompareProvider>
       </body>
     </html>
