@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import { Outfit, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -12,7 +12,7 @@ import JsonLd from "@/components/JsonLd";
 import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 const displayFont = Outfit({ variable: "--font-display", subsets: ["latin"], display: "swap" });
-const bodyFont = Plus_Jakarta_Sans({ variable: "--font-sans", subsets: ["latin"], display: "swap" });
+const bodyFont = Inter({ variable: "--font-sans", subsets: ["latin"], display: "swap" });
 const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
 export const viewport: Viewport = {
@@ -31,18 +31,71 @@ export const metadata: Metadata = {
   appleWebApp: { capable: true, title: "BikeChala", statusBarStyle: "default" },
   formatDetection: { telephone: false },
   icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }, { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" }],
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
     apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180" }],
   },
-  title: { default: "New Bikes & Scooters in India: Prices, Specs & Comparisons | BikeChala", template: "%s | BikeChala" },
-  description: "Compare new bikes and scooters in India: ex-showroom prices, mileage, range, specs, EMI and running-cost calculators.",
-  openGraph: { siteName: "BikeChala", locale: "en_IN", type: "website", url: SITE_URL },
-  twitter: { card: "summary_large_image" },
+  title: {
+    default: "New Bikes in India 2026: Prices, Specs, Mileage & Comparisons | BikeChala",
+    template: "%s | BikeChala",
+  },
+  description: "Find and compare new bikes and scooters in India. Accurate ex-showroom prices, verified mileage, electric vehicle range, specifications, and EMI & fuel cost calculators.",
+  keywords: [
+    "new bikes in India",
+    "bikes price 2026",
+    "two wheeler prices India",
+    "compare bikes",
+    "best mileage bikes",
+    "electric scooters India",
+    "bike EMI calculator",
+    "on road price calculator",
+  ],
+  authors: [{ name: "BikeChala Editorial Team", url: SITE_URL }],
+  creator: "BikeChala",
+  publisher: "BikeChala",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    siteName: SITE_NAME,
+    locale: "en_IN",
+    type: "website",
+    url: SITE_URL,
+    title: "New Bikes in India 2026: Prices, Specs & Comparisons | BikeChala",
+    description: "Compare two-wheelers in India: ex-showroom prices, mileage, range, specs, and on-road calculators.",
+    images: [
+      {
+        url: `${SITE_URL}/opengraph-image`,
+        width: 1200,
+        height: 630,
+        alt: "BikeChala - India's Two-Wheeler Portal",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "New Bikes in India 2026: Prices & Specs | BikeChala",
+    description: "Compare new bikes and scooters in India with verified specs, prices, and mileage.",
+    images: [`${SITE_URL}/opengraph-image`],
+  },
+  alternates: {
+    canonical: SITE_URL,
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en-IN" suppressHydrationWarning>
       <body className={`${bodyFont.variable} ${displayFont.variable} flex min-h-screen flex-col font-sans antialiased`}>
         {gaId && (
           <>
@@ -57,19 +110,44 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             </Script>
           </>
         )}
-        <JsonLd data={[
-          { '@context': 'https://schema.org', '@type': 'Organization', name: SITE_NAME, url: SITE_URL, logo: `${SITE_URL}/icons/icon-512.png` },
-          { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE_NAME, url: SITE_URL, inLanguage: 'en-IN', potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/bikes?q={search_term_string}` }, 'query-input': 'required name=search_term_string' } },
-        ]} />
+        <JsonLd
+          data={[
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: SITE_NAME,
+              url: SITE_URL,
+              logo: `${SITE_URL}/icons/icon-512.png`,
+              sameAs: [
+                'https://twitter.com/bikechala',
+                'https://facebook.com/bikechala',
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: SITE_NAME,
+              url: SITE_URL,
+              inLanguage: 'en-IN',
+              potentialAction: {
+                '@type': 'SearchAction',
+                target: {
+                  '@type': 'EntryPoint',
+                  urlTemplate: `${SITE_URL}/bikes?q={search_term_string}`,
+                },
+                'query-input': 'required name=search_term_string',
+              },
+            },
+          ]}
+        />
         <CompareProvider>
-        <Header />
-        <main className="flex flex-1 flex-col">{children}</main>
-        <Footer />
-        {/* keeps the footer clear of the fixed bottom tab bar on phones */}
-        <div aria-hidden className="h-[calc(4rem+env(safe-area-inset-bottom))] lg:hidden" />
-        <BottomNav />
-        <CompareTray />
-        <PwaClient />
+          <Header />
+          <main className="flex flex-1 flex-col">{children}</main>
+          <Footer />
+          <div aria-hidden className="h-[calc(4rem+env(safe-area-inset-bottom))] lg:hidden" />
+          <BottomNav />
+          <CompareTray />
+          <PwaClient />
         </CompareProvider>
       </body>
     </html>

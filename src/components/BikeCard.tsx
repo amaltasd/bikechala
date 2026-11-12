@@ -10,9 +10,19 @@ export function BikeMark({ bike, className = '' }: { bike: CardBike; className?:
   const img = bikeImage(bike);
   if (img) {
     return (
-      <div aria-hidden className={`overflow-hidden bg-muted/40 ${className}`}>
+      <div aria-hidden className={`relative overflow-hidden bg-muted/40 ${className}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={img.src} alt="" loading="lazy" decoding="async" className="h-full w-full object-contain p-2" />
+        <img
+          src={img.src}
+          alt={`${bike.brand} ${bike.name} ${CATEGORY_LABEL[bike.category]} in India${bike.exShowroomPriceInr ? ` - ${formatPrice(bike.exShowroomPriceInr)}` : ''}`}
+          loading="lazy"
+          decoding="async"
+          className="h-full w-full object-contain p-2"
+        />
+        <span className="pointer-events-none absolute bottom-1 right-1 flex select-none items-center gap-1 rounded-full bg-slate-900/60 px-1.5 py-0.5 text-[8px] font-semibold text-white/90 shadow-xs backdrop-blur-sm sm:text-[9px]">
+          <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+          bikechala.com
+        </span>
       </div>
     );
   }
