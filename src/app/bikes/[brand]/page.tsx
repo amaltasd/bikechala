@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: P }): Promise<Metad
   const popular = list.slice(0, 3).map((b) => b.name).join(', ');
 
   return {
-    title: `${name} Bikes in India: Price List 2026, New Models & Offers | BikeChala`,
+    title: `${name} Bikes in India: Price List 2026 & New Models`,
     description: `Explore ${list.length} new ${name} bikes and scooters in India ${priceRange}. Check 2026 price list, specs, mileage, EV range & offers for popular models like ${popular}.`,
     alternates: { canonical: `/bikes/${brand}` },
     openGraph: {

@@ -10,7 +10,7 @@ import { bikes, getBrands, BEST_LISTS, formatPrice, brandLogo } from '@/lib/bike
 import { articles } from '@/lib/articles';
 
 export const metadata: Metadata = {
-  title: 'New Bikes in India 2026: Prices, Specs, Mileage & Comparisons | BikeChala',
+  title: 'New Bikes in India 2026: Prices, Specs & Mileage | BikeChala',
   description: 'Explore all new bikes and scooters in India for 2026. Compare ex-showroom prices, verified mileage, electric range, specs, and calculate EMI & running costs.',
   alternates: { canonical: '/' },
   openGraph: {

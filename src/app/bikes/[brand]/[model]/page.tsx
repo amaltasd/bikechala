@@ -72,7 +72,7 @@ function exampleEmi(price: number) {
 export async function generateMetadata({ params }: { params: P }): Promise<Metadata> {
   const { brand, model } = await params;
   const b = getBike(brand, model);
-  if (!b) return { title: 'Bike Not Found | BikeChala' };
+  if (!b) return { title: 'Bike Not Found' };
 
   const priceStr = formatPrice(b.exShowroomPriceInr);
   const isEv = b.fuelType === 'electric';
@@ -82,8 +82,10 @@ export async function generateMetadata({ params }: { params: P }): Promise<Metad
   const emiVal = b.exShowroomPriceInr ? exampleEmi(b.exShowroomPriceInr).toLocaleString('en-IN') : null;
 
   const metaTitle = priceStr 
-    ? `${bikeTitle(b)} Price (${priceStr}), ${effToken}, Specs & On-Road (${CURRENT_YEAR}) | BikeChala`
-    : `${bikeTitle(b)} (${CURRENT_YEAR}): Price, Specs, ${effToken} & Variants | BikeChala`;
+    ? `${bikeTitle(b)} Price ${priceStr}, ${effToken} & Specs (${CURRENT_YEAR})`
+    : `${bikeTitle(b)} (${CURRENT_YEAR}): Price, Specs & ${effToken}`;
+  // metaTitle goes through the site title template (adds " | BikeChala"); OG/Twitter titles do not, so add it there.
+  const socialTitle = `${metaTitle} | BikeChala`;
 
   const metaDescription = `${bikeTitle(b)} price starts at ${priceStr ?? 'competitive rates'} ex-showroom. Check ${effToken}, top city on-road prices, EMI from ${emiVal ? `₹${emiVal}/mo` : 'low rates'}, full specs & rivals.`.slice(0, 160);
 
@@ -92,7 +94,7 @@ export async function generateMetadata({ params }: { params: P }): Promise<Metad
     description: metaDescription,
     alternates: { canonical: bikeUrl(b) },
     openGraph: {
-      title: metaTitle,
+      title: socialTitle,
       description: metaDescription,
       url: absoluteUrl(bikeUrl(b)),
       siteName: SITE_NAME,
@@ -102,7 +104,7 @@ export async function generateMetadata({ params }: { params: P }): Promise<Metad
     },
     twitter: {
       card: 'summary_large_image',
-      title: metaTitle,
+      title: socialTitle,
       description: metaDescription,
     },
     robots: b.specsPending ? { index: false, follow: true } : { index: true, follow: true },

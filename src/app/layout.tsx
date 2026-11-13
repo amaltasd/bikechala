@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     apple: [{ url: "/icons/apple-touch-icon.png", sizes: "180x180" }],
   },
   title: {
-    default: "New Bikes in India 2026: Prices, Specs, Mileage & Comparisons | BikeChala",
+    default: "New Bikes in India 2026: Prices, Specs & Mileage | BikeChala",
     template: "%s | BikeChala",
   },
   description: "Find and compare new bikes and scooters in India. Accurate ex-showroom prices, verified mileage, electric vehicle range, specifications, and EMI & fuel cost calculators.",

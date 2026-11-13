@@ -18,12 +18,13 @@ const CURRENT_YEAR = new Date().getFullYear();
 export async function generateMetadata({ params }: { params: P }): Promise<Metadata> {
   const { slug } = await params;
   const l = getBestList(slug);
-  if (!l) return { title: 'Not found | BikeChala' };
+  if (!l) return { title: 'Not found' };
   const top = bestListBikes(l)[0];
   const topMetric = top ? (l.metric(top) ?? formatPrice(top.exShowroomPriceInr)) : '';
   const lead = top ? ` Top pick: ${bikeTitle(top)} (${topMetric}).` : '';
 
-  const title = `${l.title} in India (${CURRENT_YEAR}) - Top 10 Price List & Mileage | BikeChala`;
+  const title = `${l.title}${/india/i.test(l.title) ? '' : ' in India'} (${CURRENT_YEAR}): Top 10 Price List`;
+  const socialTitle = `${title} | BikeChala`;
   const description = `Discover top-ranked ${l.title.toLowerCase()} in India for ${CURRENT_YEAR}.${lead} Compare confirmed ex-showroom prices, verified ARAI mileage, specs & full buyer rankings.`.slice(0, 160);
 
   return {
@@ -31,7 +32,7 @@ export async function generateMetadata({ params }: { params: P }): Promise<Metad
     description,
     alternates: { canonical: `/best/${slug}` },
     openGraph: {
-      title,
+      title: socialTitle,
       description,
       url: absoluteUrl(`/best/${slug}`),
       siteName: SITE_NAME,

@@ -9,7 +9,7 @@ import { absoluteUrl, SITE_NAME } from '@/lib/seo';
 const CURRENT_YEAR = new Date().getFullYear();
 
 export const metadata: Metadata = {
-  title: `Bike Loan EMI Calculator - Two Wheeler EMI, Interest & Down Payment (${CURRENT_YEAR}) | BikeChala`,
+  title: `Bike Loan EMI Calculator (${CURRENT_YEAR}): Interest & Down Payment`,
   description: 'Calculate your two-wheeler loan EMI instantly online. Customize loan amount, interest rate (8%-18%) and tenure (1-5 years). See complete interest breakup, amortization table & compare bank loan options.',
   alternates: { canonical: '/tools/emi-calculator' },
   openGraph: {

@@ -9,7 +9,7 @@ import { absoluteUrl, SITE_NAME } from '@/lib/seo';
 const CURRENT_YEAR = new Date().getFullYear();
 
 export const metadata: Metadata = {
-  title: `Two Wheeler On-Road Price Calculator (${CURRENT_YEAR}) - City-Wise RTO & Insurance Breakup | BikeChala`,
+  title: `Two Wheeler On-Road Price Calculator (${CURRENT_YEAR}): RTO & Insurance`,
   description: 'Calculate accurate on-road bike prices across Indian states. See exact breakdown of Ex-Showroom price, RTO road tax (4%-18%), 5-year insurance & registration fees in your city.',
   alternates: { canonical: '/tools/on-road-price-calculator' },
   openGraph: {

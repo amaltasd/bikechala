@@ -24,13 +24,14 @@ function parse(pair: string) {
 export async function generateMetadata({ params }: { params: P }): Promise<Metadata> {
   const { pair } = await params;
   const p = parse(pair);
-  if (!p) return { title: 'Comparison not found | BikeChala' };
+  if (!p) return { title: 'Comparison not found' };
   const [a, b] = p;
 
   const facts = compareFacts(a, b);
   const factSnippet = facts.slice(0, 2).join(' ');
 
-  const title = `${bikeTitle(a)} vs ${bikeTitle(b)} - Price, Mileage, Specs & Verdict (${CURRENT_YEAR}) | BikeChala`;
+  const title = `${bikeTitle(a)} vs ${bikeTitle(b)}: Price, Mileage & Specs (${CURRENT_YEAR})`;
+  const socialTitle = `${title} | BikeChala`;
   const description = `${factSnippet} Detailed side-by-side comparison on price difference, ARAI mileage, power, dimensions, and our data-backed buyer verdict.`.slice(0, 160);
 
   return {
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: { params: P }): Promise<Metad
     description,
     alternates: { canonical: `/compare/${pairSlug(a.slug, b.slug)}` },
     openGraph: {
-      title,
+      title: socialTitle,
       description,
       url: absoluteUrl(`/compare/${pairSlug(a.slug, b.slug)}`),
       siteName: SITE_NAME,
