@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Bike, ShieldCheck, Calculator, Sparkles } from 'lucide-react';
+import { Bike, CarFront, ShieldCheck, Calculator, Sparkles } from 'lucide-react';
 import { getBrands } from '@/lib/bikes';
 
 export default function Footer() {
@@ -134,6 +134,19 @@ export default function Footer() {
               </Link>
             ))}
           </div>
+        </div>
+
+        {/* Sister site */}
+        <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-slate-800/80 pt-6">
+          <span className="text-xs font-semibold text-slate-400">A CarChala group site</span>
+          <a href="https://carchala.com" target="_blank" rel="noopener" aria-label="CarChala - India's car portal" className="group flex w-fit items-center gap-2">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#2563eb] shadow-sm transition-transform group-hover:scale-110">
+              <CarFront className="h-5 w-5 text-white" />
+            </span>
+            <span className="font-display text-xl font-black tracking-tight text-white">
+              CAR<span className="text-[#3b82f6]">CHALA</span>
+            </span>
+          </a>
         </div>
 
         {/* Legal Disclaimer & Copyright */}
