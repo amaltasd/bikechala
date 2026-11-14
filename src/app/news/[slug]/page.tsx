@@ -92,6 +92,15 @@ export default async function ArticlePage({ params }: { params: P }) {
                 remarkPlugins={[remarkGfm]}
                 components={{
                   h1: () => null,
+                  table: ({ children }) => (
+                    <div className="not-prose my-6 overflow-x-auto overscroll-x-contain rounded-xl border border-border">
+                      <table className="w-full min-w-[28rem] border-collapse text-left text-sm [&_td]:border-t [&_td]:border-border [&_td]:px-3 [&_td]:py-2 [&_th]:bg-muted/60 [&_th]:px-3 [&_th]:py-2 [&_th]:font-semibold">{children}</table>
+                    </div>
+                  ),
+                  img: ({ src, alt }) => (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={typeof src === 'string' ? src : undefined} alt={alt ?? ''} loading="lazy" className="my-6 h-auto w-full rounded-xl" />
+                  ),
                   h2: ({ children }) => <h2 id={headings[h2++]?.id}>{children}</h2>,
                 }}
               >

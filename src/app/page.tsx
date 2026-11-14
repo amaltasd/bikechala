@@ -42,16 +42,16 @@ export default function Home() {
           </div>
 
           {/* Search Box */}
-          <form action="/bikes" method="GET" role="search" className="mt-6 flex max-w-2xl gap-2">
+          <form action="/bikes" method="GET" role="search" className="mt-6 flex w-full max-w-2xl gap-2">
             <input
               type="search"
               name="q"
               placeholder="Search by brand or model, e.g. Classic 350, Splendor, Activa, R15"
               aria-label="Search bikes and scooters"
               enterKeyHint="search"
-              className="h-12 flex-1 rounded-xl border border-border bg-background px-4 text-base focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-sm"
+              className="h-12 min-w-0 flex-1 rounded-xl border border-border bg-background px-4 text-base focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-sm"
             />
-            <button className="min-h-12 rounded-xl bg-primary px-6 font-bold text-primary-foreground transition-transform active:scale-95">
+            <button className="min-h-12 shrink-0 rounded-xl bg-primary px-5 font-bold sm:px-6 text-primary-foreground transition-transform active:scale-95">
               Search
             </button>
           </form>
