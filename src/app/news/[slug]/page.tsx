@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: P }): Promise<Metad
     title: a.title,
     description: a.excerpt,
     alternates: { canonical: `/news/${a.slug}` },
-    openGraph: { title: a.title, description: a.excerpt, type: 'article', publishedTime: new Date(a.timestamp).toISOString() },
+    openGraph: { title: a.title, description: a.excerpt, type: 'article', publishedTime: new Date(a.timestamp).toISOString(), ...(a.image ? { images: [absoluteUrl(a.image)] } : {}) },
   };
 }
 
@@ -63,6 +63,11 @@ export default async function ArticlePage({ params }: { params: P }) {
               </p>
               <ShareButton title={a.title} />
             </div>
+
+            {a.image && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={a.image} alt={a.title} className="mb-6 aspect-[16/9] w-full rounded-xl object-cover" />
+            )}
 
             {headings.length >= 3 && (
               <details className="group mb-7 rounded-xl border border-border bg-muted/40 [&_summary::-webkit-details-marker]:hidden">

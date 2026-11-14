@@ -21,7 +21,12 @@ export default function NewsPage() {
       </header>
       <div className="container mx-auto grid max-w-4xl gap-3 px-4 py-5 sm:gap-4">
         {sorted.map((a) => (
-          <article key={a.slug} className="group relative rounded-2xl border border-border bg-card p-5 transition-all active:scale-[0.99] sm:hover:shadow-md">
+          <article key={a.slug} className="group relative overflow-hidden rounded-2xl border border-border bg-card transition-all active:scale-[0.99] sm:hover:shadow-md">
+            {a.image && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={a.image} alt="" loading="lazy" className="aspect-[16/9] w-full object-cover" />
+            )}
+            <div className="p-5">
             <p className="text-xs font-semibold text-primary">{a.category}</p>
             <h2 className="mt-1 text-lg font-bold leading-snug group-hover:text-primary sm:text-xl">
               <Link href={`/news/${a.slug}`} className="before:absolute before:inset-0">{a.title}</Link>
@@ -31,6 +36,7 @@ export default function NewsPage() {
               <span>{formatPublishedDate(a.timestamp)}</span>
               <span className="flex items-center gap-1"><Clock className="h-3 w-3" />{readingTimeMinutes(a.content)} min read</span>
             </p>
+            </div>
           </article>
         ))}
       </div>

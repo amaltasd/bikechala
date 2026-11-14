@@ -2,7 +2,8 @@ export type Article = {
   slug: string;
   title: string;
   excerpt: string;
-  category: 'Guide';
+  category: 'Guide' | 'Market Analysis';
+  image?: string;
   author: string;
   timestamp: number;
   content: string;
@@ -11,10 +12,98 @@ export type Article = {
 const at = (iso: string) => new Date(`${iso}T09:00:00+05:30`).getTime();
 
 /**
- * Evergreen explainers only. Time-sensitive news needs a real feed or an editor,
- * so none is invented here — add entries below (or load from a CMS) when you have them.
+ * Evergreen explainers plus sourced market analysis. Every figure in a Market Analysis entry
+ * must come from a named published source (FADA, SIAM, company reports) and be cited in the article.
  */
 export const articles: Article[] = [
+  {
+    slug: 'october-2026-two-wheeler-retail-sales-fada-honda-hero-tvs-bajaj',
+    title: 'October 2026 Two-Wheeler Retail Sales: 23.21 Lakh Units, Honda Edges Past Hero as Diwali Shifts to November',
+    excerpt: 'FADA reports 23,21,419 two-wheelers retailed in October 2026, down 28.35% year on year but up 29.67% on September. Brand-wise retail for Honda, Hero, TVS and Bajaj, rural vs urban demand, EV share and what dealers expect in November.',
+    category: 'Market Analysis',
+    image: '/images/bikes/honda-shine.jpg',
+    author: 'BikeChala Team',
+    timestamp: new Date('2026-11-14T06:58:00+05:30').getTime(),
+    content: `**India's two-wheeler retail sales were 23,21,419 units in October 2026, down 28.35% from 32,39,949 a year earlier but up 29.67% from 17,90,188 in September, according to the Federation of Automobile Dealers Associations (FADA). FADA president Sai Giridhar called the year-on-year fall "almost entirely optical": October 2025 had Navratri, Diwali and pent-up demand after the GST 2.0 rate cuts, while this year Dhanteras and Diwali fall in November.**
+
+Honda Motorcycle & Scooter India moved ahead of Hero MotoCorp as the top retailer of the month. Here is what the numbers show, brand by brand.
+
+## October 2026 Two-Wheeler Retail at a Glance
+
+| Metric | October 2026 |
+| :--- | :---: |
+| Total two-wheeler retail (FADA) | 23,21,419 |
+| Change vs October 2025 | -28.35% |
+| Change vs September 2026 | +29.67% |
+| April to October 2026 (FY27 so far) | 1,33,79,362 (+7.81%) |
+| Navratri period retail | 8,40,696 (-2.02% YoY) |
+| Electric share of retail | 9.65% |
+
+Two-wheelers made up about 73% of the 31,72,466 vehicles retailed across all categories in October. October 2026 was still the second-best October on record, and the first seven months of the financial year are 7.81% ahead of last year.
+
+The Navratri period itself was close to last year: 8,40,696 units against 8,58,027 in 2025, a fall of just 2.02%. That is one reason FADA reads the October gap as a shift in timing.
+
+## Brand-Wise Retail: Honda Takes the Lead
+
+![Two-wheeler retail sales by brand in India, October 2026: Honda, Hero MotoCorp, TVS, Bajaj, Royal Enfield, Suzuki, Yamaha | BikeChala Analysis](/images/news/october-2026-two-wheeler-retail-by-brand.svg)
+
+| Brand | Retail units | Market share | Change vs Oct 2025 |
+| :--- | :---: | :---: | :---: |
+| Honda Motorcycle & Scooter India | 6,37,630 | 27.47% | -25.06% |
+| Hero MotoCorp | 5,98,433 | 25.78% | -40.56% |
+| TVS Motor | 4,58,303 | 19.74% | -19.9% |
+| Bajaj Auto | 2,09,634 | 9.03% | -37.5% |
+| Royal Enfield | 1,23,982 | 5.34% | n/a |
+| Suzuki Motorcycle India | 1,20,931 | 5.21% | n/a |
+| India Yamaha Motor | 79,001 | 3.40% | n/a |
+
+- **Honda** retailed 39,000 more units than Hero. A year earlier Hero led Honda by about 1.56 lakh units. Honda's share rose from 26.26% to 27.47%.
+- **Hero MotoCorp** fell furthest among the big four, down 40.56% from 10,06,796 units. Its share dropped from 31.07% to 25.78%.
+- **TVS Motor** held up best of the four, down 19.9%, and its share rose from 17.67% to 19.74%.
+- **Bajaj Auto** retail fell about 37.5%, and its share slipped from 10.35% to 9.03%.
+
+![Year-on-year change in two-wheeler retail for Hero, Bajaj, Honda and TVS compared with the overall market, October 2026 | BikeChala Analysis](/images/news/october-2026-two-wheeler-yoy-by-brand.svg)
+
+## Dispatches Tell a Different Story
+
+Company-reported dispatches to dealers, which include exports, grew in October. Hero MotoCorp reported 7,05,084 units (up 16.58% from 6,04,829), Honda 6,64,831 (up 11.00%), TVS 5,14,764 (up 22.10%), Bajaj 2,92,885 (up 9.91%), Suzuki 1,24,599 (up 20.44%) and Royal Enfield 1,21,527 (up 4.00%).
+
+Dispatches and retail measure different things. Dispatches count bikes sent to dealers, exports included, while retail counts bikes sold to customers. Bajaj and TVS ship large export volumes (2,08,309 and 1,55,915 units in October), so their dispatch numbers are not comparable with domestic retail. Hero's dispatches rose 16.58% while its retail fell 40.56%, so dealers received more bikes than they sold in the month.
+
+## Rural Demand Fell More Than Urban
+
+- **Rural retail** fell 33.97% year on year and rose 31.00% from September. Rural areas made up 52.9% of two-wheeler retail.
+- **Urban retail** fell 20.77% year on year and rose 28.21% from September.
+
+FADA sees much of this as demand pushed into November rather than lost. Dealers also pointed to deficient rains and a weak kharif crop, the fading of last year's GST price advantage after manufacturers raised prices, and a possible lull after the festive season. About 31% of dealers said the first repo-rate increase in more than three years had a moderate or material effect on financing costs and EMIs.
+
+## Electric Two-Wheelers: Share Rises on Last Year
+
+![Electric share of two-wheeler retail in India: October 2025, September 2026 and October 2026 | BikeChala Analysis](/images/news/october-2026-electric-two-wheeler-share.svg)
+
+Electric two-wheelers took 9.65% of retail in October 2026, up from 4.66% a year ago but down from 11.58% in September. That works out to about 2.24 lakh units, an estimate based on FADA's share figures. Petrol and ethanol bikes held 90.30%.
+
+- **Ather Energy:** 31,833 units, a 1.37% share, up from 0.93%
+- **Ola Electric:** 12,098 units, down about 26%
+- **Greaves Electric Mobility:** 10,839 units, up about 40%
+- **River:** 6,817 units, up nearly 274%
+- **BGauss:** 5,556 units, up about 81%
+
+FADA said electric two-wheeler retail was limited by availability, not demand, and electric vehicles across all categories reached a record of about 3.55 lakh units in October.
+
+## What Dealers Expect Next
+
+FADA says the real verdict on demand will come from November's Diwali numbers rather than October's base-distorted ones. Dealer sentiment for November and the next three months is "cautiously optimistic".
+
+- **November:** 51.65% of dealers expect growth, 34.71% expect flat sales and 13.64% expect a decline.
+- **November to January:** 50.41% expect growth, 40.08% flat and 9.50% a decline. Two-wheeler dealers were the most cautious segment over this three-month period.
+
+## What This Means for Bike Buyers
+
+Dhanteras and Diwali fall in November, which is when most festive offers are likely to be at their strongest. If you are planning a purchase, check the on-road price rather than the ex-showroom price, and use our [on-road price calculator](/tools/on-road-price-calculator) and [EMI calculator](/tools/emi-calculator) to compare. Higher financing costs make the loan rate worth comparing across lenders. To shortlist a bike, start with our [compare tool](/compare).
+
+*Data sources: FADA October 2026 two-wheeler retail data (6 November 2026) and company dispatch reports as compiled by Autocar India and Autocar Professional.*`,
+  },
   {
     slug: 'how-to-read-bike-specs',
     title: 'How to Read a Bike Spec Sheet: What Actually Matters',
