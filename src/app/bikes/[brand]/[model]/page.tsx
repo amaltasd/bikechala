@@ -239,11 +239,6 @@ export default async function BikePage({ params }: { params: P }) {
                     <span className="h-1.5 w-1.5 rounded-full bg-primary" />
                     bikechala.com
                   </span>
-                  {img.credit && (
-                    <span className="mt-2 text-[10px] text-muted-foreground">
-                      Photo: {img.credit}
-                    </span>
-                  )}
                 </div>
               ) : (
                 <div className="flex h-48 w-full items-center justify-center">
