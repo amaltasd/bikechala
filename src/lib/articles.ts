@@ -17,6 +17,87 @@ const at = (iso: string) => new Date(`${iso}T09:00:00+05:30`).getTime();
  */
 export const articles: Article[] = [
   {
+    slug: 'siam-october-2026-two-wheeler-dispatches-25-78-lakh-scooters-surge-31-percent',
+    title: 'Two-Wheeler Dispatches Hit 25.78 Lakh in October 2026: SIAM Data Shows Scooters Up 31.6%, Retail Down 28%',
+    excerpt: 'SIAM data shows domestic two-wheeler dispatches rose 16.1% to 25,77,810 units in October 2026, led by scooters (+31.6%), while FADA retail fell 28.35%. Segment data, exports, electric two-wheeler brands and what it means for buyers.',
+    category: 'Market Analysis',
+    image: '/images/bikes/honda-activa.jpg',
+    author: 'BikeChala Team',
+    timestamp: new Date('2026-11-17T06:30:00+05:30').getTime(),
+    content: `**Indian manufacturers dispatched 25,77,810 two-wheelers to domestic dealers in October 2026, up 16.1% from 22,20,345 a year earlier, according to data the Society of Indian Automobile Manufacturers (SIAM) released on 13 November. Scooters led the growth with 10,96,756 units, up 31.6%, while motorcycles rose 6.6% to 14,23,118. Retail sales fell the other way: the Federation of Automobile Dealers Associations (FADA) counted 23,21,419 two-wheelers sold, down 28.35%.**
+
+SIAM said automakers shipped more vehicles to dealers ahead of Dhanteras and Diwali, which fell in early November. Last year both Navratri and Diwali fell in October, so retail had a much higher base.
+
+## SIAM October 2026 Two-Wheeler Data at a Glance
+
+| Metric | October 2026 | Change vs October 2025 |
+| :--- | :---: | :---: |
+| Domestic two-wheeler dispatches | 25,77,810 | +16.1% |
+| Scooters | 10,96,756 | +31.6% |
+| Motorcycles | 14,23,118 | +6.6% |
+| Mopeds | 57,936 | +13% |
+| Two-wheeler exports | 5,43,972 | +26.5% |
+| April to October dispatches | 1,46,64,622 | +17.4% |
+| Three-wheeler dispatches | 1,03,349 | +25.7% |
+
+## Scooters Drive the Growth
+
+Scooters grew almost five times as fast as motorcycles. They made up about 42.5% of domestic two-wheeler dispatches in October (our calculation from SIAM's figures), up from roughly 37.5% a year earlier.
+
+![Domestic two-wheeler dispatches by type in India, October 2026: motorcycles, scooters and mopeds with year-on-year change | BikeChala Analysis](/images/news/october-2026-siam-two-wheeler-dispatch-by-type.svg)
+
+SIAM Director General Rajesh Menon said demand "continues to be supported by improved credit availability and replacement demand across rural and urban markets". If you are choosing between the two types, our [scooter listings](/bikes?category=scooter) and [bike comparison tool](/compare) show prices and specifications side by side, and the [EMI calculator](/tools/emi-calculator) shows what a loan will cost each month.
+
+## Why Dispatches Rose While Retail Fell
+
+Dispatches count bikes sent from factories to dealers, and exports are counted separately. Retail counts bikes sold to customers. In October 2026 the two moved in opposite directions:
+
+- **Dispatches:** 25,77,810 domestic units, up 16.1%.
+- **Retail (FADA):** 23,21,419 units, down 28.35% from 32,39,949.
+
+Dispatches were about 2.56 lakh units above retail (25,77,810 minus 23,21,419, our subtraction of the two published totals), which is consistent with dealers stocking up for the November festive days. A year ago retail of 32,39,949 ran well ahead of dispatches of 22,20,345.
+
+![Domestic two-wheeler dispatches compared with retail sales in India, October 2025 and October 2026 | BikeChala Analysis](/images/news/october-2026-siam-dispatch-vs-fada-retail-2w.svg)
+
+SIAM's segment-wise figures leave out data from some manufacturers, and the two bodies count different things, so treat the gap as a direction and not an exact stock figure. Our [October retail analysis](/news/october-2026-two-wheeler-retail-sales-fada-honda-hero-tvs-bajaj) has the FADA numbers brand by brand, including how [Honda](/bikes/honda) moved ahead of [Hero](/bikes/hero) on retail.
+
+## Exports Grew Faster Than Domestic Sales
+
+Two-wheeler exports were 5,43,972 units, up 26.5%, a faster rise than domestic dispatches. Across April to October, domestic dispatches reached 1,46,64,622 units, 17.4% above the same months last year. Three-wheeler dispatches rose 25.7% to 1,03,349 units, with passenger carriers up 26.9%.
+
+## Electric Two-Wheelers: TVS and Bajaj Lead
+
+Registration data compiled from FADA's report shows electric two-wheelers reached 2,24,104 units in October, up 48.5% from 1,50,896 a year earlier, and about 9.7% of all two-wheeler registrations.
+
+![Electric two-wheeler sales by brand in India, October 2026: TVS, Bajaj, Ather, Hero Vida, Ola Electric and Greaves | BikeChala Analysis](/images/news/october-2026-electric-two-wheeler-sales-by-brand.svg)
+
+- **[TVS Motor](/bikes/tvs/iqube):** 60,494 units, a 27.0% share, up 94.7%.
+- **[Bajaj Auto](/bikes/bajaj/chetak-3001):** 49,127 units, a 21.9% share, up 51.3%.
+- **[Ather Energy](/bikes/ather):** 31,833 units, up 5.2%.
+- **[Hero Vida](/bikes/hero/vida-v2-plus):** 29,958 units, up 81.6%.
+- **[Ola Electric](/bikes/ola-electric):** 12,098 units, down 26.4%, the only large brand to fall.
+
+For a shortlist of models, see our list of the [best electric scooters](/best/best-electric-scooters).
+
+## Early November: Mumbai Registrations
+
+Mumbai's Wadala, Tardeo and Borivali RTOs registered more than 7,200 two-wheelers in the first ten days of November (Wadala 2,977, Tardeo 2,222, Borivali 2,088), and the city passed 9,500 two-wheeler registrations overall, according to the Free Press Journal. This is one city and the report gives no comparison with last year, so it is a sign of festive buying and not a national figure.
+
+## Cars Showed the Same Split
+
+Passenger vehicles followed a similar pattern. Domestic car dispatches hit a record 5,19,060 units, up 12.4%, while retail fell 14.23%. Our sister site CarChala covers it in its [SIAM car dispatch analysis](https://carchala.com/news/siam-october-2026-passenger-vehicle-dispatches-record-5-19-lakh-retail-gap-dhanteras), including what Maruti, Tata, Hyundai and Mahindra said about Dhanteras deliveries.
+
+## What This Means for Bike Buyers
+
+Higher dispatches mean showrooms entered the festive days well stocked, which gives buyers more choice of variants and colours. Dhanteras and Diwali offers are worth comparing across dealers, and the on-road price matters more than the ex-showroom price, so use our [on-road price calculator](/tools/on-road-price-calculator) before you book.
+
+## What to Watch Next
+
+FADA's November retail figures, due in early December, will show how much of October's gap was sold in the festive days. SIAM's November dispatch data follows in mid-December.
+
+*Data sources: [SIAM October 2026 data via ETV Bharat](https://www.etvbharat.com/en/business/domestic-pv-dispatches-grow-12-percent-in-october-2026-two-wheeler-sales-up-16-percent-siam-enn26111304363), [Business Today](https://www.businesstoday.in/auto/story/auto-industry-posts-record-october-sales-as-passenger-vehicles-cross-5-lakh-mark-2-wheelers-grow-16-567320-2026-11-13), [Daily Excelsior](https://www.dailyexcelsior.com/domestic-pv-dispatches-grow-12-pc-in-oct-two-wheeler-sales-up-16-pc-siam/); FADA October 2026 retail data and [CarHP](https://carhp.in/bike-news/two-wheeler-sales-in-october-2026-honda-leads-tvs-tops-ev-market) for electric two-wheeler registrations; [Free Press Journal](https://www.freepressjournal.in/mumbai/diwali-2026-mumbai-records-over-9500-two-wheeler-registrations-in-first-10-days-of-november-as-festive-vehicle-sales-surge) for Mumbai.*`,
+  },
+  {
     slug: 'october-2026-two-wheeler-retail-sales-fada-honda-hero-tvs-bajaj',
     title: 'October 2026 Two-Wheeler Retail Sales: 23.21 Lakh Units, Honda Edges Past Hero as Diwali Shifts to November',
     excerpt: 'FADA reports 23,21,419 two-wheelers retailed in October 2026, down 28.35% year on year but up 29.67% on September. Brand-wise retail for Honda, Hero, TVS and Bajaj, rural vs urban demand, EV share and what dealers expect in November.',
@@ -102,7 +183,9 @@ FADA says the real verdict on demand will come from November's Diwali numbers ra
 
 Dhanteras and Diwali fall in November, which is when most festive offers are likely to be at their strongest. If you are planning a purchase, check the on-road price rather than the ex-showroom price, and use our [on-road price calculator](/tools/on-road-price-calculator) and [EMI calculator](/tools/emi-calculator) to compare. Higher financing costs make the loan rate worth comparing across lenders. To shortlist a bike, start with our [compare tool](/compare).
 
-*Data sources: FADA October 2026 two-wheeler retail data (6 November 2026) and company dispatch reports as compiled by Autocar India and Autocar Professional.*`,
+*Data sources: FADA October 2026 two-wheeler retail data (6 November 2026) and company dispatch reports as compiled by Autocar India and Autocar Professional.*
+
+**Update, 17 November 2026:** SIAM's October data, released on 13 November, shows domestic two-wheeler dispatches at 25,77,810 units, up 16.1%, with scooters up 31.6%. Read the [SIAM dispatch analysis](/news/siam-october-2026-two-wheeler-dispatches-25-78-lakh-scooters-surge-31-percent) for how that compares with the retail figures above.`,
   },
   {
     slug: 'how-to-read-bike-specs',

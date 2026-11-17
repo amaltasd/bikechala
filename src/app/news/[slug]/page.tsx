@@ -20,8 +20,9 @@ export async function generateMetadata({ params }: { params: P }): Promise<Metad
   return {
     title: a.title,
     description: a.excerpt,
-    alternates: { canonical: `/news/${a.slug}` },
-    openGraph: { title: a.title, description: a.excerpt, type: 'article', publishedTime: new Date(a.timestamp).toISOString(), ...(a.image ? { images: [absoluteUrl(a.image)] } : {}) },
+    alternates: { canonical: absoluteUrl(`/news/${a.slug}`) },
+    openGraph: { title: a.title, description: a.excerpt, type: 'article', url: absoluteUrl(`/news/${a.slug}`), siteName: 'BikeChala', locale: 'en_IN', publishedTime: new Date(a.timestamp).toISOString(), modifiedTime: new Date(a.timestamp).toISOString(), section: a.category, authors: [a.author], ...(a.image ? { images: [{ url: absoluteUrl(a.image), alt: a.title }] } : {}) },
+    twitter: { card: 'summary_large_image', title: a.title, description: a.excerpt, ...(a.image ? { images: [absoluteUrl(a.image)] } : {}) },
   };
 }
 
@@ -37,11 +38,18 @@ export default async function ArticlePage({ params }: { params: P }) {
 
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: a.title,
+    '@type': a.category === 'Market Analysis' ? 'NewsArticle' : 'Article',
+    headline: a.title.length > 110 ? a.title.slice(0, 107) + '...' : a.title,
+    description: a.excerpt,
+    ...(a.image ? { image: [absoluteUrl(a.image)] } : {}),
     datePublished: new Date(a.timestamp).toISOString(),
-    author: { '@type': 'Organization', name: a.author },
-    mainEntityOfPage: absoluteUrl(`/news/${a.slug}`),
+    dateModified: new Date(a.timestamp).toISOString(),
+    articleSection: a.category,
+    inLanguage: 'en-IN',
+    isAccessibleForFree: true,
+    author: { '@type': 'Organization', name: a.author, url: absoluteUrl('/about') },
+    publisher: { '@type': 'Organization', name: 'BikeChala', url: absoluteUrl('/'), logo: { '@type': 'ImageObject', url: absoluteUrl('/icon.svg') } },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': absoluteUrl(`/news/${a.slug}`) },
   };
 
   return (
