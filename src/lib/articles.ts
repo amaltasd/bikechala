@@ -17,6 +17,90 @@ const at = (iso: string) => new Date(`${iso}T09:00:00+05:30`).getTime();
  */
 export const articles: Article[] = [
   {
+    slug: 'royal-enfield-himalayan-750-specs-uk-price-india-launch-motoverse',
+    title: 'Royal Enfield Himalayan 750: 55 hp Twin, UK Price Revealed, India Launch Expected at Motoverse',
+    excerpt: 'Royal Enfield has revealed the Himalayan 750 at EICMA 2026 with a 743cc parallel-twin making 55 hp. UK prices start at £6,999; India timing is not confirmed, though Motoverse in late November is the likely stage. Specs, expected price and what to watch.',
+    category: 'Market Analysis',
+    image: '/images/bikes/royal-enfield-himalayan-450.jpg',
+    author: 'BikeChala Team',
+    timestamp: new Date('2026-11-18T09:30:00+05:30').getTime(),
+    content: `**Royal Enfield has revealed the Himalayan 750 at EICMA 2026 in Milan, powered by a new 743cc air/oil-cooled parallel-twin. Autocar India reported on 3 November that the company has not confirmed an India launch timeline, but Motoverse 2026, due in late November, is the likely stage for India details.**
+
+## Himalayan 750 specs
+
+These figures come from Autocar India's report on the EICMA reveal.
+
+| Spec | Himalayan 750 |
+| :--- | :--- |
+| Engine | 743cc air/oil-cooled parallel-twin |
+| Power and torque | 55 hp at 7,000 rpm, 63 Nm at 5,000 rpm |
+| Gearbox | 6-speed |
+| Suspension | 43 mm Showa USD fork (190 mm travel), Showa monoshock (175 mm travel) |
+| Wheels | 19-inch front, 17-inch rear, tubeless, alloy or spoked |
+| Brakes | Twin 280 mm front discs, 255 mm rear disc, cornering ABS |
+| Seat height | 815 mm standard |
+| Ground clearance | 205 mm |
+| Weight | 223 kg (Europe), 224 kg (India spec) |
+| Fuel tank | 17.8 litres |
+| Electronics | Five riding modes, lean-sensitive traction control, cruise control, 4-inch TFT, TPMS |
+
+## UK price and what it says about India
+
+In the UK the alloy-wheel versions are priced at £6,999 (about ₹8.92 lakh on Autocar India's conversion), the spoked-wheel version at £7,299 and the top Antarctic Silver version, with GIVI accessories, at £8,699. UK prices include local taxes and are not a guide to the Indian price.
+
+For India, there is no official price. Published expectations vary: NewsBytes (6 November) said ₹4 lakh to ₹5 lakh ex-showroom, while Bikes4Sale (updated 12 November) said ₹4 lakh to ₹5.5 lakh. Treat both as estimates.
+
+## India launch timing
+
+Motoverse 2026 is Royal Enfield's rider festival in Goa. NewsBytes gives the dates as 26 to 28 November with the Himalayan 750 unveil on 26 November, while Bikes4Sale lists 27 to 29 November. The dates differ between sources, so confirm with Royal Enfield before you plan to attend.
+
+## How it compares with what you can buy today
+
+The Himalayan 750 would sit above the [Himalayan 450](/bikes/royal-enfield/himalayan-450) and [Himalayan 440](/bikes/royal-enfield/himalayan-440) in the line-up. If you are choosing now, browse all [Royal Enfield bikes](/bikes/royal-enfield) or our [best cruiser and adventure bikes](/best/best-cruiser-and-adventure-bikes) list, and use the [on-road price calculator](/tools/on-road-price-calculator) to see what a bike costs after RTO and insurance.
+
+*Sources: [Autocar India, 3 Nov 2026](https://www.autocarindia.com/bike-news-amp/royal-enfield-himalayan-750-specs-and-uk-price-revealed-441207); [NewsBytes, 6 Nov 2026](https://www.newsbytesapp.com/news/auto/royal-enfield-bringing-743cc-himalayan-750-to-india-at-motoverse/tldr); [Bikes4Sale, updated 12 Nov 2026](https://www.bikes4sale.in/news/eicma-2026-upcoming-bikes-scooters-india/).*`,
+  },
+  {
+    slug: 'eicma-2026-india-bound-bikes-xpulse-450-harley-x350t-italjet-dragster-dates',
+    title: 'EICMA 2026 India-Bound Bikes: Hero Xpulse 450, Harley-Davidson X350 T, Italjet Dragster and Launch Dates',
+    excerpt: 'Which bikes shown at EICMA 2026 are headed to India? Hero Xpulse 450 (46.7 hp), Harley-Davidson X350 T, Italjet Dragster 300 at India Bike Week on 4-5 December, and what is still unconfirmed.',
+    category: 'Market Analysis',
+    image: '/images/bikes/hero-xpulse-210.jpg',
+    author: 'BikeChala Team',
+    timestamp: new Date('2026-11-18T09:00:00+05:30').getTime(),
+    content: `**Several bikes revealed at EICMA 2026 are being lined up for India, but only a few have dates. The Italjet Dragster 300 is confirmed for India Bike Week on 4 and 5 December, the Hero Xpulse 450 is expected soon after its global launch, and the Harley-Davidson X350 T has no confirmed date.**
+
+## India-bound bikes at a glance
+
+| Bike | India timing | Key details |
+| :--- | :--- | :--- |
+| Hero Xpulse 450 | Hero says India follows shortly after the global launch; likely early 2027 | 421cc single, 46.7 hp, 38 Nm, 6-speed, 225 mm travel, 7-inch TFT |
+| Harley-Davidson X350 T | No date; possibly India Bike Week in December | Sub-350cc air/oil-cooled engine; figures not announced |
+| Italjet Dragster 300 | India Bike Week, 4-5 December; deliveries from Q2 2027 | 278cc liquid-cooled, 23.8 hp, 26 Nm |
+| Italjet Dragster 459 and 700 | India Bike Week (earlier report) | 449cc twin at 47.58 hp; 698cc twin at 68 hp |
+| Royal Enfield Himalayan 750 | Possible India debut at Motoverse in late November | 743cc twin, 55 hp, 63 Nm |
+
+## Hero Xpulse 450
+
+Autocar India lists the Xpulse 450 as a 421cc single-cylinder adventure bike with 46.7 hp and 38 Nm, a 6-speed gearbox, 225 mm of suspension travel and a 7-inch TFT with Android Auto and Apple CarPlay. Bikes4Sale says it was earlier called the Xpulse 421 and puts the expected price at around ₹3 lakh, an unofficial estimate. Compare it with the current [Hero Xpulse 210](/bikes/hero/xpulse-210) and [Xpulse 200 4V](/bikes/hero/xpulse-200-4v).
+
+## Harley-Davidson X350 T
+
+Harley-Davidson showed the X350 T at EICMA. No launch date or price has been announced; Autocar India says it could come to India Bike Week in December. For reference, the X440 T starts at ₹2.86 lakh, per the same report, and you can see the current [Harley-Davidson X440](/bikes/harley-davidson/x440) on BikeChala.
+
+## Italjet Dragster
+
+The Italjet Dragster 300 is confirmed for India Bike Week on 4 and 5 December, with deliveries from the second quarter of 2027, according to Bikes4Sale. Autocar India notes the larger 459 and 700 versions were also tied to the India Bike Week launch in an earlier report. No prices have been announced.
+
+## What is not yet confirmed
+
+Many premium bikes shown at EICMA, including the BMW F 450 R and RR, the Kawasaki Versys 900 and several Ducati and Honda models, have no India date. Autocar India says Kawasaki's KLE650 is "still some time away" for India.
+
+Planning a purchase this season? Our [best cruiser and adventure bikes](/best/best-cruiser-and-adventure-bikes) list covers what is on sale now, and the [EMI calculator](/tools/emi-calculator) helps you estimate monthly payments. For the biggest launch of the month, read our [Himalayan 750 report](/news/royal-enfield-himalayan-750-specs-uk-price-india-launch-motoverse).
+
+*Sources: [Autocar India, 5 Nov 2026](https://www.autocarindia.com/auto-features/india-bound-bikes-and-scooters-from-eicma-2026-441268); [Bikes4Sale, updated 12 Nov 2026](https://www.bikes4sale.in/news/eicma-2026-upcoming-bikes-scooters-india/). Prices marked expected are estimates, not official.*`,
+  },
+  {
     slug: 'siam-october-2026-two-wheeler-dispatches-25-78-lakh-scooters-surge-31-percent',
     title: 'Two-Wheeler Dispatches Hit 25.78 Lakh in October 2026: SIAM Data Shows Scooters Up 31.6%, Retail Down 28%',
     excerpt: 'SIAM data shows domestic two-wheeler dispatches rose 16.1% to 25,77,810 units in October 2026, led by scooters (+31.6%), while FADA retail fell 28.35%. Segment data, exports, electric two-wheeler brands and what it means for buyers.',
