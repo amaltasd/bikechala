@@ -88,7 +88,7 @@ At ₹14.39 lakh this is a premium middleweight naked, a segment far above entry
 
 **What are the riding modes?** Rain, Road, Sport, Track, Eco and two configurable modes, with cornering ABS, cornering traction control and launch control.
 
-*Source: [BikeWale, 18 Nov 2026](https://bikewale.com/news/triumph-street-triple-798-rs-launched-top-five-highlights). Delivery timing and colours were not available from this source and are not stated here.*`,
+*Source: BikeWale, 18 Nov 2026. Delivery timing and colours were not available from this source and are not stated here.*`,
   },
   {
     slug: 'royal-enfield-himalayan-750-specs-uk-price-india-launch-motoverse',
@@ -132,7 +132,7 @@ Motoverse 2026 is Royal Enfield's rider festival in Goa. NewsBytes gives the dat
 
 The Himalayan 750 would sit above the [Himalayan 450](/bikes/royal-enfield/himalayan-450) and [Himalayan 440](/bikes/royal-enfield/himalayan-440) in the line-up. If you are choosing now, browse all [Royal Enfield bikes](/bikes/royal-enfield) or our [best cruiser and adventure bikes](/best/best-cruiser-and-adventure-bikes) list, and use the [on-road price calculator](/tools/on-road-price-calculator) to see what a bike costs after RTO and insurance.
 
-*Sources: [Autocar India, 3 Nov 2026](https://www.autocarindia.com/bike-news-amp/royal-enfield-himalayan-750-specs-and-uk-price-revealed-441207); [NewsBytes, 6 Nov 2026](https://www.newsbytesapp.com/news/auto/royal-enfield-bringing-743cc-himalayan-750-to-india-at-motoverse/tldr); [Bikes4Sale, updated 12 Nov 2026](https://www.bikes4sale.in/news/eicma-2026-upcoming-bikes-scooters-india/).*`,
+*Sources: Autocar India, 3 Nov 2026; NewsBytes, 6 Nov 2026; Bikes4Sale, updated 12 Nov 2026.*`,
   },
   {
     slug: 'eicma-2026-india-bound-bikes-xpulse-450-harley-x350t-italjet-dragster-dates',
@@ -172,7 +172,7 @@ Many premium bikes shown at EICMA, including the BMW F 450 R and RR, the Kawasak
 
 Planning a purchase this season? Our [best cruiser and adventure bikes](/best/best-cruiser-and-adventure-bikes) list covers what is on sale now, and the [EMI calculator](/tools/emi-calculator) helps you estimate monthly payments. For the biggest launch of the month, read our [Himalayan 750 report](/news/royal-enfield-himalayan-750-specs-uk-price-india-launch-motoverse).
 
-*Sources: [Autocar India, 5 Nov 2026](https://www.autocarindia.com/auto-features/india-bound-bikes-and-scooters-from-eicma-2026-441268); [Bikes4Sale, updated 12 Nov 2026](https://www.bikes4sale.in/news/eicma-2026-upcoming-bikes-scooters-india/). Prices marked expected are estimates, not official.*`,
+*Sources: Autocar India, 5 Nov 2026; Bikes4Sale, updated 12 Nov 2026. Prices marked expected are estimates, not official.*`,
   },
   {
     slug: 'siam-october-2026-two-wheeler-dispatches-25-78-lakh-scooters-surge-31-percent',
