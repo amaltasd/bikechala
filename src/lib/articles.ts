@@ -17,6 +17,80 @@ const at = (iso: string) => new Date(`${iso}T09:00:00+05:30`).getTime();
  */
 export const articles: Article[] = [
   {
+    slug: 'triumph-street-triple-798-rs-launched-india-price-14-39-lakh-specs-vs-765-rs',
+    title: 'Triumph Street Triple 798 RS Launched in India at ₹14.39 Lakh: 133 bhp, 183 kg, Ohlins and Brembo Stylema — Specs and What Changed vs 765 RS',
+    excerpt: 'Triumph has launched the Street Triple 798 RS in India at ₹14.39 lakh ex-showroom. New 798cc triple with 133 bhp and 86 Nm, 5 kg lighter than the 765 RS, Ohlins STX46, Brembo Stylema and a 7-inch TFT. Full specs, electronics, on-road prices and what it means for buyers.',
+    category: 'Market Analysis',
+    image: '/images/news/triumph-street-triple-798-rs-vs-765-rs.svg',
+    author: 'BikeChala Team',
+    timestamp: new Date('2026-11-19T09:30:00+05:30').getTime(),
+    content: `**Triumph has launched the Street Triple 798 RS in India at ₹14.39 lakh (ex-showroom). It gets a new 798cc liquid-cooled inline-triple making 133 bhp and 86 Nm, a new aluminium frame that makes it 5 kg lighter than the 765 RS, a fully adjustable Showa fork, an Ohlins STX46 rear shock, Brembo Stylema brakes and a 7-inch TFT. BikeWale reported the launch on 18 November 2026.**
+
+## Triumph Street Triple 798 RS price in India
+
+| Item | Price |
+|---|---|
+| Ex-showroom | ₹14.39 lakh |
+| On-road, Delhi (BikeWale) | ₹14,80,354 |
+| On-road, Mumbai (BikeWale) | ₹16,39,090 |
+
+On-road prices differ by city, insurance and registration. Use our [on-road price calculator](/tools/on-road-price-calculator) and [EMI calculator](/tools/emi-calculator) to work out your own numbers.
+
+## Specifications
+
+| Spec | Street Triple 798 RS |
+|---|---|
+| Engine | 798cc liquid-cooled inline three-cylinder, revised cylinder head with larger valves |
+| Power | 133 bhp at 11,500 rpm (5 bhp more than the 765 RS) |
+| Torque | 86 Nm at 9,250 rpm (6 Nm more than the 765 RS) |
+| Gearbox | 6-speed with updated Triumph Shift Assist quickshifter |
+| Weight | 183 kg ready to ride (5 kg less than the 765 RS) |
+| Seat height | 836 mm (unchanged) |
+| Frame | New aluminium frame, rear subframe, swingarm and fuel tank |
+| Front suspension | Fully adjustable 41 mm Showa Big Piston fork, 120 mm travel |
+| Rear suspension | Ohlins STX46 monoshock, 130 mm travel |
+| Brakes | Brembo Stylema calipers on twin 310 mm discs |
+| Display | 7-inch colour TFT touchscreen (up from 5 inches) |
+
+Triumph also claims about 10% more torque across the rev range than the 765 RS, even though the peak torque gain is 6 Nm.
+
+## Electronics and riding modes
+
+- Seven riding modes: Rain, Road, Sport, Track, Eco and two configurable modes
+- Cornering ABS and cornering traction control
+- Launch control
+- Wireless Apple CarPlay and Android Auto
+- Cruise control and USB-C charging
+- Adaptive cornering lights
+
+## What changed from the 765 RS
+
+| | Change on the 798 RS |
+|---|---|
+| Power | +5 bhp |
+| Torque | +6 Nm |
+| Weight | −5 kg |
+| Display | 5-inch to 7-inch TFT |
+| Seat height | Unchanged at 836 mm |
+| Chassis | New frame, subframe, swingarm and tank |
+
+## What it means for buyers
+
+At ₹14.39 lakh this is a premium middleweight naked, a segment far above entry-level Triumphs such as the [Speed 400](/bikes/triumph/speed-400). Rivals to check include the [Kawasaki Z900](/bikes/kawasaki/z900) and the [Ducati Monster](/bikes/ducati/monster); compare current prices and specs on their pages, because we have not tested the Street Triple against them. If you are choosing within a smaller budget, see our [best cruiser and adventure bikes](/best/best-cruiser-and-adventure-bikes), and for this month's other big launch read our [Himalayan 750 report](/news/royal-enfield-himalayan-750-specs-uk-price-india-launch-motoverse).
+
+## FAQ
+
+**What is the price of the Triumph Street Triple 798 RS in India?** ₹14.39 lakh ex-showroom.
+
+**How much power does it make?** 133 bhp at 11,500 rpm and 86 Nm at 9,250 rpm.
+
+**How is it different from the 765 RS?** 5 bhp and 6 Nm more power and torque, 5 kg lighter, a new frame, Ohlins STX46 rear shock and a 7-inch TFT in place of a 5-inch display.
+
+**What are the riding modes?** Rain, Road, Sport, Track, Eco and two configurable modes, with cornering ABS, cornering traction control and launch control.
+
+*Source: [BikeWale, 18 Nov 2026](https://bikewale.com/news/triumph-street-triple-798-rs-launched-top-five-highlights). Delivery timing and colours were not available from this source and are not stated here.*`,
+  },
+  {
     slug: 'royal-enfield-himalayan-750-specs-uk-price-india-launch-motoverse',
     title: 'Royal Enfield Himalayan 750: 55 hp Twin, UK Price Revealed, India Launch Expected at Motoverse',
     excerpt: 'Royal Enfield has revealed the Himalayan 750 at EICMA 2026 with a 743cc parallel-twin making 55 hp. UK prices start at £6,999; India timing is not confirmed, though Motoverse in late November is the likely stage. Specs, expected price and what to watch.',
