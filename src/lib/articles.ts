@@ -17,6 +17,103 @@ const at = (iso: string) => new Date(`${iso}T09:00:00+05:30`).getTime();
  */
 export const articles: Article[] = [
   {
+    slug: 'hero-splendor-plus-price-hike-november-2026-variant-wise-new-prices',
+    title: 'Hero Splendor+ Price Hike (Nov 2026): Drum Now ₹78,912, i3S ₹80,045, XTEC from ₹82,418 — Variant-Wise Old vs New Prices',
+    excerpt: 'Hero has raised Splendor+ prices by up to ₹3,086. Variant-wise old and new ex-showroom prices, the Flex E85 version at ₹84,042 and what the hike means for commuter buyers.',
+    category: 'Market Analysis',
+    image: '/images/bikes/hero-splendor-plus.jpg',
+    author: 'BikeChala Team',
+    timestamp: new Date('2026-11-21T08:10:00+05:30').getTime(),
+    content: `**Hero MotoCorp has raised the price of the Splendor+ by up to ₹3,086 across variants. The entry Drum variant now costs ₹78,912 (ex-showroom, Delhi), up ₹1,135, while the Special Editions saw the largest rise of ₹3,086. The changes were reported on 20 November 2026.**
+
+## Hero Splendor+ new prices, variant-wise
+
+| Variant | Old price | New price | Increase |
+|---|---|---|---|
+| Splendor+ Drum | ₹77,777 | ₹78,912 | ₹1,135 |
+| Splendor+ i3S | ₹78,910 | ₹80,045 | ₹1,135 |
+| Splendor+ Special Editions | ₹78,580 | ₹81,666 | ₹3,086 |
+| Splendor+ 125 Million Edition | ₹80,531 | ₹81,666 | ₹1,135 |
+| Splendor+ Flex (vs launch price) | ₹82,710 | ₹84,042 | ₹1,332 |
+
+Current prices for the XTEC variants are ₹82,418 (Drum), ₹85,461 (Disc) and ₹84,549 for the XTEC 2.0 Drum. The HF Deluxe Flex stays at its launch price of ₹72,792. All prices are ex-showroom, Delhi; on-road prices differ by city, insurance and registration. Work out your own figure with the [on-road price calculator](/tools/on-road-price-calculator).
+
+## How big is the increase?
+
+By our calculation, the ₹1,135 rise is about 1.5 per cent on the Drum variant and the ₹3,086 rise on the Special Editions is about 3.9 per cent. Hero has not given an official reason for the revision.
+
+## Splendor+ Flex: the E85 version
+
+The Flex variant uses a different engine tuned for E85 fuel. On E85 it makes 8.6 hp and 8.3 Nm, against 8.02 hp and 8.05 Nm for the E20 versions. That is about 7 per cent more power and 3 per cent more torque.
+
+## Should you buy now?
+
+If you are shortlisting the Splendor+, the price gap between the Drum and i3S is unchanged at ₹1,133, so choose on features rather than the hike. Open the [Splendor+ page](/bikes/hero/splendor-plus) for specs and check the [EMI calculator](/tools/emi-calculator) to see how an extra ₹1,135 to ₹3,086 changes the monthly instalment. Compare against other [Hero motorcycles](/bikes/hero) before you book.
+
+## FAQ
+
+**What is the new Hero Splendor+ price?** ₹78,912 ex-showroom, Delhi, for the Drum variant.
+
+**Which Splendor+ variant got the biggest hike?** The Special Editions, up ₹3,086.
+
+**What is the Splendor+ Flex price?** ₹84,042 ex-showroom.
+
+**Did the HF Deluxe Flex price change?** No, it stays at ₹72,792.
+
+*Percentage increases and the Drum-to-i3S gap are BikeChala calculations from the published prices.*`,
+  },
+  {
+    slug: 'bajaj-pulsar-rs200-updated-launched-rs-1-98-lakh-25-5-hp-tft-quickshifter-usd-fork',
+    title: 'Updated Bajaj Pulsar RS200 Launched at ₹1.98 Lakh: 25.5 hp, TFT, Quickshifter, USD Fork — What Changed and How It Compares',
+    excerpt: 'Bajaj has updated the Pulsar RS200 with the NS200 upgrades: 25.5 hp, throttle-by-wire with ride modes, traction control, quickshifter, 5-inch TFT and a 37 mm USD fork. Price is ₹1.98 lakh, up ₹17,000. Full changes and rivals.',
+    category: 'Market Analysis',
+    image: '/images/bikes/bajaj-pulsar-ns200.jpg',
+    author: 'BikeChala Team',
+    timestamp: new Date('2026-11-21T08:00:00+05:30').getTime(),
+    content: `**Bajaj has launched the updated Pulsar RS200 at ₹1.98 lakh (ex-showroom, Delhi), ₹17,000 more than before. The faired 200 gets the same upgrades the Pulsar NS200 received last month: 25.5 hp, an electronic throttle body with ride modes, traction control, a quickshifter, a 5-inch TFT with Google Maps mirroring and a 37 mm upside-down fork.**
+
+## What changed on the 2026 Pulsar RS200
+
+| Area | Update |
+|---|---|
+| Engine | 199.5cc liquid-cooled single, 25.5 hp (up 1 hp), 18.7 Nm unchanged |
+| Throttle | Electronic throttle body with multiple ride modes |
+| Electronics | Traction control and quickshifter |
+| Console | 5-inch TFT with Google Maps mirroring, replacing the colour LCD |
+| Front suspension | 37 mm upside-down fork, replacing the telescopic fork |
+| Other | Adjustable levers, USB Type-C port, hazard switch |
+
+The extra 1 hp is likely linked to the new electronic throttle body, though Bajaj has not said so. See the [Pulsar RS200 page](/bikes/bajaj/pulsar-rs200) and the [NS200](/bikes/bajaj/pulsar-ns200) it now shares hardware with.
+
+## Price and rivals
+
+| Bike | Ex-showroom price |
+|---|---|
+| Bajaj Pulsar RS200 (updated) | ₹1.98 lakh |
+| Hero Karizma XMR | from ₹1.86 lakh |
+| KTM RC 200 | ₹2.33 lakh |
+
+The RS200 now costs more than the [Karizma XMR](/bikes/hero/karizma-xmr) but undercuts the RC 200 by about ₹35,000, going by these prices. The Apache RTR 200 4V is another rival in the segment.
+
+## Should you buy it?
+
+The hardware list is now close to bikes costing much more: a USD fork, quickshifter, traction control and a TFT are rare below ₹2 lakh. The ₹17,000 premium buys features that previously needed an aftermarket fix. Estimate the on-road cost with the [on-road price calculator](/tools/on-road-price-calculator) and your monthly outgo with the [EMI calculator](/tools/emi-calculator).
+
+## FAQ
+
+**What is the new Pulsar RS200 price?** ₹1.98 lakh ex-showroom, Delhi.
+
+**How much more does it cost?** ₹17,000.
+
+**How much power does it make?** 25.5 hp and 18.7 Nm.
+
+**Does the RS200 get a quickshifter?** Yes, along with traction control and ride modes.
+
+**Is it the same as the NS200 update?** The RS200 receives the same upgrades as the NS200.
+
+*The price gap to the KTM RC 200 is a BikeChala calculation. The photo shows the Pulsar NS200, which shares these upgrades.*`,
+  },
+  {
     slug: 'triumph-street-triple-798-rs-launched-india-price-14-39-lakh-specs-vs-765-rs',
     title: 'Triumph Street Triple 798 RS Launched in India at ₹14.39 Lakh: 133 bhp, 183 kg, Ohlins and Brembo Stylema — Specs and What Changed vs 765 RS',
     excerpt: 'Triumph has launched the Street Triple 798 RS in India at ₹14.39 lakh ex-showroom. New 798cc triple with 133 bhp and 86 Nm, 5 kg lighter than the 765 RS, Ohlins STX46, Brembo Stylema and a 7-inch TFT. Full specs, electronics, on-road prices and what it means for buyers.',
